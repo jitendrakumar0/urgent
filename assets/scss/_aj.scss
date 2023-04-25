@@ -1,5 +1,109 @@
 @include media-breakpoint(basic) {
-  
+    .signUpFormPage {
+        background-color: #F4F4F4;
+        z-index: 1;
+        &::before{
+            content: '';
+            background: url(../img/bg1.png) no-repeat, center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 1000px;
+            width: 1000px;
+            z-index: -1;
+        }
+        & .innerSection {
+            // max-width: 853px;
+            & .form {
+                & .topSection {
+                    & .userName {
+                        font-size: 60px;
+                        line-height: 90px;
+                        color: #464255;
+                    }
+                    & .databaseName {
+                        font-weight: 300;
+                        font-size: 40px;
+                        line-height: 60px;
+                        color: #464255;
+                    }
+                    & .topbilling {
+                        & .belingType {
+                            font-size: 22px;
+                            line-height: 28px;
+                            color: #4A5C77;
+                            & span {
+                                height: 40px;
+                                width: 40px;
+                            }
+                        }
+                        & .form-select {
+                            height: 60px;
+                            background-color: #DAECEC;
+                            border: 1px solid #E0E0E0;
+                            border-radius: 18px;
+                            padding: 16px 26px;
+                            gap: 14px;
+                            font-size: 15px;
+                            line-height: 22px;
+                            letter-spacing: 0.4px;
+                            color: #464255;
+                            position: relative;
+                            // &::before{
+                            //     content: '';
+                            //     background: url(../img/svg/down-chevron.svg) no-repeat, center;
+                            //     background-size: cover;
+                            //     position: absolute;
+                            //     top: 0;
+                            //     left: 0;
+                            //     height: 28px;
+                            //     width: 28px;
+                            //     z-index: -1;
+                            // }
+                        }
+                        & .features {
+                            & .featuresName {
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: #464255;
+                            }
+                            & ul {
+                                & li {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #464255;
+                                    &::marker{
+                                        color: #464255;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                & .mainForm {
+                    & .card {
+                        border-radius: 24px;
+                        & .companyDetails {
+                            font-size: 22px;
+                            line-height: 28px;
+                            color: #4A5C77;
+                            & span {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                        & .imnformation {
+                            font-size: 22px;
+                            line-height: 33px;
+                            color: #464255;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
