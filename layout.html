@@ -78,8 +78,9 @@
                                         <div class="row d-flex  flex-column h-100 flex-nowrap">
                                             <div class="col-12 sideBarHeader">
                                                 <div class="companyLogo">
-                                                    <img src="assets/img/logo/Logo 0f Company.svg" alt="">
+                                                    <img src="assets/img/logo/logo.svg" alt="">
                                                 </div>
+                                                <img src="assets/img/svg/menuClose.svg" class="d-lg-none menuCloseIcon" id="menuClose" alt="menu close">
                                             </div>
                                             <div class="col-12 sideBarBody flex-fill overflow-hidden-auto h-100">
                                                 <ul class="sidebarUL list-unstyled">
@@ -111,17 +112,22 @@
                                         <div class="row mx-0 justify-content-center align-items-center">
                                             <div class="col-xxl-8 leftSide">
                                                 <div class="row mx-0 align-items-center">
-                                                    <div class="col-auto menuIconBtn me-2 d-lg-none d-lg-block">
+                                                    <div class="col-auto menuIconBtn me-2 d-lg-none d-lg-block ps-0">
                                                         <img src="assets/img/svg/grid.svg" alt="">
                                                     </div>
                                                     <div class="col textSide ps-0">
-                                                        <div class="row flex-column mx-0">
+                                                        <div class="row flex-column mx-0 d-none d-md-flex">
                                                             <div class="col pageHeading px-0">Billing & Plans</div>
                                                             <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
                                                         </div>
                                                     </div>
                                                     <div class="col-auto imgSide pe-0">
                                                         <div class="row mx-0 imgSideInner">
+                                                            <div class="col-auto px-0 d-xxl-none">
+                                                                <a href="javascript:;" class="notificationBtn">
+                                                                    <img src="assets/img/svg/topSearch.svg" class="w100" alt="">
+                                                                </a>
+                                                            </div>
                                                             <div class="col-auto px-0">
                                                                 <a href="javascript:;" class="notificationBtn">
                                                                     <img src="assets/img/svg/001-notification.svg" class="w100" alt="">
@@ -147,6 +153,10 @@
                                             <div class="col-12 overflow-hidden-auto h-100 px-0">
                                                 <div class="row py-3">
                                                     <div class="col-xxl-8">
+                                                        <div class="row flex-column mx-0 d-md-none headerHiddenDetails mb-3">
+                                                            <div class="col pageHeading px-0">Billing & Plans</div>
+                                                            <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
+                                                        </div>
                                                         <div class="row dashboardCardDetail g-3">
                                                             <div class="col-md-3 col-sm-6">
                                                                 <div class="dashboardCard"style="--color:#4A5C77">
@@ -216,9 +226,13 @@
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
-            let menuIcon = document.querySelector('.menuIcon')
-            let menuIconBtn = document.querySelector('.menuIconBtn')
+            let menuIcon = document.querySelector('.menuIcon');
+            let menuIconBtn = document.querySelector('.menuIconBtn');
+            let menuClose = document.querySelector('#menuClose')
             menuIconBtn.addEventListener('click', ()=>{
+                menuIcon.classList.toggle('show')
+            });
+            menuClose.addEventListener('click', ()=>{
                 menuIcon.classList.toggle('show')
             })
         </script>

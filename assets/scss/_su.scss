@@ -116,6 +116,9 @@
                             & .notificationBtn {
                                 width: 68px;
                                 height: 68px;
+                                & img {
+                                    height: 27px;
+                                }
                                 & .notificationText {
                                     width: 32px;
                                     height: 32px;
@@ -240,6 +243,7 @@
         & .rightPart {
             & .header {
                 & .leftSide {
+                    padding: 15px;
                     & .textSide {
                         & .pageHeading {
                             font-size: 22px;
@@ -255,6 +259,10 @@
                             & .notificationBtn {
                                 width: 50px;
                                 height: 50px;
+                                border-radius: 18px;
+                                & img {
+
+                                }
                                 & .notificationText {
                                     width: 22px;
                                     height: 22px;
@@ -280,6 +288,7 @@
         & .rightPart {
             & .header {
                 & .leftSide {
+                    padding: 12px;
                     & .textSide {
                         & .pageHeading {
                         }
@@ -289,10 +298,17 @@
                     & .imgSide {
                         & .imgSideInner {
                             & .notificationBtn {
+                                height: 40px;
+                                width: 40px;
+                                & img {
+                                    height: 22px;
+                                }
                                 & .notificationText {
                                 }
                             }
                             & .userImgBtn {
+                                height: 40px;
+                                width: 40px;
                             }
                         }
                     }

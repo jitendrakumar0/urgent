@@ -124,6 +124,24 @@
         }
     }
     .rightPart{
+        & .headerHiddenDetails {
+            & .pageHeading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                color: #464255;
+            }
+            & .pageSubheading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #464255;
+            }
+        }
         & .dashboardCardDetail{
             & .dashboardCard{
                 background-color: var(--color);
@@ -175,12 +193,16 @@
             border-radius: 33px;
             padding: 34px 30px 10px 30px;
             & .sideBarHeader{
+                display: flex;
                 & .companyLogo{
-                    padding-left: 25px;
+                    padding-left: 20px;
                     height: 116px;
                     & img{
-                        height: 63px;
+                        height: 45px;
                     }
+                }
+                & .menuCloseIcon {
+                    height: 35px;
                 }
             }
             & .sideBarBody{
@@ -471,8 +493,9 @@
                 & .sideBarHeader{
                     & .companyLogo{
                         height: 75px;
-                        padding-left: 15px;
+                        padding-left: 10px;
                         & img{
+                            height: 40px;
                         }
                     }
                 }
@@ -583,7 +606,9 @@
                 border-radius: 0;
                 padding: 25px 25px 15px 25px;
                 & .sideBarHeader{
+                    justify-content: space-between;
                     & .companyLogo{
+                        padding-left: 0;
                         & img{
                         }
                     }
@@ -591,6 +616,8 @@
                 & .sideBarBody{
                     & .sidebarUL{
                         & .sidebarLi{
+                            height: 46px;
+                            border-radius: 14px;
                             &.active{
                                 & img{
                                 }
