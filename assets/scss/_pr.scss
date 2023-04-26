@@ -1,5 +1,90 @@
 @include media-breakpoint(basic) {
-  
+    .modalMain{
+        & .modalContent{
+            border-radius: 25px;
+            & .modalBody{
+                & .modalBodyMainHeading{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 17px;
+                    & img{
+                        height: 31px;
+                    }
+                    & span{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #464255;
+                        margin-left: 10px;
+                    }
+                }
+                & .para{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #4A5C77;
+                    & span:first-child{
+                        font-weight: 700;
+                    }
+                    & span:last-child{
+                        font-weight: 700;
+                    }
+                }
+            }
+            & .modalFooter{
+                border-top: unset;
+                & .closeBtn{
+                    background: #E15656;
+                    border-radius: 18px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-align: center;
+                    letter-spacing: 0.4px;
+                    border: none;
+                    height: 35px;
+                    padding: 20px 30px;
+                    & img{
+                        margin-right: 8px;
+                    }
+                }
+                & .applyBtn{
+                    background: #5BCD97;
+                    border-radius: 18px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-align: center;
+                    letter-spacing: 0.4px;
+                    border: none;
+                    height: 35px;
+                    padding: 20px 30px;
+                    & img{
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 

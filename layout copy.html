@@ -126,7 +126,7 @@
                                                     <div class="col-auto imgSide pe-0">
                                                         <div class="row mx-0 imgSideInner">
                                                             <div class="col-auto px-0">
-                                                                <a href="javascript:;" class="notificationBtn">
+                                                                <a href="#exampleModal" class="notificationBtn"data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                                     <img src="assets/img/svg/001-notification.svg" class="w100" alt="">
                                                                     <div class="notificationText">2</div>
                                                                 </a>
@@ -216,6 +216,28 @@
                 </div>
             </div>
         </main>
+        <!-- Modal -->
+        <div class="modal fade modalMain" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalContent">
+                <!-- <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body modalBody">
+                    <div class="modalBodyMainHeading">
+                        <img src="assets/img/svg/userinfo.svg" alt="">
+                        <span>Update User Info</span>
+                    </div>
+                    <div class="para">Are you sure you want to update user info? Please note that any changes made to the password or email address will result in a <span>modification to</span> their <span>login details</span>.</div>
+                </div>
+                <div class="modal-footer modalFooter">
+                <button type="button" class="closeBtn" data-bs-dismiss="modal"> <img src="assets/img/svg/close.svg" alt=""> Cancle</button>
+                <button type="button" class="applyBtn"> <img src="assets/img/svg/apply.svg" alt=""> Apply</button>
+                </div>
+            </div>
+            </div>
+        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <script>
