@@ -1,648 +1,650 @@
-@include media-breakpoint(basic) {
-    .signUpFormPage {
-        background-color: #F4F4F4;
-        z-index: 1;
-        &::before{
-            content: '';
-            background: url(../img/bg1.png) no-repeat, center;
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 1000px;
-            width: 1000px;
-            z-index: -1;
-        }
-        & .innerSection {
-            // max-width: 853px;
-            & .form {
-                & .topSection {
-                    & .userName {
-                        font-size: 60px;
-                        line-height: 90px;
-                        color: #464255;
+[data-page-name="signUpFormPage"] {
+    @include media-breakpoint(basic) {
+        &.signUpFormPage {
+            background-color: #F4F4F4;
+            z-index: 1;
+            &::before{
+                content: '';
+                background: url(../img/bg1.png) no-repeat, center;
+                background-size: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1000px;
+                width: 1000px;
+                z-index: -1;
+            }
+            & .innerSection {
+                // max-width: 853px;
+                & .form {
+                    & .topSection {
+                        & .userName {
+                            font-size: 60px;
+                            line-height: 90px;
+                            color: #464255;
+                        }
+                        & .databaseName {
+                            font-weight: 300;
+                            font-size: 40px;
+                            line-height: 60px;
+                            color: #464255;
+                        }
+                        & .topbilling {
+                            & .belingType {
+                                font-size: 22px;
+                                line-height: 28px;
+                                color: #4A5C77;
+                                & span {
+                                    height: 40px;
+                                    width: 40px;
+                                }
+                            }
+                            & .form-select {
+                                height: 60px;
+                                background-color: #DAECEC;
+                                border: 1px solid #E0E0E0;
+                                border-radius: 18px;
+                                padding: 16px 26px;
+                                gap: 14px;
+                                font-size: 15px;
+                                line-height: 22px;
+                                letter-spacing: 0.4px;
+                                color: #464255;
+                                position: relative;
+                                // &::before{
+                                //     content: '';
+                                //     background: url(../img/svg/down-chevron.svg) no-repeat, center;
+                                //     background-size: cover;
+                                //     position: absolute;
+                                //     top: 0;
+                                //     left: 0;
+                                //     height: 28px;
+                                //     width: 28px;
+                                //     z-index: -1;
+                                // }
+                            }
+                            & .features {
+                                & .featuresName {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #464255;
+                                }
+                                & ul {
+                                    & li {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        color: #464255;
+                                        &::marker{
+                                            color: #464255;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                    & .databaseName {
-                        font-weight: 300;
-                        font-size: 40px;
-                        line-height: 60px;
-                        color: #464255;
-                    }
-                    & .topbilling {
-                        & .belingType {
+                    & .mainForm {
+                        & .companyDetails {
+                            font-weight: 500;
                             font-size: 22px;
                             line-height: 28px;
                             color: #4A5C77;
                             & span {
-                                height: 40px;
-                                width: 40px;
+                                width: 50px;
+                                height: 50px;
                             }
                         }
-                        & .form-select {
-                            height: 60px;
-                            background-color: #DAECEC;
-                            border: 1px solid #E0E0E0;
-                            border-radius: 18px;
-                            padding: 16px 26px;
-                            gap: 14px;
-                            font-size: 15px;
-                            line-height: 22px;
-                            letter-spacing: 0.4px;
-                            color: #464255;
-                            position: relative;
-                            // &::before{
-                            //     content: '';
-                            //     background: url(../img/svg/down-chevron.svg) no-repeat, center;
-                            //     background-size: cover;
-                            //     position: absolute;
-                            //     top: 0;
-                            //     left: 0;
-                            //     height: 28px;
-                            //     width: 28px;
-                            //     z-index: -1;
-                            // }
-                        }
-                        & .features {
-                            & .featuresName {
-                                font-size: 16px;
-                                line-height: 24px;
-                                color: #464255;
-                            }
-                            & ul {
-                                & li {
-                                    font-size: 16px;
-                                    line-height: 24px;
+                        & .card {
+                            border-radius: 24px;
+                            & .card-body{
+                                & .imnformation {
+                                    font-size: 22px;
+                                    line-height: 33px;
                                     color: #464255;
-                                    &::marker{
-                                        color: #464255;
-                                        font-size: 14px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                & .mainForm {
-                    & .companyDetails {
-                        font-weight: 500;
-                        font-size: 22px;
-                        line-height: 28px;
-                        color: #4A5C77;
-                        & span {
-                            width: 50px;
-                            height: 50px;
-                        }
-                    }
-                    & .card {
-                        border-radius: 24px;
-                        & .card-body{
-                            & .imnformation {
-                                font-size: 22px;
-                                line-height: 33px;
-                                color: #464255;
-                                & .solidContent {
-                                    color: #A3A3A3;
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                }
-                            }
-                            & .imgOuter {
-                                width: 70px;
-                                height: 70px;
-                                & img {
-                                    object-position: center top;
-                                    object-fit: cover;
-                                }
-                                & .form-label {
-                                    cursor: pointer;
-                                    background-color: #4A5C77;
-                                    width: 24px;
-                                    padding: 5px;
-                                    height: 24px;
-                                }
-                            }
-                            & .logoName {
-                                font-size: 16px;
-                                line-height: 24px;
-                                color: #4A5C77;
-                            }
-                            & .portalName {
-                                color: #4A5C77;
-                                font-size: 14.22px;
-                                line-height: 17px;
-                            }
-                            & .companyForm {
-                                & .formGroup {
-                                    & .form-label {
-                                        color: #464255;
-                                        font-size: 12px;
-                                        line-height: 18px;
-                                    }
-                                    & .form-control, & .form-select{
-                                        border: 1px solid #E0E0E0;
-                                        border-radius: 18px;    
-                                        height: 62px;
-                                        padding: 18px 24px;
-                                        gap: 10px;
+                                    & .solidContent {
                                         color: #A3A3A3;
-                                        font-size: 14px;
-                                        line-height: 26px;
-                                        &::placeholder{
-                                            color: #A3A3A3;
-                                        }
-                                    }
-                                    & .form-select{
-                                        background-color: rgba(234, 240, 248, 0.44); 
-                                        color: #464255;
-                                        font-size: 15px; 
-                                        line-height: 22px;  
-                                    }
-                                    & .input-group {
-                                        & .input-group-text {
-                                            padding: 18px 24px;
-                                            border-radius: 18px; 
-                                            font-weight: 400;
-                                            font-size: 14px;
-                                            line-height: 26px;
-                                            color: #A3A3A3;
-                                            & .arrowImg {
-                                                height: 20px;
-                                                padding-right: 24px;
-                                                border-right: 2px solid #E0E0E0;
-                                            }
-                                        }
-                                    }
-                                    & .invalidText {
-                                        color: #B00101;
-                                        font-size: 12px;
-                                        line-height: 26px;
-                                        font-weight: 400;
-                                    }
-                                }
-                                & .form-check {
-                                    & .form-check-input {
-                                        border: 1.5px solid #C5C5C5;
-                                        &:checked{
-                                            background-color: #464255;
-                                        }
-                                    }
-                                    & .form-check-label {
                                         font-size: 14px;
                                         line-height: 20px;
-                                        color: #A3A3A3;
+                                    }
+                                }
+                                & .imgOuter {
+                                    width: 70px;
+                                    height: 70px;
+                                    & img {
+                                        object-position: center top;
+                                        object-fit: cover;
+                                    }
+                                    & .form-label {
+                                        cursor: pointer;
+                                        background-color: #4A5C77;
+                                        width: 24px;
+                                        padding: 5px;
+                                        height: 24px;
+                                    }
+                                }
+                                & .logoName {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #4A5C77;
+                                }
+                                & .portalName {
+                                    color: #4A5C77;
+                                    font-size: 14.22px;
+                                    line-height: 17px;
+                                }
+                                & .companyForm {
+                                    & .formGroup {
+                                        & .form-label {
+                                            color: #464255;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                        }
+                                        & .form-control, & .form-select{
+                                            border: 1px solid #E0E0E0;
+                                            border-radius: 18px;    
+                                            height: 62px;
+                                            padding: 18px 24px;
+                                            gap: 10px;
+                                            color: #A3A3A3;
+                                            font-size: 14px;
+                                            line-height: 26px;
+                                            &::placeholder{
+                                                color: #A3A3A3;
+                                            }
+                                        }
+                                        & .form-select{
+                                            background-color: rgba(234, 240, 248, 0.44); 
+                                            color: #464255;
+                                            font-size: 15px; 
+                                            line-height: 22px;  
+                                        }
+                                        & .input-group {
+                                            & .input-group-text {
+                                                padding: 18px 24px;
+                                                border-radius: 18px; 
+                                                font-weight: 400;
+                                                font-size: 14px;
+                                                line-height: 26px;
+                                                color: #A3A3A3;
+                                                & .arrowImg {
+                                                    height: 20px;
+                                                    padding-right: 24px;
+                                                    border-right: 2px solid #E0E0E0;
+                                                }
+                                            }
+                                        }
+                                        & .invalidText {
+                                            color: #B00101;
+                                            font-size: 12px;
+                                            line-height: 26px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                    & .form-check {
+                                        & .form-check-input {
+                                            border: 1.5px solid #C5C5C5;
+                                            &:checked{
+                                                background-color: #464255;
+                                            }
+                                        }
+                                        & .form-check-label {
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #A3A3A3;
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }
-                & .paymentGroup {
-                    & .form-check {
-                        & .form-check-input  {
-                            border: 1.5px solid #4A5C77;
-                            &:checked{
-                                background-color: #464255 !important;
+                    & .paymentGroup {
+                        & .form-check {
+                            & .form-check-input  {
+                                border: 1.5px solid #4A5C77;
+                                &:checked{
+                                    background-color: #464255 !important;
+                                }
+                            }
+                            & .form-check-label {
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #4A5C77;
                             }
                         }
-                        & .form-check-label {
-                            font-size: 14px;
-                            line-height: 20px;
-                            color: #4A5C77;
+                        & .paymentBtn {
+                            letter-spacing: 0.4px;
+                            font-size: 16px;
+                            line-height: 24px; 
+                            padding: 16px 26px;
+                            background: #897FFF;
+                            border-radius: 18px; 
+                            transition: all ease-in-out 0.3s;
+                            &:hover{
+                                background: rgba(#897FFF, 0.8);
+                            }
                         }
-                    }
-                    & .paymentBtn {
-                        letter-spacing: 0.4px;
-                        font-size: 16px;
-                        line-height: 24px; 
-                        padding: 16px 26px;
-                        background: #897FFF;
-                        border-radius: 18px; 
-                        transition: all ease-in-out 0.3s;
-                        &:hover{
-                            background: rgba(#897FFF, 0.8);
+                        & .timeingPyment {
+                            color: #464255;
+                            font-size: 16px;
+                            line-height: 24px;
                         }
-                    }
-                    & .timeingPyment {
-                        color: #464255;
-                        font-size: 16px;
-                        line-height: 24px;
                     }
                 }
             }
         }
     }
-}
-@include media-breakpoint-up(sm) {}
-
-@include media-breakpoint-up(md) {}
-
-@include media-breakpoint-up(lg) {}
-
-@include media-breakpoint-up(xl) {}
-
-@include media-breakpoint-up(xxl) {}
-
-
-@include media-breakpoint-down(xxl) {}
-
-@include media-breakpoint-down(xl) {}
-
-@include media-breakpoint-down(lg) {
-    .signUpFormPage {
-        &::before{
-            height: 500px;
-            width: 500px;
-        }
-        & .innerSection {
-            & .form {
-                & .topSection {
-                    & .userName {
-                        font-size: 50px;
-                        line-height: 70px;
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {
+        &.signUpFormPage {
+            &::before{
+                height: 500px;
+                width: 500px;
+            }
+            & .innerSection {
+                & .form {
+                    & .topSection {
+                        & .userName {
+                            font-size: 50px;
+                            line-height: 70px;
+                        }
+                        & .databaseName {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                        & .topbilling {
+                            & .belingType {
+                                font-size: 20px;
+                                line-height: normal;
+                                & span {
+                                    height: 30px;
+                                    width: 30px;
+                                }
+                            }
+                            & .form-select {
+                                height: 50px;
+                                border-radius: 16px;
+                                padding: 16px 20px;
+                                font-size: 14px;
+                                line-height: normal;
+                            }
+                            & .features {
+                                & .featuresName {
+                                    font-size: 14px;
+                                    line-height: normal;
+                                }
+                                & ul {
+                                    & li {
+                                        font-size: 14px;
+                                        line-height: normal;
+                                        &::marker{
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                    & .databaseName {
-                        font-size: 30px;
-                        line-height: 40px;
-                    }
-                    & .topbilling {
-                        & .belingType {
+                    & .mainForm {
+                        & .companyDetails {
                             font-size: 20px;
                             line-height: normal;
                             & span {
-                                height: 30px;
-                                width: 30px;
+                                width: 40px;
+                                height: 40px;
                             }
                         }
-                        & .form-select {
-                            height: 50px;
-                            border-radius: 16px;
-                            padding: 16px 20px;
-                            font-size: 14px;
-                            line-height: normal;
-                        }
-                        & .features {
-                            & .featuresName {
-                                font-size: 14px;
-                                line-height: normal;
-                            }
-                            & ul {
-                                & li {
-                                    font-size: 14px;
+                        & .card {
+                            border-radius: 20px;
+                            & .card-body{
+                                & .imnformation {
+                                    font-size: 20px;
                                     line-height: normal;
-                                    &::marker{
+                                    & .solidContent {
                                         font-size: 12px;
+                                        line-height: normal;
                                     }
                                 }
-                            }
-                        }
-                    }
-                }
-                & .mainForm {
-                    & .companyDetails {
-                        font-size: 20px;
-                        line-height: normal;
-                        & span {
-                            width: 40px;
-                            height: 40px;
-                        }
-                    }
-                    & .card {
-                        border-radius: 20px;
-                        & .card-body{
-                            & .imnformation {
-                                font-size: 20px;
-                                line-height: normal;
-                                & .solidContent {
+                                & .imgOuter {
+                                    width: 60px;
+                                    height: 60px;
+                                    & .form-label {
+                                        width: 22px;
+                                        padding: 5px;
+                                        height: 22px;
+                                    }
+                                }
+                                & .logoName {
+                                    font-size: 14px;
+                                    line-height: normal;
+                                }
+                                & .portalName {
                                     font-size: 12px;
                                     line-height: normal;
                                 }
-                            }
-                            & .imgOuter {
-                                width: 60px;
-                                height: 60px;
-                                & .form-label {
-                                    width: 22px;
-                                    padding: 5px;
-                                    height: 22px;
+                                & .companyForm {
+                                    & .formGroup {
+                                        & .form-label {
+                                            font-size: 12px;
+                                            line-height: normal;
+                                        }
+                                        & .form-control, & .form-select{
+                                            border-radius: 16px;    
+                                            height: 50px;
+                                            padding: 16px 20px;
+                                            font-size: 12px;
+                                            line-height: normal;
+                                        }
+                                        & .form-select{
+                                            font-size: 14px; 
+                                            line-height: normal;  
+                                        }
+                                        & .input-group {
+                                            height: 50px;
+                                            & .input-group-text {
+                                                padding: 16px 20px;
+                                                border-radius: 16px; 
+                                                font-size: 12px;
+                                                line-height: normal;
+                                                & .arrowImg {
+                                                    height: 16px;
+                                                    padding-right: 20px;
+                                                }
+                                            }
+                                        }
+                                        & .invalidText {
+                                            font-size: 10px;
+                                            line-height: normal;
+                                        }
+                                    }
+                                    & .form-check {
+                                        & .form-check-input {
+                                            &:checked{
+                                            }
+                                        }
+                                        & .form-check-label {
+                                            font-size: 12px;
+                                            line-height: normal;
+                                        }
+                                    }
                                 }
                             }
-                            & .logoName {
-                                font-size: 14px;
-                                line-height: normal;
+                        }
+                    }
+                    & .paymentGroup {
+                        & .form-check {
+                            & .form-check-input  {
+                                &:checked{
+                                }
                             }
-                            & .portalName {
+                            & .form-check-label {
                                 font-size: 12px;
                                 line-height: normal;
                             }
-                            & .companyForm {
-                                & .formGroup {
-                                    & .form-label {
-                                        font-size: 12px;
-                                        line-height: normal;
-                                    }
-                                    & .form-control, & .form-select{
-                                        border-radius: 16px;    
-                                        height: 50px;
-                                        padding: 16px 20px;
-                                        font-size: 12px;
-                                        line-height: normal;
-                                    }
-                                    & .form-select{
-                                        font-size: 14px; 
-                                        line-height: normal;  
-                                    }
-                                    & .input-group {
-                                        height: 50px;
-                                        & .input-group-text {
-                                            padding: 16px 20px;
-                                            border-radius: 16px; 
-                                            font-size: 12px;
-                                            line-height: normal;
-                                            & .arrowImg {
-                                                height: 16px;
-                                                padding-right: 20px;
-                                            }
-                                        }
-                                    }
-                                    & .invalidText {
-                                        font-size: 10px;
-                                        line-height: normal;
-                                    }
-                                }
-                                & .form-check {
-                                    & .form-check-input {
-                                        &:checked{
-                                        }
-                                    }
-                                    & .form-check-label {
-                                        font-size: 12px;
-                                        line-height: normal;
-                                    }
-                                }
-                            }
                         }
-                    }
-                }
-                & .paymentGroup {
-                    & .form-check {
-                        & .form-check-input  {
-                            &:checked{
-                            }
+                        & .paymentBtn {
+                                font-size: 14px;
+                                padding: 12px 24px;
+                                border-radius: 16px; 
+                                line-height: normal;
                         }
-                        & .form-check-label {
-                            font-size: 12px;
-                            line-height: normal;
-                        }
-                    }
-                    & .paymentBtn {
+                        & .timeingPyment {
                             font-size: 14px;
-                            padding: 12px 24px;
-                            border-radius: 16px; 
                             line-height: normal;
-                    }
-                    & .timeingPyment {
-                        font-size: 14px;
-                        line-height: normal;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-@include media-breakpoint-down(md) {
-    .signUpFormPage {
-        &::before{
-            height: 400px;
-            width: 400px;
-        }
-        & .innerSection {
-            & .form {
-                & .topSection {
-                    & .userName {
-                        font-size: 40px;
-                        line-height: normal;
-                    }
-                    & .databaseName {
-                        font-size: 25px;
-                        line-height: normal;
-                    }
-                    & .topbilling {
-                        & .belingType {
-                            font-size: 18px;
-                            & span {
-                                height: 25px;
-                                width: 25px;
-                            }
+    
+    @include media-breakpoint-down(md) {
+        &.signUpFormPage {
+            &::before{
+                height: 400px;
+                width: 400px;
+            }
+            & .innerSection {
+                & .form {
+                    & .topSection {
+                        & .userName {
+                            font-size: 40px;
+                            line-height: normal;
                         }
-                        & .form-select {
-                            height: 40px;
-                            border-radius: 10px;
-                            font-size: 13px;
-                            padding: 8px 18px;
+                        & .databaseName {
+                            font-size: 25px;
+                            line-height: normal;
                         }
-                        & .features {
-                            & .featuresName {
-                                font-size: 13px;
-                            }
-                            & ul {
-                                & li {
-                                    font-size: 13px;
-                                    &::marker{
-                                        font-size: 10px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                & .mainForm {
-                    & .companyDetails {
-                        font-size: 18px;
-                        line-height: normal;
-                        & span {
-                            width: 35px;
-                            height: 35px;
-                        }
-                    }
-                    & .card {
-                        & .card-body{
-                            & .imnformation {
+                        & .topbilling {
+                            & .belingType {
                                 font-size: 18px;
-                                & .solidContent {
+                                & span {
+                                    height: 25px;
+                                    width: 25px;
                                 }
                             }
-                            & .imgOuter {
-                                width: 50px;
-                                height: 50px;
-                                & .form-label {
-                                    width: 20px;
-                                    padding: 4px;
-                                    height: 20px;
+                            & .form-select {
+                                height: 40px;
+                                border-radius: 10px;
+                                font-size: 13px;
+                                padding: 8px 18px;
+                            }
+                            & .features {
+                                & .featuresName {
+                                    font-size: 13px;
+                                }
+                                & ul {
+                                    & li {
+                                        font-size: 13px;
+                                        &::marker{
+                                            font-size: 10px;
+                                        }
+                                    }
                                 }
                             }
-                            & .logoName {
+                        }
+                    }
+                    & .mainForm {
+                        & .companyDetails {
+                            font-size: 18px;
+                            line-height: normal;
+                            & span {
+                                width: 35px;
+                                height: 35px;
                             }
-                            & .portalName {
-                            }
-                            & .companyForm {
-                                & .formGroup {
+                        }
+                        & .card {
+                            & .card-body{
+                                & .imnformation {
+                                    font-size: 18px;
+                                    & .solidContent {
+                                    }
+                                }
+                                & .imgOuter {
+                                    width: 50px;
+                                    height: 50px;
                                     & .form-label {
+                                        width: 20px;
+                                        padding: 4px;
+                                        height: 20px;
                                     }
-                                    & .form-control, & .form-select{
-                                        border-radius: 10px;    
-                                        height: 40px;
-                                        padding: 8px 18px;
-                                    }
-                                    & .form-select{
-                                        font-size: 13px; 
-                                    }
-                                    & .input-group {
-                                        height: 40px;
-                                        & .input-group-text {
+                                }
+                                & .logoName {
+                                }
+                                & .portalName {
+                                }
+                                & .companyForm {
+                                    & .formGroup {
+                                        & .form-label {
+                                        }
+                                        & .form-control, & .form-select{
+                                            border-radius: 10px;    
+                                            height: 40px;
                                             padding: 8px 18px;
-                                            border-radius: 10px; 
-                                            & .arrowImg {
-                                                height: 14px;
-                                                padding-right: 18px;
+                                        }
+                                        & .form-select{
+                                            font-size: 13px; 
+                                        }
+                                        & .input-group {
+                                            height: 40px;
+                                            & .input-group-text {
+                                                padding: 8px 18px;
+                                                border-radius: 10px; 
+                                                & .arrowImg {
+                                                    height: 14px;
+                                                    padding-right: 18px;
+                                                }
                                             }
                                         }
-                                    }
-                                    & .invalidText {
-                                    }
-                                }
-                                & .form-check {
-                                    & .form-check-input {
-                                        &:checked{
+                                        & .invalidText {
                                         }
                                     }
-                                    & .form-check-label {
+                                    & .form-check {
+                                        & .form-check-input {
+                                            &:checked{
+                                            }
+                                        }
+                                        & .form-check-label {
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }
-                & .paymentGroup {
-                    & .form-check {
-                        & .form-check-input  {
-                            &:checked{
+                    & .paymentGroup {
+                        & .form-check {
+                            & .form-check-input  {
+                                &:checked{
+                                }
+                            }
+                            & .form-check-label {
                             }
                         }
-                        & .form-check-label {
+                        & .paymentBtn {
+                                font-size: 12px;
+                                padding: 10px 18px;
+                                border-radius: 10px; 
                         }
-                    }
-                    & .paymentBtn {
-                            font-size: 12px;
-                            padding: 10px 18px;
-                            border-radius: 10px; 
-                    }
-                    & .timeingPyment {
-                        font-size: 13px;
+                        & .timeingPyment {
+                            font-size: 13px;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-@include media-breakpoint-down(sm) {
-    .signUpFormPage {
-        &::before{
-        }
-        & .innerSection {
-            & .form {
-                & .topSection {
-                    & .userName {
-                        font-size: 30px;
+    
+    @include media-breakpoint-down(sm) {
+        &.signUpFormPage {
+            &::before{
+            }
+            & .innerSection {
+                & .form {
+                    & .topSection {
+                        & .userName {
+                            font-size: 30px;
+                        }
+                        & .databaseName {
+                            font-size: 20px;
+                        }
+                        & .topbilling {
+                            & .belingType {
+                                font-size: 16px;
+                                & span {
+                                }
+                            }
+                            & .form-select {
+                            }
+                            & .features {
+                                & .featuresName {
+                                }
+                                & ul {
+                                    & li {
+                                        &::marker{
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
-                    & .databaseName {
-                        font-size: 20px;
-                    }
-                    & .topbilling {
-                        & .belingType {
+                    & .mainForm {
+                        & .companyDetails {
                             font-size: 16px;
                             & span {
+                                width: 30px;
+                                height: 30px;
                             }
                         }
-                        & .form-select {
-                        }
-                        & .features {
-                            & .featuresName {
-                            }
-                            & ul {
-                                & li {
-                                    &::marker{
+                        & .card {
+                            & .card-body{
+                                & .imnformation {
+                                    font-size: 16px;
+                                    & .solidContent {
                                     }
                                 }
-                            }
-                        }
-                    }
-                }
-                & .mainForm {
-                    & .companyDetails {
-                        font-size: 16px;
-                        & span {
-                            width: 30px;
-                            height: 30px;
-                        }
-                    }
-                    & .card {
-                        & .card-body{
-                            & .imnformation {
-                                font-size: 16px;
-                                & .solidContent {
-                                }
-                            }
-                            & .imgOuter {
-                                & .form-label {
-                                }
-                            }
-                            & .logoName {
-                            }
-                            & .portalName {
-                            }
-                            & .companyForm {
-                                & .formGroup {
+                                & .imgOuter {
                                     & .form-label {
                                     }
-                                    & .form-control, & .form-select{
-                                    }
-                                    & .form-select{ 
-                                    }
-                                    & .input-group {
-                                        & .input-group-text { 
-                                            & .arrowImg {
+                                }
+                                & .logoName {
+                                }
+                                & .portalName {
+                                }
+                                & .companyForm {
+                                    & .formGroup {
+                                        & .form-label {
+                                        }
+                                        & .form-control, & .form-select{
+                                        }
+                                        & .form-select{ 
+                                        }
+                                        & .input-group {
+                                            & .input-group-text { 
+                                                & .arrowImg {
+                                                }
                                             }
                                         }
-                                    }
-                                    & .invalidText {
-                                    }
-                                }
-                                & .form-check {
-                                    & .form-check-input {
-                                        &:checked{
+                                        & .invalidText {
                                         }
                                     }
-                                    & .form-check-label {
+                                    & .form-check {
+                                        & .form-check-input {
+                                            &:checked{
+                                            }
+                                        }
+                                        & .form-check-label {
+                                        }
                                     }
                                 }
                             }
                         }
                     }
-                }
-                & .paymentGroup {
-                    & .form-check {
-                        & .form-check-input  {
-                            &:checked{
+                    & .paymentGroup {
+                        & .form-check {
+                            & .form-check-input  {
+                                &:checked{
+                                }
+                            }
+                            & .form-check-label {
                             }
                         }
-                        & .form-check-label {
+                        & .paymentBtn {
                         }
-                    }
-                    & .paymentBtn {
-                    }
-                    & .timeingPyment {
+                        & .timeingPyment {
+                        }
                     }
                 }
             }
