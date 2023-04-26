@@ -295,6 +295,35 @@ body .overflow-auto-hidden {
   justify-content: center;
 }
 
+@media (max-width: 1599px) {
+  .main .rightPart .header .leftSide {
+    padding: 25px;
+  }
+  .main .rightPart .header .leftSide .textSide .pageHeading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .main .rightPart .header .leftSide .textSide .pageSubheading {
+    font-size: 14px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn {
+    width: 68px;
+    height: 68px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn .notificationText {
+    width: 32px;
+    height: 32px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .userImgBtn {
+    width: 68px;
+    height: 68px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .main .leftPart {
+    width: 300px;
+  }
+}
 .modalMain .modalContent {
   border-radius: 25px;
 }
@@ -378,6 +407,242 @@ body .overflow-auto-hidden {
   margin-right: 8px;
 }
 
+.billingCard {
+  background-color: #FDFDFD;
+  border-radius: 24px;
+  height: 100%;
+  padding: 28px 30px;
+}
+.billingCard .billingCardHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #464255;
+}
+.billingCard .edit {
+  background: #9BB7C2;
+  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.billingCard .edit img {
+  height: 28px;
+}
+.billingCard .lightPlan {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  color: #58CDFF;
+  margin-bottom: 7px;
+}
+.billingCard .billingBottomTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #A3A3A3;
+  margin-bottom: 7px;
+}
+.billingCard .close {
+  background: #838383;
+  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableHeading .paymentHistory {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #464255;
+}
+.tableHeading .searchInp {
+  height: 36px;
+  background: #FFFFFF;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A5C77;
+  padding-left: 20px;
+  box-shadow: none;
+  border-color: #FFFFFF;
+}
+.tableHeading .searchIcon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tableHeading .searchIcon img {
+  height: 15px;
+}
+.tableHeading .formSelect {
+  background: #EAF0F8;
+  border: 1px solid #FFFFFF;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #464255;
+  box-shadow: none;
+}
+.tableHeading .formselectIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+.tableHeading .uploadBtn {
+  background: #EAF0F8;
+  border: 1px solid #FFFFFF;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #464255;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+.tableHeading .uploadBtn img {
+  height: 15px;
+  margin-right: 8px;
+}
+
+.paymentTable.table > :not(caption) > * > * {
+  background: #FDFDFD !important;
+  padding: 33px 20px;
+}
+.paymentTable.table > tbody > tr:nth-of-type(odd) > * {
+  background-color: #FCFCFC !important;
+}
+.paymentTable .tableHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A3A3A3;
+}
+.paymentTable .tableHead .Radius {
+  border-radius: 24px 0 0 0;
+}
+.paymentTable .Radiuss {
+  border-radius: 0 24px 0 0;
+}
+.paymentTable .date {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #464255;
+}
+.paymentTable .order {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #464255;
+}
+.paymentTable .description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #464255;
+}
+.paymentTable .amount {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #464255;
+}
+.paymentTable .invoice img {
+  height: 16px;
+}
+
+@media (max-width: 1599px) {
+  .billingCard .billingCardHeading {
+    font-size: 30px;
+  }
+  .billingCard .edit {
+    width: 56px;
+    height: 56px;
+  }
+  .billingCard .close {
+    width: 56px;
+    height: 56px;
+  }
+  .paymentTable.table > :not(caption) > * > * {
+    padding: 26px 19px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .billingCard {
+    padding: 20px 30px;
+  }
+  .billingCard .billingCardHeading {
+    font-size: 26px;
+  }
+  .billingCard .edit {
+    width: 48px;
+    height: 48px;
+  }
+  .billingCard .billingBottomTxt {
+    margin-bottom: 0;
+  }
+  .billingCard .close {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .billingCard .billingCardHeading {
+    font-size: 21px;
+  }
+  .billingCard .edit {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+  }
+  .billingCard .edit img {
+    height: 15px;
+  }
+  .billingCard .close {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+  }
+  .billingCard .close img {
+    height: 15px;
+  }
+}
 .loginPageFluid {
   background-color: #F4F4F4;
   background-image: url(../img/bg1.png);
@@ -530,10 +795,13 @@ body .overflow-auto-hidden {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 26px;
   color: #FFFFFF;
   margin-top: 5px;
+}
+.rightPart .dashboardCardDetail .dashboardCard .dashboardCardText span {
+  font-weight: 600;
 }
 
 .sideBar {
@@ -560,16 +828,16 @@ body .overflow-auto-hidden {
   line-height: 24px;
   letter-spacing: 0.4px;
   color: #737373;
-  padding: 16px 24px;
+  padding: 0px 24px;
   position: relative;
   margin-bottom: 2px;
   display: flex;
   align-items: center;
+  height: 60px;
+  border-radius: 18px;
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi.active {
   background-color: #90A0B8;
-  border-radius: 18px;
-  height: 60px;
   color: white;
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi.active img {
@@ -577,8 +845,6 @@ body .overflow-auto-hidden {
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi:hover {
   background-color: #90A0B8;
-  border-radius: 18px;
-  height: 60px;
   color: white;
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi:hover img {
@@ -630,6 +896,60 @@ body .overflow-auto-hidden {
   text-align: center;
 }
 
+@media (max-width: 1599px) {
+  .leftPart .sideBar .sideBarInner .sideBarHeader .companyLogo {
+    height: 90px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi {
+    height: 54px;
+    font-size: 14px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi img {
+    height: 24px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarFooter .logout {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard {
+    padding: 20px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardNumber {
+    font-size: 30px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardIcon {
+    height: 42px;
+    width: 42px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardIcon img {
+    height: 22px;
+    width: 22px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardCardText {
+    font-size: 12px;
+    margin-top: 0;
+    line-height: 125%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .leftPart .sideBar {
+    padding: 15px 35px 15px 15px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarHeader .companyLogo {
+    height: 75px;
+    padding-left: 15px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi {
+    font-size: 13px;
+    height: 52px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi .sidebarImg {
+    height: 22px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarFooter .logout {
+    font-size: 13px;
+  }
+}
 @media (max-width: 991.98px) {
   .menuIcon.show .leftPart {
     transform: translateX(0);
@@ -642,9 +962,6 @@ body .overflow-auto-hidden {
     z-index: 9;
     transform: translateX(-100%);
     transition: 0.3s ease-in-out;
-  }
-  .rightPart {
-    margin-left: 20px;
   }
 }
 @media (max-width: 767.98px) {
