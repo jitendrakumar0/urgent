@@ -303,6 +303,21 @@ body .overflow-auto-hidden {
 .loginPageFluid .loginPageContainer .loginFormRow .loginBtn:hover {
   opacity: 0.8;
 }
+.loginPageFluid .loginPageContainer .loginFormRow .resendBtn {
+  background: #F9F9F9;
+  border: 1px solid #F3F3F3;
+  border-radius: 18px;
+  height: 53px;
+  width: 121px;
+  position: absolute;
+  right: 16px;
+  top: 33px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
 .loginPageFluid .loginPageContainer .loginFormRow .formTopTxt {
   font-family: "Poppins";
   font-style: normal;
@@ -311,6 +326,14 @@ body .overflow-auto-hidden {
   line-height: 22px;
   color: #7D7D7D;
   margin-bottom: 6px;
+}
+.loginPageFluid .loginPageContainer .loginFormRow .resetTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #7D7D7D;
 }
 
 @media (max-width: 767.98px) {
@@ -342,5 +365,11 @@ body .overflow-auto-hidden {
   }
   .loginPageFluid .loginPageContainer .loginFormRow .loginBtn {
     font-size: 18px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .resendBtn {
+    position: absolute;
+    top: 55px;
+    right: 16px;
+    width: 100px;
   }
 }/*# sourceMappingURL=style.min.css.map */

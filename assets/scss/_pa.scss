@@ -1,3 +1,4 @@
+
 @include media-breakpoint(basic) {
     .loginPageFluid{
         background-color: #F4F4F4;
@@ -87,6 +88,21 @@
                         opacity: 0.8;
                     }
                 }
+                & .resendBtn{
+                    background: #F9F9F9;
+                    border: 1px solid #F3F3F3;
+                    border-radius: 18px;
+                    height: 53px;
+                    width: 121px;
+                    position: absolute;
+                    right: 16px;
+                    top: 33px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
                 & .formTopTxt{
                     font-family: 'Poppins';
                     font-style: normal;
@@ -95,6 +111,14 @@
                     line-height: 22px;
                     color: #7D7D7D;
                     margin-bottom: 6px;
+                }
+                & .resetTxt{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #7D7D7D;
                 }
             }
         }
@@ -259,6 +283,12 @@
                     font-size: 18px;
                     &:hover{
                     }
+                }
+                & .resendBtn{
+                    position: absolute;
+                    top: 55px;
+                    right: 16px;
+                    width: 100px;
                 }
             }
         }
