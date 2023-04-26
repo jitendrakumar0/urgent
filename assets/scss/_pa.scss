@@ -124,6 +124,24 @@
         }
     }
     .rightPart{
+        & .headerHiddenDetails {
+            & .pageHeading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                color: #464255;
+            }
+            & .pageSubheading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #464255;
+            }
+        }
         & .dashboardCardDetail{
             & .dashboardCard{
                 background-color: var(--color);
@@ -156,10 +174,13 @@
                     font-family: 'Poppins';
                     font-style: normal;
                     font-weight: 400;
-                    font-size: 13px;
+                    font-size: 14px;
                     line-height: 26px;
                     color: #FFFFFF;
                     margin-top: 5px;
+                    & span {
+                        font-weight: 600;
+                    }
                 }
             }
         }
@@ -172,13 +193,16 @@
             border-radius: 33px;
             padding: 34px 30px 10px 30px;
             & .sideBarHeader{
+                display: flex;
                 & .companyLogo{
-                    padding-left: 25px;
+                    padding-left: 20px;
                     height: 116px;
                     & img{
-                        // width: 100%;
-                        height: 63px;
+                        height: 45px;
                     }
+                }
+                & .menuCloseIcon {
+                    height: 35px;
                 }
             }
             & .sideBarBody{
@@ -191,15 +215,15 @@
                         line-height: 24px;
                         letter-spacing: 0.4px;
                         color: #737373;
-                        padding: 16px 24px;
+                        padding: 0px 24px;
                         position: relative;
                         margin-bottom: 2px;
                         display: flex;
                         align-items: center;
+                        height: 60px;
+                        border-radius: 18px;
                         &.active{
                             background-color: #90A0B8;
-                            border-radius: 18px;
-                            height: 60px;
                             color: white;
                             & img{
                                 filter: brightness(5);
@@ -207,8 +231,6 @@
                         }
                         &:hover{
                             background-color: #90A0B8;
-                            border-radius: 18px;
-                            height: 60px;
                             color: white;
                             & img{
                                 filter: brightness(5);
@@ -279,6 +301,80 @@
 
 @include media-breakpoint-up(xxl) {}
 
+
+@media (max-width: 1599px) {
+    .leftPart{
+        & .sideBar{
+            & .sideBarInner{
+                & .sideBarHeader{
+                    & .companyLogo{
+                        height: 90px;
+                        & img{
+                        }
+                    }
+                }
+                & .sideBarBody{
+                    & .sidebarUL{
+                        & .sidebarLi{
+                            height: 54px;
+                            font-size: 14px;
+                            & img {
+                                height: 24px;
+                            }
+                            &.active{
+                                & img{
+                                }
+                            }
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & .sidebarImg{
+                            }
+                        }
+                    }
+                }
+                & .sideBarFooter{
+                    & .logout{
+                        margin-bottom: 25px;
+                        font-size: 14px;
+                        & img{
+                        }
+                    }
+                    & .sideBarTxt{
+                        & span:first-child{
+                        }
+                        & span:last-child{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPart{
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                padding: 20px;
+                & .dashboardNumber{
+                    font-size: 30px;
+                }
+                & .dashboardIcon{
+                    height: 42px;
+                    width: 42px;
+                    & img{
+                        height: 22px;
+                        width: 22px;
+                    }
+                }
+                & .dashboardCardText{
+                    font-size: 12px;
+                    margin-top: 0;
+                    line-height: 125%;
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(xxl) {
     .loginPageFluid{
@@ -392,16 +488,22 @@
     }
     .leftPart{
         & .sideBar{
+            padding: 15px 35px 15px 15px;
             & .sideBarInner{
                 & .sideBarHeader{
                     & .companyLogo{
+                        height: 75px;
+                        padding-left: 10px;
                         & img{
+                            height: 40px;
                         }
                     }
                 }
                 & .sideBarBody{
                     & .sidebarUL{
                         & .sidebarLi{
+                            font-size: 13px;
+                            height: 50px;
                             &.active{
                                 & img{
                                 }
@@ -411,12 +513,14 @@
                                 }
                             }
                             & .sidebarImg{
+                                height: 22px;
                             }
                         }
                     }
                 }
                 & .sideBarFooter{
                     & .logout{
+                        font-size: 13px;
                         & img{
                         }
                     }
@@ -434,9 +538,14 @@
         & .dashboardCardDetail{
             & .dashboardCard{
                 & .dashboardNumber{
+                    font-size: 26px;
                 }
                 & .dashboardIcon{
+                    height: 40px;
+                    width: 40px;
                     & img{
+                        height: 20px;
+                        width: 20px;
                     }
                 }
                 & .dashboardCardText{
@@ -489,9 +598,17 @@
         transform: translateX(-100%);
         transition: 0.3s ease-in-out;
         & .sideBar{
+            padding: 0;
+            margin: 0;
             & .sideBarInner{
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                padding: 25px 25px 15px 25px;
                 & .sideBarHeader{
+                    justify-content: space-between;
                     & .companyLogo{
+                        padding-left: 0;
                         & img{
                         }
                     }
@@ -499,6 +616,8 @@
                 & .sideBarBody{
                     & .sidebarUL{
                         & .sidebarLi{
+                            height: 46px;
+                            border-radius: 14px;
                             &.active{
                                 & img{
                                 }
@@ -528,7 +647,6 @@
         }
     }
     .rightPart{
-        margin-left: 20px;
         & .dashboardCardDetail{
             & .dashboardCard{
                 & .dashboardNumber{
@@ -547,11 +665,17 @@
 @include media-breakpoint-down(md) {
     .loginPageFluid{
         & .loginPageContainer{
+            padding: 40px 15px;
             & .loginPageMainHeading{
-                font-size: 52px;
+                font-size: 40px;
+                line-height: 50px;
             }
             & .loginFormRow{
                 & .loginInp{
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    padding: 8px 18px;
                 }
                 & .openEye{
                     & img{
@@ -559,15 +683,33 @@
                     }
                 }
                 & .forgotSection{
+                    margin-bottom: 30px;
                     & .forgotSection1{
+                        font-size: 13px;
                         
                     }
                     & .forgotSection2{
+                        font-size: 13px;
                     }
                 }
                 & .loginBtn{
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    padding: 8px 18px;
+                    line-height: normal;
                     &:hover{
                     }
+                }
+                & .resendBtn{
+                    top: 54px;
+                    height: 42px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    width: 110px;
+                }
+                & .resetTxt {
+                    font-size: 13px;
                 }
             }
         }
@@ -633,7 +775,7 @@
         & .loginPageContainer{
             & .loginPageMainHeading{
                 font-size: 30px;
-                line-height: 46px;
+                line-height: 40px;
             }
             & .loginFormRow{
                 margin-top: 50px;
@@ -645,7 +787,6 @@
                     }
                 }
                 & .forgotSection{
-                    margin-bottom: 42px;
                     & .forgotSection1{
                         width: 100%;
                     }
@@ -656,15 +797,10 @@
                     }
                 }
                 & .loginBtn{
-                    font-size: 18px;
                     &:hover{
                     }
                 }
                 & .resendBtn{
-                    position: absolute;
-                    top: 55px;
-                    right: 16px;
-                    width: 100px;
                 }
             }
         }
