@@ -310,6 +310,9 @@ body .overflow-auto-hidden {
     width: 68px;
     height: 68px;
   }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn img {
+    height: 27px;
+  }
   .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn .notificationText {
     width: 32px;
     height: 32px;
@@ -319,9 +322,89 @@ body .overflow-auto-hidden {
     height: 68px;
   }
 }
+@media (max-width: 1399.98px) {
+  .main .rightPart .header .rightSide {
+    background: linear-gradient(121.56deg, #FCFCFC 8.05%, #F4F7F9 82.51%);
+    padding: 25px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
+  }
+  .main .rightPart .header .rightSide.show {
+    transform: translateY(0);
+  }
+}
 @media (max-width: 1199.98px) {
   .main .leftPart {
     width: 300px;
+  }
+  .main .rightPart .header .leftSide .textSide .pageHeading {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .main .rightPart .header .leftSide .textSide .pageSubheading {
+    font-size: 13px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn {
+    width: 60px;
+    height: 60px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn .notificationText {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .userImgBtn {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .main .rightPart .header .leftSide {
+    padding: 15px;
+  }
+  .main .rightPart .header .leftSide .textSide .pageHeading {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .main .rightPart .header .leftSide .textSide .pageSubheading {
+    line-height: 20px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner {
+    gap: 15px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn .notificationText {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .userImgBtn {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main .rightPart .header .leftSide {
+    padding: 12px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn {
+    height: 40px;
+    width: 40px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .notificationBtn img {
+    height: 22px;
+  }
+  .main .rightPart .header .leftSide .imgSide .imgSideInner .userImgBtn {
+    height: 40px;
+    width: 40px;
   }
 }
 .modalMain .modalContent {
@@ -763,6 +846,22 @@ body .overflow-auto-hidden {
   color: #7D7D7D;
 }
 
+.rightPart .headerHiddenDetails .pageHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: #464255;
+}
+.rightPart .headerHiddenDetails .pageSubheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464255;
+}
 .rightPart .dashboardCardDetail .dashboardCard {
   background-color: var(--color);
   border-radius: 24px;
@@ -813,12 +912,18 @@ body .overflow-auto-hidden {
   border-radius: 33px;
   padding: 34px 30px 10px 30px;
 }
+.sideBar .sideBarInner .sideBarHeader {
+  display: flex;
+}
 .sideBar .sideBarInner .sideBarHeader .companyLogo {
-  padding-left: 25px;
+  padding-left: 20px;
   height: 116px;
 }
 .sideBar .sideBarInner .sideBarHeader .companyLogo img {
-  height: 63px;
+  height: 45px;
+}
+.sideBar .sideBarInner .sideBarHeader .menuCloseIcon {
+  height: 35px;
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi {
   font-family: "Poppins";
@@ -937,17 +1042,31 @@ body .overflow-auto-hidden {
   }
   .leftPart .sideBar .sideBarInner .sideBarHeader .companyLogo {
     height: 75px;
-    padding-left: 15px;
+    padding-left: 10px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarHeader .companyLogo img {
+    height: 40px;
   }
   .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi {
     font-size: 13px;
-    height: 52px;
+    height: 50px;
   }
   .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi .sidebarImg {
     height: 22px;
   }
   .leftPart .sideBar .sideBarInner .sideBarFooter .logout {
     font-size: 13px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardNumber {
+    font-size: 26px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardIcon {
+    height: 40px;
+    width: 40px;
+  }
+  .rightPart .dashboardCardDetail .dashboardCard .dashboardIcon img {
+    height: 20px;
+    width: 20px;
   }
 }
 @media (max-width: 991.98px) {
@@ -963,25 +1082,78 @@ body .overflow-auto-hidden {
     transform: translateX(-100%);
     transition: 0.3s ease-in-out;
   }
+  .leftPart .sideBar {
+    padding: 0;
+    margin: 0;
+  }
+  .leftPart .sideBar .sideBarInner {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 25px 25px 15px 25px;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarHeader {
+    justify-content: space-between;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarHeader .companyLogo {
+    padding-left: 0;
+  }
+  .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi {
+    height: 46px;
+    border-radius: 14px;
+  }
 }
 @media (max-width: 767.98px) {
+  .loginPageFluid .loginPageContainer {
+    padding: 40px 15px;
+  }
   .loginPageFluid .loginPageContainer .loginPageMainHeading {
-    font-size: 52px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .loginInp {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .forgotSection {
+    margin-bottom: 30px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .forgotSection .forgotSection1 {
+    font-size: 13px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .forgotSection .forgotSection2 {
+    font-size: 13px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .loginBtn {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 8px 18px;
+    line-height: normal;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .resendBtn {
+    top: 54px;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 13px;
+    width: 110px;
+  }
+  .loginPageFluid .loginPageContainer .loginFormRow .resetTxt {
+    font-size: 13px;
   }
 }
 @media (max-width: 575.98px) {
   .loginPageFluid .loginPageContainer .loginPageMainHeading {
     font-size: 30px;
-    line-height: 46px;
+    line-height: 40px;
   }
   .loginPageFluid .loginPageContainer .loginFormRow {
     margin-top: 50px;
   }
   .loginPageFluid .loginPageContainer .loginFormRow .openEye img {
     height: 15px;
-  }
-  .loginPageFluid .loginPageContainer .loginFormRow .forgotSection {
-    margin-bottom: 42px;
   }
   .loginPageFluid .loginPageContainer .loginFormRow .forgotSection .forgotSection1 {
     width: 100%;
@@ -991,13 +1163,488 @@ body .overflow-auto-hidden {
     display: flex;
     justify-content: flex-start;
   }
-  .loginPageFluid .loginPageContainer .loginFormRow .loginBtn {
+}
+[data-page-name=signUpFormPage].signUpFormPage {
+  background-color: #F4F4F4;
+  z-index: 1;
+}
+[data-page-name=signUpFormPage].signUpFormPage::before {
+  content: "";
+  background: url(../img/bg1.png) no-repeat, center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  width: 1000px;
+  z-index: -1;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .userName {
+  font-size: 60px;
+  line-height: 90px;
+  color: #464255;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .databaseName {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 60px;
+  color: #464255;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType {
+  font-size: 22px;
+  line-height: 28px;
+  color: #4A5C77;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType span {
+  height: 40px;
+  width: 40px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .form-select {
+  height: 60px;
+  background-color: #DAECEC;
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  padding: 16px 26px;
+  gap: 14px;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #464255;
+  position: relative;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features .featuresName {
+  font-size: 16px;
+  line-height: 24px;
+  color: #464255;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features ul li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #464255;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features ul li::marker {
+  color: #464255;
+  font-size: 14px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #4A5C77;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails span {
+  width: 50px;
+  height: 50px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card {
+  border-radius: 24px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imnformation {
+  font-size: 22px;
+  line-height: 33px;
+  color: #464255;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imnformation .solidContent {
+  color: #A3A3A3;
+  font-size: 14px;
+  line-height: 20px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter {
+  width: 70px;
+  height: 70px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter img {
+  object-position: center top;
+  object-fit: cover;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter .form-label {
+  cursor: pointer;
+  background-color: #4A5C77;
+  width: 24px;
+  padding: 5px;
+  height: 24px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .logoName {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4A5C77;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .portalName {
+  color: #4A5C77;
+  font-size: 14.22px;
+  line-height: 17px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-label {
+  color: #464255;
+  font-size: 12px;
+  line-height: 18px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-control, [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select {
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  height: 62px;
+  padding: 18px 24px;
+  gap: 10px;
+  color: #A3A3A3;
+  font-size: 14px;
+  line-height: 26px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-control::placeholder, [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select::placeholder {
+  color: #A3A3A3;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select {
+  background-color: rgba(234, 240, 248, 0.44);
+  color: #464255;
+  font-size: 15px;
+  line-height: 22px;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group .input-group-text {
+  padding: 18px 24px;
+  border-radius: 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group .input-group-text .arrowImg {
+  height: 20px;
+  padding-right: 24px;
+  border-right: 2px solid #E0E0E0;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .invalidText {
+  color: #B00101;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 400;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .form-check .form-check-input {
+  border: 1.5px solid #C5C5C5;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .form-check .form-check-input:checked {
+  background-color: #464255;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .form-check .form-check-label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #A3A3A3;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .form-check .form-check-input {
+  border: 1.5px solid #4A5C77;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .form-check .form-check-input:checked {
+  background-color: #464255 !important;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .form-check .form-check-label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4A5C77;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .paymentBtn {
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 26px;
+  background: #897FFF;
+  border-radius: 18px;
+  transition: all ease-in-out 0.3s;
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .paymentBtn:hover {
+  background: rgba(137, 127, 255, 0.8);
+}
+[data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .timeingPyment {
+  color: #464255;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 991.98px) {
+  [data-page-name=signUpFormPage].signUpFormPage::before {
+    height: 500px;
+    width: 500px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .userName {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .databaseName {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType {
+    font-size: 20px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType span {
+    height: 30px;
+    width: 30px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .form-select {
+    height: 50px;
+    border-radius: 16px;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features .featuresName {
+    font-size: 14px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features ul li {
+    font-size: 14px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features ul li::marker {
+    font-size: 12px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails {
+    font-size: 20px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails span {
+    width: 40px;
+    height: 40px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card {
+    border-radius: 20px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imnformation {
+    font-size: 20px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imnformation .solidContent {
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter {
+    width: 60px;
+    height: 60px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter .form-label {
+    width: 22px;
+    padding: 5px;
+    height: 22px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .logoName {
+    font-size: 14px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .portalName {
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-label {
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-control, [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select {
+    border-radius: 16px;
+    height: 50px;
+    padding: 16px 20px;
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select {
+    font-size: 14px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group {
+    height: 50px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group .input-group-text {
+    padding: 16px 20px;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group .input-group-text .arrowImg {
+    height: 16px;
+    padding-right: 20px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .invalidText {
+    font-size: 10px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .form-check .form-check-label {
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .form-check .form-check-label {
+    font-size: 12px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .paymentBtn {
+    font-size: 14px;
+    padding: 12px 24px;
+    border-radius: 16px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .timeingPyment {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media (max-width: 767.98px) {
+  [data-page-name=signUpFormPage].signUpFormPage::before {
+    height: 400px;
+    width: 400px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .userName {
+    font-size: 40px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .databaseName {
+    font-size: 25px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType {
     font-size: 18px;
   }
-  .loginPageFluid .loginPageContainer .loginFormRow .resendBtn {
-    position: absolute;
-    top: 55px;
-    right: 16px;
-    width: 100px;
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType span {
+    height: 25px;
+    width: 25px;
   }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .form-select {
+    height: 40px;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features .featuresName {
+    font-size: 13px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features ul li {
+    font-size: 13px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .features ul li::marker {
+    font-size: 10px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails {
+    font-size: 18px;
+    line-height: normal;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails span {
+    width: 35px;
+    height: 35px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imnformation {
+    font-size: 18px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter {
+    width: 50px;
+    height: 50px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imgOuter .form-label {
+    width: 20px;
+    padding: 4px;
+    height: 20px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-control, [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select {
+    border-radius: 10px;
+    height: 40px;
+    padding: 8px 18px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .form-select {
+    font-size: 13px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group {
+    height: 40px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group .input-group-text {
+    padding: 8px 18px;
+    border-radius: 10px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .companyForm .formGroup .input-group .input-group-text .arrowImg {
+    height: 14px;
+    padding-right: 18px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .paymentBtn {
+    font-size: 12px;
+    padding: 10px 18px;
+    border-radius: 10px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .paymentGroup .timeingPyment {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .userName {
+    font-size: 30px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .databaseName {
+    font-size: 20px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .topbilling .belingType {
+    font-size: 16px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails {
+    font-size: 16px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .companyDetails span {
+    width: 30px;
+    height: 30px;
+  }
+  [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .mainForm .card .card-body .imnformation {
+    font-size: 16px;
+  }
+}
+
+.chartSide .searchgroup .input-group .form-control {
+  background: #EAF0F8;
+  border-radius: 22px;
+  height: 70px;
+  padding: 23px 32px;
+  color: #A3A3A3;
+  font-size: 16px;
+  line-height: 24px;
+}
+.chartSide .searchgroup .input-group .input-group-text {
+  border-radius: 22px;
+  background: #EAF0F8;
+}
+.chartSide .accordion .accordion-item {
+  border-radius: 24px;
+}
+.chartSide .accordion .accordion-item .accordion-header {
+  border-radius: 24px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button {
+  border-radius: 24px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .dpausage {
+  color: #464255;
+  font-size: 24px;
+  line-height: 36px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .dpausage span {
+  width: 30px;
+  height: 30px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .chartValue {
+  font-size: 32px;
+  line-height: 48px;
+  color: #4A5C77;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .progress {
+  height: 8px;
+  background: #C5C5C5;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .progress .progress-bar {
+  background: #4A5C77;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .renewsContent {
+  color: #4A5C77;
+  font-size: 14px;
+  line-height: 26px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .reviewCounting {
+  color: #4A5C77;
+  font-size: 14px;
+  line-height: 26px;
+}
+.chartSide .accordion .accordion-item .accordion-header .accordion-button .accordionHeader .reviewCounting span {
+  color: #838383;
 }/*# sourceMappingURL=style.min.css.map */
