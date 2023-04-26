@@ -415,14 +415,14 @@ body .overflow-auto-hidden {
   color: #7D7D7D;
 }
 
-.dashboardCardDetail .dashboardCard {
+.rightPart .dashboardCardDetail .dashboardCard {
   background-color: var(--color);
   border-radius: 24px;
   width: 100%;
   height: 100%;
   padding: 22px 22px;
 }
-.dashboardCardDetail .dashboardCard .dashboardNumber {
+.rightPart .dashboardCardDetail .dashboardCard .dashboardNumber {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -430,7 +430,7 @@ body .overflow-auto-hidden {
   line-height: 48px;
   color: #FFFFFF;
 }
-.dashboardCardDetail .dashboardCard .dashboardIcon {
+.rightPart .dashboardCardDetail .dashboardCard .dashboardIcon {
   width: 50px;
   height: 50px;
   border-radius: 6px;
@@ -439,11 +439,11 @@ body .overflow-auto-hidden {
   justify-content: center;
   align-items: center;
 }
-.dashboardCardDetail .dashboardCard .dashboardIcon img {
+.rightPart .dashboardCardDetail .dashboardCard .dashboardIcon img {
   width: 25px;
   height: 25px;
 }
-.dashboardCardDetail .dashboardCard .dashboardCardText {
+.rightPart .dashboardCardDetail .dashboardCard .dashboardCardText {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -454,21 +454,20 @@ body .overflow-auto-hidden {
 }
 
 .sideBar {
-  padding: 20px;
+  padding: 20px 52px 20px 20px;
 }
 .sideBar .sideBarInner {
   background: linear-gradient(121.56deg, #FCFCFC 8.05%, #F4F7F9 82.51%);
   border: 1px solid #FFFFFF;
   border-radius: 33px;
-  padding: 34px 30px;
+  padding: 34px 30px 10px 30px;
 }
 .sideBar .sideBarInner .sideBarHeader .companyLogo {
-  height: 36px;
-  margin-bottom: 52px;
+  padding-left: 25px;
+  height: 116px;
 }
 .sideBar .sideBarInner .sideBarHeader .companyLogo img {
-  width: 100%;
-  height: 100%;
+  height: 63px;
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi {
   font-family: "Poppins";
@@ -479,11 +478,34 @@ body .overflow-auto-hidden {
   letter-spacing: 0.4px;
   color: #737373;
   padding: 16px 24px;
+  position: relative;
+  margin-bottom: 2px;
+}
+.sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi.active {
+  background-color: #90A0B8;
+  border-radius: 18px;
+  height: 60px;
+  color: white;
+}
+.sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi.active img {
+  filter: brightness(5);
+}
+.sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi:hover {
+  background-color: #90A0B8;
+  border-radius: 18px;
+  height: 60px;
+  color: white;
+}
+.sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi:hover img {
+  filter: brightness(5);
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi .sidebarImg {
   filter: brightness(0);
   height: 28px;
   margin-right: 6px;
+}
+.sideBar .sideBarInner .sideBarFooter {
+  padding-top: 20px;
 }
 .sideBar .sideBarInner .sideBarFooter .logout {
   background: #90A0B8;
@@ -499,6 +521,38 @@ body .overflow-auto-hidden {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 40px;
+}
+.sideBar .sideBarInner .sideBarFooter .sideBarTxt span:first-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #676767;
+  display: block;
+  text-align: center;
+}
+.sideBar .sideBarInner .sideBarFooter .sideBarTxt span:last-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  color: #A3A3A3;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .leftPart {
+    position: absolute;
+    display: none;
+  }
+  .rightPart {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 767.98px) {
   .loginPageFluid .loginPageContainer .loginPageMainHeading {
