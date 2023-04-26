@@ -123,59 +123,61 @@
             }
         }
     }
-    .dashboardCardDetail{
-        & .dashboardCard{
-            background-color: var(--color);
-            border-radius: 24px;
-            width: 100%;
-            height: 100%;
-            padding: 22px 22px;
-            & .dashboardNumber{
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 48px;
-                color: #FFFFFF;
-            }
-            & .dashboardIcon{
-                width: 50px;
-                height: 50px;
-                border-radius: 6px;
-                background-color:#FFFFFF;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                & img{
-                    width: 25px;
-                    height: 25px;
+    .rightPart{
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                background-color: var(--color);
+                border-radius: 24px;
+                width: 100%;
+                height: 100%;
+                padding: 22px 22px;
+                & .dashboardNumber{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 48px;
+                    color: #FFFFFF;
                 }
-            }
-            & .dashboardCardText{
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 26px;
-                color: #FFFFFF;
-                margin-top: 5px;
+                & .dashboardIcon{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 6px;
+                    background-color:#FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    & img{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                & .dashboardCardText{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+                    margin-top: 5px;
+                }
             }
         }
     }
     .sideBar{
-        padding: 20px;
+        padding: 20px 52px 20px 20px;
         & .sideBarInner{
             background: linear-gradient(121.56deg, #FCFCFC 8.05%, #F4F7F9 82.51%);
             border: 1px solid #FFFFFF;
             border-radius: 33px;
-            padding: 34px 30px;
+            padding: 34px 30px 10px 30px;
             & .sideBarHeader{
                 & .companyLogo{
-                    height: 36px;
-                    margin-bottom: 52px;
+                    padding-left: 25px;
+                    height: 116px;
                     & img{
-                        width: 100%;
-                        height: 100%;
+                        // width: 100%;
+                        height: 63px;
                     }
                 }
             }
@@ -190,6 +192,26 @@
                         letter-spacing: 0.4px;
                         color: #737373;
                         padding: 16px 24px;
+                        position: relative;
+                        margin-bottom: 2px;
+                        &.active{
+                            background-color: #90A0B8;
+                            border-radius: 18px;
+                            height: 60px;
+                            color: white;
+                            & img{
+                                filter: brightness(5);
+                            }
+                        }
+                        &:hover{
+                            background-color: #90A0B8;
+                            border-radius: 18px;
+                            height: 60px;
+                            color: white;
+                            & img{
+                                filter: brightness(5);
+                            }
+                        }
                         & .sidebarImg{
                             filter: brightness(0);
                             height: 28px;
@@ -199,6 +221,7 @@
                 }
             }
             & .sideBarFooter{
+                padding-top: 20px;
                 & .logout{
                     background: #90A0B8;
                     border-radius: 14px;
@@ -213,7 +236,31 @@
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 24px;
+                    margin-bottom: 40px;
                     & img{
+                    }
+                }
+                & .sideBarTxt{
+                    & span:first-child{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-align: center;
+                        color: #676767;
+                        display: block;
+                        text-align: center;
+                    }
+                    & span:last-child{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 10px;
+                        line-height: 18px;
+                        color: #A3A3A3;
+                        display: block;
+                        text-align: center;
                     }
                 }
             }
@@ -258,6 +305,60 @@
             }
         }
     }
+    .leftPart{
+        & .sideBar{
+            & .sideBarInner{
+                & .sideBarHeader{
+                    & .companyLogo{
+                        & img{
+                        }
+                    }
+                }
+                & .sideBarBody{
+                    & .sidebarUL{
+                        & .sidebarLi{
+                            &.active{
+                                & img{
+                                }
+                            }
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & .sidebarImg{
+                            }
+                        }
+                    }
+                }
+                & .sideBarFooter{
+                    & .logout{
+                        & img{
+                        }
+                    }
+                    & .sideBarTxt{
+                        & span:first-child{
+                        }
+                        & span:last-child{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPart{
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                & .dashboardNumber{
+                }
+                & .dashboardIcon{
+                    & img{
+                    }
+                }
+                & .dashboardCardText{
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -283,6 +384,60 @@
                 & .loginBtn{
                     &:hover{
                     }
+                }
+            }
+        }
+    }
+    .leftPart{
+        & .sideBar{
+            & .sideBarInner{
+                & .sideBarHeader{
+                    & .companyLogo{
+                        & img{
+                        }
+                    }
+                }
+                & .sideBarBody{
+                    & .sidebarUL{
+                        & .sidebarLi{
+                            &.active{
+                                & img{
+                                }
+                            }
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & .sidebarImg{
+                            }
+                        }
+                    }
+                }
+                & .sideBarFooter{
+                    & .logout{
+                        & img{
+                        }
+                    }
+                    & .sideBarTxt{
+                        & span:first-child{
+                        }
+                        & span:last-child{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPart{
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                & .dashboardNumber{
+                }
+                & .dashboardIcon{
+                    & img{
+                    }
+                }
+                & .dashboardCardText{
                 }
             }
         }
@@ -316,6 +471,63 @@
             }
         }
     }
+    .leftPart{
+        position: absolute;
+        display: none;
+        & .sideBar{
+            & .sideBarInner{
+                & .sideBarHeader{
+                    & .companyLogo{
+                        & img{
+                        }
+                    }
+                }
+                & .sideBarBody{
+                    & .sidebarUL{
+                        & .sidebarLi{
+                            &.active{
+                                & img{
+                                }
+                            }
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & .sidebarImg{
+                            }
+                        }
+                    }
+                }
+                & .sideBarFooter{
+                    & .logout{
+                        & img{
+                        }
+                    }
+                    & .sideBarTxt{
+                        & span:first-child{
+                        }
+                        & span:last-child{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPart{
+        margin-left: 20px;
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                & .dashboardNumber{
+                }
+                & .dashboardIcon{
+                    & img{
+                    }
+                }
+                & .dashboardCardText{
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -342,6 +554,60 @@
                 & .loginBtn{
                     &:hover{
                     }
+                }
+            }
+        }
+    }
+    .leftPart{
+        & .sideBar{
+            & .sideBarInner{
+                & .sideBarHeader{
+                    & .companyLogo{
+                        & img{
+                        }
+                    }
+                }
+                & .sideBarBody{
+                    & .sidebarUL{
+                        & .sidebarLi{
+                            &.active{
+                                & img{
+                                }
+                            }
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & .sidebarImg{
+                            }
+                        }
+                    }
+                }
+                & .sideBarFooter{
+                    & .logout{
+                        & img{
+                        }
+                    }
+                    & .sideBarTxt{
+                        & span:first-child{
+                        }
+                        & span:last-child{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPart{
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                & .dashboardNumber{
+                }
+                & .dashboardIcon{
+                    & img{
+                    }
+                }
+                & .dashboardCardText{
                 }
             }
         }
@@ -385,6 +651,60 @@
                     top: 55px;
                     right: 16px;
                     width: 100px;
+                }
+            }
+        }
+    }
+    .leftPart{
+        & .sideBar{
+            & .sideBarInner{
+                & .sideBarHeader{
+                    & .companyLogo{
+                        & img{
+                        }
+                    }
+                }
+                & .sideBarBody{
+                    & .sidebarUL{
+                        & .sidebarLi{
+                            &.active{
+                                & img{
+                                }
+                            }
+                            &:hover{
+                                & img{
+                                }
+                            }
+                            & .sidebarImg{
+                            }
+                        }
+                    }
+                }
+                & .sideBarFooter{
+                    & .logout{
+                        & img{
+                        }
+                    }
+                    & .sideBarTxt{
+                        & span:first-child{
+                        }
+                        & span:last-child{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rightPart{
+        & .dashboardCardDetail{
+            & .dashboardCard{
+                & .dashboardNumber{
+                }
+                & .dashboardIcon{
+                    & img{
+                    }
+                }
+                & .dashboardCardText{
                 }
             }
         }
