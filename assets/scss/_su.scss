@@ -5,6 +5,7 @@
         width: 350px;
     }
     & .rightPart {
+        width: calc(100% - 350px);
         background-image: url('../img/bg/Background-artwork.png');
         background-repeat: no-repeat;
         & .header {
@@ -186,6 +187,7 @@
             width: 300px;
         }
         & .rightPart {
+            width: calc(100% - 300px);
             & .header {
                 & .leftSide {
                     & .textSide {
@@ -225,6 +227,7 @@
         & .leftPart {
         }
         & .rightPart {
+            width: 100%;
             & .header {
                 & .leftSide {
                     & .textSide {
