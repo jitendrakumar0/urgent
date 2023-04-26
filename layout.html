@@ -124,7 +124,7 @@
                                                     <div class="col-auto imgSide pe-0">
                                                         <div class="row mx-0 imgSideInner">
                                                             <div class="col-auto px-0 d-xxl-none">
-                                                                <a href="javascript:;" class="notificationBtn">
+                                                                <a href="javascript:;" class="notificationBtn" id="openSearch">
                                                                     <img src="assets/img/svg/topSearch.svg" class="w100" alt="">
                                                                 </a>
                                                             </div>
@@ -143,8 +143,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-4 rightSide">
-
+                                            <div class="col-xxl-4 rightSide chartSide" id="SearchOffcanvas">
+                                                <div class="row mx-0 align-items-center">
+                                                    <div class="col-xxl-12 col searchgroup">
+                                                        <div class="input-group">
+                                                            <input type="search" class="form-control shadow-none fw-normal border-0" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                            <button type="button" class="input-group-text border-0" id="basic-addon1"><img src="assets/img/svg/032-search.svg" alt=""></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto d-xxl-none">
+                                                        <img src="assets/img/svg/menuClose.svg" class="searchCloseIcon" id="searchClose" alt="menu close">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -235,6 +245,20 @@
             menuClose.addEventListener('click', ()=>{
                 menuIcon.classList.toggle('show')
             })
+        </script>
+
+        <script>
+            let openSearch= document.querySelector('#openSearch');
+            let SearchOffcanvas= document.querySelector('#SearchOffcanvas');
+            let searchClose= document.querySelector('#searchClose');
+
+            openSearch.addEventListener('click', ()=> {
+                SearchOffcanvas.classList.add('show')
+            })
+            searchClose.addEventListener('click', ()=> {
+                SearchOffcanvas.classList.remove('show')
+            })
+
         </script>
     </body>
 </html>
