@@ -638,11 +638,17 @@
 @include media-breakpoint-down(md) {
     .loginPageFluid{
         & .loginPageContainer{
+            padding: 40px 15px;
             & .loginPageMainHeading{
-                font-size: 52px;
+                font-size: 40px;
+                line-height: 50px;
             }
             & .loginFormRow{
                 & .loginInp{
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    padding: 8px 18px;
                 }
                 & .openEye{
                     & img{
@@ -650,15 +656,33 @@
                     }
                 }
                 & .forgotSection{
+                    margin-bottom: 30px;
                     & .forgotSection1{
+                        font-size: 13px;
                         
                     }
                     & .forgotSection2{
+                        font-size: 13px;
                     }
                 }
                 & .loginBtn{
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    padding: 8px 18px;
+                    line-height: normal;
                     &:hover{
                     }
+                }
+                & .resendBtn{
+                    top: 54px;
+                    height: 42px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    width: 110px;
+                }
+                & .resetTxt {
+                    font-size: 13px;
                 }
             }
         }
@@ -724,7 +748,7 @@
         & .loginPageContainer{
             & .loginPageMainHeading{
                 font-size: 30px;
-                line-height: 46px;
+                line-height: 40px;
             }
             & .loginFormRow{
                 margin-top: 50px;
@@ -736,7 +760,6 @@
                     }
                 }
                 & .forgotSection{
-                    margin-bottom: 42px;
                     & .forgotSection1{
                         width: 100%;
                     }
@@ -747,15 +770,10 @@
                     }
                 }
                 & .loginBtn{
-                    font-size: 18px;
                     &:hover{
                     }
                 }
                 & .resendBtn{
-                    position: absolute;
-                    top: 55px;
-                    right: 16px;
-                    width: 100px;
                 }
             }
         }
