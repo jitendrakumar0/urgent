@@ -124,6 +124,24 @@
         }
     }
     .rightPart{
+        & .headerHiddenDetails {
+            & .pageHeading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 32px;
+                color: #464255;
+            }
+            & .pageSubheading {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #464255;
+            }
+        }
         & .dashboardCardDetail{
             & .dashboardCard{
                 background-color: var(--color);
@@ -175,12 +193,16 @@
             border-radius: 33px;
             padding: 34px 30px 10px 30px;
             & .sideBarHeader{
+                display: flex;
                 & .companyLogo{
-                    padding-left: 25px;
+                    padding-left: 20px;
                     height: 116px;
                     & img{
-                        height: 63px;
+                        height: 45px;
                     }
+                }
+                & .menuCloseIcon {
+                    height: 35px;
                 }
             }
             & .sideBarBody{
@@ -471,8 +493,9 @@
                 & .sideBarHeader{
                     & .companyLogo{
                         height: 75px;
-                        padding-left: 15px;
+                        padding-left: 10px;
                         & img{
+                            height: 40px;
                         }
                     }
                 }
@@ -480,7 +503,7 @@
                     & .sidebarUL{
                         & .sidebarLi{
                             font-size: 13px;
-                            height: 52px;
+                            height: 50px;
                             &.active{
                                 & img{
                                 }
@@ -515,9 +538,14 @@
         & .dashboardCardDetail{
             & .dashboardCard{
                 & .dashboardNumber{
+                    font-size: 26px;
                 }
                 & .dashboardIcon{
+                    height: 40px;
+                    width: 40px;
                     & img{
+                        height: 20px;
+                        width: 20px;
                     }
                 }
                 & .dashboardCardText{
@@ -570,9 +598,17 @@
         transform: translateX(-100%);
         transition: 0.3s ease-in-out;
         & .sideBar{
+            padding: 0;
+            margin: 0;
             & .sideBarInner{
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                padding: 25px 25px 15px 25px;
                 & .sideBarHeader{
+                    justify-content: space-between;
                     & .companyLogo{
+                        padding-left: 0;
                         & img{
                         }
                     }
@@ -580,6 +616,8 @@
                 & .sideBarBody{
                     & .sidebarUL{
                         & .sidebarLi{
+                            height: 46px;
+                            border-radius: 14px;
                             &.active{
                                 & img{
                                 }
@@ -627,11 +665,17 @@
 @include media-breakpoint-down(md) {
     .loginPageFluid{
         & .loginPageContainer{
+            padding: 40px 15px;
             & .loginPageMainHeading{
-                font-size: 52px;
+                font-size: 40px;
+                line-height: 50px;
             }
             & .loginFormRow{
                 & .loginInp{
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    padding: 8px 18px;
                 }
                 & .openEye{
                     & img{
@@ -639,15 +683,33 @@
                     }
                 }
                 & .forgotSection{
+                    margin-bottom: 30px;
                     & .forgotSection1{
+                        font-size: 13px;
                         
                     }
                     & .forgotSection2{
+                        font-size: 13px;
                     }
                 }
                 & .loginBtn{
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    padding: 8px 18px;
+                    line-height: normal;
                     &:hover{
                     }
+                }
+                & .resendBtn{
+                    top: 54px;
+                    height: 42px;
+                    border-radius: 10px;
+                    font-size: 13px;
+                    width: 110px;
+                }
+                & .resetTxt {
+                    font-size: 13px;
                 }
             }
         }
@@ -713,7 +775,7 @@
         & .loginPageContainer{
             & .loginPageMainHeading{
                 font-size: 30px;
-                line-height: 46px;
+                line-height: 40px;
             }
             & .loginFormRow{
                 margin-top: 50px;
@@ -725,7 +787,6 @@
                     }
                 }
                 & .forgotSection{
-                    margin-bottom: 42px;
                     & .forgotSection1{
                         width: 100%;
                     }
@@ -736,15 +797,10 @@
                     }
                 }
                 & .loginBtn{
-                    font-size: 18px;
                     &:hover{
                     }
                 }
                 & .resendBtn{
-                    position: absolute;
-                    top: 55px;
-                    right: 16px;
-                    width: 100px;
                 }
             }
         }

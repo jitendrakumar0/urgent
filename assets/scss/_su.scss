@@ -116,6 +116,9 @@
                             & .notificationBtn {
                                 width: 68px;
                                 height: 68px;
+                                & img {
+                                    height: 27px;
+                                }
                                 & .notificationText {
                                     width: 32px;
                                     height: 32px;
@@ -159,6 +162,19 @@
                     }
                 }
             }
+            & .rightSide {
+                background: linear-gradient(121.56deg, #FCFCFC 8.05%, #F4F7F9 82.51%);
+                padding: 25px 0;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+                transform: translateY(-100%);
+                transition: 0.3s ease-in-out;
+                &.show {
+                    transform: translateY(0);
+                }
+            }
         }
     }
 }
@@ -174,17 +190,27 @@
                 & .leftSide {
                     & .textSide {
                         & .pageHeading {
+                            font-size: 26px;
+                            line-height: 36px;
                         }
                         & .pageSubheading {
+                            font-size: 13px;
                         }
                     }
                     & .imgSide {
                         & .imgSideInner {
                             & .notificationBtn {
+                                width: 60px;
+                                height: 60px;
                                 & .notificationText {
+                                    width: 28px;
+                                    height: 28px;
+                                    font-size: 13px;
                                 }
                             }
                             & .userImgBtn {
+                                width: 60px;
+                                height: 60px;
                             }
                         }
                     }
@@ -230,19 +256,35 @@
         & .rightPart {
             & .header {
                 & .leftSide {
+                    padding: 15px;
                     & .textSide {
                         & .pageHeading {
+                            font-size: 22px;
+                            line-height: 32px;
                         }
                         & .pageSubheading {
+                            line-height: 20px;
                         }
                     }
                     & .imgSide {
                         & .imgSideInner {
+                            gap: 15px;
                             & .notificationBtn {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 18px;
+                                & img {
+
+                                }
                                 & .notificationText {
+                                    width: 22px;
+                                    height: 22px;
+                                    font-size: 11px;
                                 }
                             }
                             & .userImgBtn {
+                                width: 50px;
+                                height: 50px;
                             }
                         }
                     }
@@ -259,6 +301,7 @@
         & .rightPart {
             & .header {
                 & .leftSide {
+                    padding: 12px;
                     & .textSide {
                         & .pageHeading {
                         }
@@ -268,10 +311,17 @@
                     & .imgSide {
                         & .imgSideInner {
                             & .notificationBtn {
+                                height: 40px;
+                                width: 40px;
+                                & img {
+                                    height: 22px;
+                                }
                                 & .notificationText {
                                 }
                             }
                             & .userImgBtn {
+                                height: 40px;
+                                width: 40px;
                             }
                         }
                     }
