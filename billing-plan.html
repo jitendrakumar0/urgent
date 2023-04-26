@@ -171,9 +171,9 @@
                                                             <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
                                                         </div>
                                                         <div class="row pe-xxl-5 pe-0 py-3">
-                                                            <div class="col-6">
+                                                            <div class="col-sm-6 col-12 pb-3 pb-sm-0">
                                                                 <div class="billingCard">
-                                                                    <div class="row">
+                                                                    <div class="row align-items-center">
                                                                         <div class="col">
                                                                             <div class="billingCardHeading">Subscription Plan</div>
                                                                         </div>
@@ -200,9 +200,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-6">
+                                                            <div class="col-sm-6 col-12">
                                                                 <div class="billingCard">
-                                                                    <div class="row">
+                                                                    <div class="row align-items-center">
                                                                         <div class="col">
                                                                             <div class="billingCardHeading">Billing Details</div>
                                                                         </div>
@@ -233,19 +233,19 @@
                                                         </div>
                                                         <div class="row py-2 mx-0 pe-xxl-5 pe-0">
                                                             <div class="col-12">
-                                                                <div class="row tableHeading">
+                                                                <div class="row tableHeading ">
                                                                     <div class="col-auto">
                                                                         <div class="paymentHistory">Payment History</div>
                                                                     </div>
-                                                                    <div class="col d-flex justify-content-end">
-                                                                        <div class="row">
-                                                                            <div class="col-auto">
+                                                                    <div class="col-md d-flex justify-content-md-end">
+                                                                        <div class="row w-100 mx-0 justify-content-md-end">
+                                                                            <div class="col-md-auto col-sm-6 ps-0">
                                                                                 <div class="position-relative">
                                                                                     <input type="text" class="searchInp form-control" name="" id="" placeholder="Search company">
                                                                                     <img class="searchIcon" src="assets/img/svg/search.svg" alt="">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-auto ps-0">
+                                                                            <div class="col-md-auto ps-0 col-6 col-sm-3">
                                                                                 <div class="position-relative">
                                                                                     <select class="form-select formSelect form-select-lg mb-3 " aria-label=".form-select-lg example">
                                                                                         <option selected>Date Range</option>
@@ -256,7 +256,7 @@
                                                                                     <img class="formselectIcon" src="assets/img/svg/down.svg" alt="">
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-auto ps-0">
+                                                                            <div class="col-md-auto ps-0 col-6 col-sm-3">
                                                                                 <button class="uploadBtn"><img src="assets/img/svg/upload.svg" alt="">Export</button>
                                                                             </div>
                                                                         </div>
@@ -266,56 +266,58 @@
                                                         </div>
                                                         <div class="row mx-0 pe-xxl-5 pe-0">
                                                             <div class="col-12">
-                                                                <table class="table table-striped paymentTable">
-                                                                    <thead>
-                                                                        <tr class="tableHead">
-                                                                            <th scope="col" class="Radius">Date</th>
-                                                                            <th scope="col">Order</th>
-                                                                            <th scope="col">Description</th>
-                                                                            <th scope="col">Amount</th>
-                                                                            <th scope="col">Status</th>
-                                                                            <th scope="col" class="Radiuss">Invoice</th>
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                        <tr>
-                                                                            <th scope="row"><div class="date">15/03/2023</div></th>
-                                                                            <td><div class="order">
-                                                                                344256
-                                                                            </div></td>
-                                                                            <td>
-                                                                                <div class="description">Lite Plan (Monthly)</div>
-                                                                            </td>
-                                                                            <td><div class="amount">$200</div></td>
-                                                                            <td><div class="status"><img src="assets/img/svg/Failed.svg" alt=""></div></td>
-                                                                            <td><div class="invoice"><img src="assets/img/svg/menu.svg" alt=""></div></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th scope="row"><div class="date">15/03/2023</div></th>
-                                                                            <td><div class="order">
-                                                                                344256
-                                                                            </div></td>
-                                                                            <td>
-                                                                                <div class="description">Lite Plan (Monthly)</div>
-                                                                            </td>
-                                                                            <td><div class="amount">$200</div></td>
-                                                                            <td><div class="status"><img src="assets/img/svg/Paid.svg" alt=""></div></td>
-                                                                            <td><div class="invoice"><img src="assets/img/svg/Download.svg" alt=""></div></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <th scope="row"><div class="date">15/03/2023</div></th>
-                                                                            <td><div class="order">
-                                                                                344256
-                                                                            </div></td>
-                                                                            <td>
-                                                                                <div class="description">Lite Plan (Monthly)</div>
-                                                                            </td>
-                                                                            <td><div class="amount">$200</div></td>
-                                                                            <td><div class="status"><img src="assets/img/svg/refund.svg" alt=""></div></td>
-                                                                            <td><div class="invoice"><img src="assets/img/svg/Download.svg" alt=""></div></td>
-                                                                        </tr>
-                                                                        </tbody>
-                                                                </table>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-striped paymentTable">
+                                                                        <thead>
+                                                                            <tr class="tableHead">
+                                                                                <th scope="col" class="Radius">Date</th>
+                                                                                <th scope="col">Order</th>
+                                                                                <th scope="col">Description</th>
+                                                                                <th scope="col">Amount</th>
+                                                                                <th scope="col">Status</th>
+                                                                                <th scope="col" class="Radiuss">Invoice</th>
+                                                                            </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            <tr>
+                                                                                <th scope="row"><div class="date">15/03/2023</div></th>
+                                                                                <td><div class="order">
+                                                                                    344256
+                                                                                </div></td>
+                                                                                <td>
+                                                                                    <div class="description text-nowrap">Lite Plan (Monthly)</div>
+                                                                                </td>
+                                                                                <td><div class="amount">$200</div></td>
+                                                                                <td><div class="status"><img src="assets/img/svg/Failed.svg" alt=""></div></td>
+                                                                                <td><div class="invoice"><img src="assets/img/svg/menu.svg" alt=""></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row"><div class="date">15/03/2023</div></th>
+                                                                                <td><div class="order">
+                                                                                    344256
+                                                                                </div></td>
+                                                                                <td>
+                                                                                    <div class="description text-nowrap">Lite Plan (Monthly)</div>
+                                                                                </td>
+                                                                                <td><div class="amount">$200</div></td>
+                                                                                <td><div class="status"><img src="assets/img/svg/Paid.svg" alt=""></div></td>
+                                                                                <td><div class="invoice"><img src="assets/img/svg/Download.svg" alt=""></div></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th scope="row"><div class="date">15/03/2023</div></th>
+                                                                                <td><div class="order">
+                                                                                    344256
+                                                                                </div></td>
+                                                                                <td>
+                                                                                    <div class="description text-nowrap">Lite Plan (Monthly)</div>
+                                                                                </td>
+                                                                                <td><div class="amount">$200</div></td>
+                                                                                <td><div class="status"><img src="assets/img/svg/refund.svg" alt=""></div></td>
+                                                                                <td><div class="invoice"><img src="assets/img/svg/Download.svg" alt=""></div></td>
+                                                                            </tr>
+                                                                            </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
