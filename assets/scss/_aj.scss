@@ -899,7 +899,9 @@
             }
         }
     }
-}}
+}
+}
+
 @include media-breakpoint-up(sm) {}
 
 @include media-breakpoint-up(md) {}
@@ -920,3 +922,82 @@
 @include media-breakpoint-down(md) {}
 
 @include media-breakpoint-down(sm) {}
+
+@media screen and (max-width: 1599px) {
+
+    .dpaSection {
+        &.card{
+            & .dpaUsesHeading {
+                font-size: 28px;
+                line-height: normal;
+            }
+            & .formSelectGroup {
+                font-size: 13px;
+                line-height: normal;
+                &:focus{
+                }
+            }
+            & .exportBtn {
+                height: 28px;
+                font-size: 12px;
+                line-height: normal;
+                & span {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+        }
+        &.topDapSection {
+            & .leftSide {
+                & .commonWork {
+                    & .workColor {
+                        width: 22px;
+                        height: 22px;
+                    }
+                    & .workHeading {
+                        font-size: 16px;
+                        line-height: normal;
+                    }
+                    & .workToken {
+                        font-size: 13px;
+                        line-height: normal;
+                    }
+                    & .trackBtn {
+                        height: 32px;
+                        line-height: normal;
+                        & span{
+                            height: 16px;
+                            width: 16px;
+                        }
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+                    &.hrWork {
+                        & .workColor, & .trackBtn {
+                        }
+                        & .progressGroup {
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                        }
+                }
+                &.customerService {
+                    & .workColor, & .trackBtn {
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+}
