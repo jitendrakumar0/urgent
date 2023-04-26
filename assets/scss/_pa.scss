@@ -480,7 +480,7 @@
                     & .sidebarUL{
                         & .sidebarLi{
                             font-size: 13px;
-                            height: 52px;
+                            height: 50px;
                             &.active{
                                 & img{
                                 }
@@ -515,9 +515,14 @@
         & .dashboardCardDetail{
             & .dashboardCard{
                 & .dashboardNumber{
+                    font-size: 26px;
                 }
                 & .dashboardIcon{
+                    height: 40px;
+                    width: 40px;
                     & img{
+                        height: 20px;
+                        width: 20px;
                     }
                 }
                 & .dashboardCardText{
@@ -570,7 +575,13 @@
         transform: translateX(-100%);
         transition: 0.3s ease-in-out;
         & .sideBar{
+            padding: 0;
+            margin: 0;
             & .sideBarInner{
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                padding: 25px 25px 15px 25px;
                 & .sideBarHeader{
                     & .companyLogo{
                         & img{
