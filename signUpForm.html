@@ -70,14 +70,14 @@
         <main class="container-fluid">
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill signUpFormPage position-relative" data-page-name="signUpFormPage">
-                    <div class="innerSection row mx-0 py-5 my-5">
-                        <form action="" class="form col-7 mx-auto px-0">
+                    <div class="innerSection row mx-0 py-md-5 my-5">
+                        <form action="" class="form col-xl-7 col-lg-9 col-sm-10 col-11 mx-auto px-0">
                             <div class="row mx-0 topSection">
                                 <div class="col-12 userName fw-medium text-center">KAIRAV</div>
                                 <div class="col-12 databaseName text-center">Database Personal Assistant</div>
-                                <div class="col-12 px-0 my-5 topbilling">
+                                <div class="col-12 px-0 my-md-5 my-4 topbilling">
                                     <div class="row mx-0">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-12 mb-md-0 mb-3">
                                             <div class="belingType fw-medium d-flex align-items-center gap-2"><span class="d-inline-flex"><img src="assets/img/svg/grid-2-horizontal.svg" alt="" class="w-100"></span> Chosen Tier</div>
                                             <div class="my-3">
                                                 <select class="form-select shadow-none" aria-label="Default select example">
@@ -97,7 +97,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-12 mb-md-0 mb-3">
                                             <div class="belingType fw-medium d-flex align-items-center gap-2"><span class="d-inline-flex"><img src="assets/img/svg/creditcard.svg" alt="" class="w-100"></span> Billing Type</div>
                                             <div class="mt-3">
                                                 <select class="form-select shadow-none bg-white" aria-label="Default select example">
@@ -111,13 +111,189 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mx-0 mainForm">
+                            <div class="row mx-0 mainForm mb-5">
                                 <div class="col-12 companyDetails d-flex align-items-center gap-2 fw-medium mb-3"><span class="d-inline-flex"><img src="assets/img/svg/wand.svg" alt="" class="w-100"></span> Company Details</div>
-                                <div class="col-12 card border-0 bg-white  bg-opacity-50">
-                                    <div class="card-body row mx-0">
+                                <div class="col-12 card border-0 bg-white  bg-opacity-50 px-0">
+                                    <div class="card-body row mx-0 gap-md-4 gap-3 p-md-4 p-3 pb-md-5 pb-4">
                                         <div class="col-12 imnformation fw-medium">Please fill in your Company’s Information</div>
+                                        <div class="col-12 px-0">
+                                            <div class="row mx-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="imgOuter position-relative mx-auto">
+                                                        <div class="img w-100 h-100 rounded-circle overflow-hidden"><img src="assets/img/svg/user.svg" alt="" class="w-100 h-100"></div>
+                                                        <label for="profileImg" class="form-label m-0 rounded-circle align-items-center d-flex justify-content-center position-absolute bottom-0 end-0"><img class="w-100" src="assets/img/svg/pen.svg" alt=""></label>
+                                                        <input class="form-control" type="file" id="profileImg" hidden="">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="logoName fw-medium">Company Logo</div>
+                                                    <div class="portalName fw-normal">This will be displayed across the portal.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0 companyForm">
+                                            <div class="row mx-0 gap-3">
+                                                <div class="col-12 formGroup">
+                                                    <label for="companyName" class="form-label fw-normal px-3">Company Name</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="companyName" placeholder="Company Name" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="companyNUmber" class="form-label fw-normal px-3">Company Contact Number</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text bg-white border-end-0 rounded-end-0 d-flex align-items-center gap-3 pe-0" id="addon-wrapping">+61 <div class="arrowImg d-flex"><img src="assets/img/svg/down-chevron.svg" class="h-100" alt=""></div></span>
+                                                        <input type="text" class="form-control shadow-none border-start-0 rounded-start-0" id="companyNUmber" placeholder="Contact Number" aria-label="companyNUmber" aria-describedby="addon-wrapping">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-12 formGroup">
+                                                    <label for="companyUrl" class="form-label fw-normal px-3">Company Website URL</label>
+                                                    <input type="url" class="form-control shadow-none bg-white fw-normal" id="companyUrl" placeholder="Company Website" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="Industry" class="form-label fw-normal px-3">Industry</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="Industry" placeholder="Industry" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="country" class="form-label fw-normal px-3">Country</label>
+                                                    <select class="form-select shadow-none" id="country" aria-label="Default select example">
+                                                        <option selected>Country</option>
+                                                        <option value="1">India</option>
+                                                        <option value="2">Rusia</option>
+                                                        <option value="3">Japan</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="state" class="form-label fw-normal px-3">State</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="state" placeholder="State" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="streetAddress" class="form-label fw-normal px-3">Street Address</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="streetAddress" placeholder="Street Address" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="code" class="form-label fw-normal px-3">ZIP Code</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="code" placeholder="ZIP Code" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row mx-0 mainForm mb-5">
+                                <div class="col-12 companyDetails d-flex align-items-center gap-2 fw-medium mb-3"><span class="d-inline-flex"><img src="assets/img/svg/wand.svg" alt="" class="w-100"></span> Company Representative Details</div>
+                                <div class="col-12 card border-0 bg-white  bg-opacity-50 px-0">
+                                    <div class="card-body row mx-0 gap-md-4 gap-3 p-md-4 p-3 pb-md-5 pb-4">
+                                        <div class="col-12 imnformation fw-medium">
+                                            Please fill in your Representative’s Information
+                                            <div class="solidContent fw-normal mt-2">
+                                                    Representative will be the point of contact and an admin. As an admin, the representative will be able to handle all administrative matters such as DPA management & user settings.
+                                            </div>
+                                        </div>
+                                        <div class="col-12 px-0 companyForm">
+                                            <div class="row mx-0 gap-3">
+                                                <div class="col-12 formGroup">
+                                                    <label for="name" class="form-label fw-normal px-3">Name</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="name" placeholder="Name" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="email" class="form-label fw-normal px-3">Email</label>
+                                                    <input type="email" class="form-control shadow-none bg-white fw-normal" id="email" placeholder="Email" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="password" class="form-label fw-normal px-3">Password</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <input type="password" class="form-control shadow-none border-end-0 rounded-end-0" id="password" placeholder="Enter Password" aria-label="password" aria-describedby="addon-wrapping">
+                                                        <button type="button" class="input-group-text bg-white  border-start-0 rounded-start-0 d-flex align-items-center gap-3" id="addon-wrapping"><div class="arrowImg d-flex border-0 p-0"><img src="assets/img/svg/eye-open.svg" class="h-100" alt=""></div></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="cpassword" class="form-label fw-normal px-3">Confirm Password</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <input type="password" class="form-control shadow-none border-end-0 rounded-end-0" id="cpassword" placeholder="Re-enter Password" aria-label="cpassword" aria-describedby="addon-wrapping">
+                                                        <button type="button" class="input-group-text bg-white  border-start-0 rounded-start-0 d-flex align-items-center gap-3" id="addon-wrapping"><div class="arrowImg d-flex border-0 p-0"><img src="assets/img/svg/eye-open.svg" class="h-100" alt=""></div></button>
+                                                    </div>
+                                                    <div id="cpassword" class="form-text text-end invalidText">Password does not match</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 mainForm mb-5">
+                                <div class="col-12 companyDetails d-flex align-items-center gap-2 fw-medium mb-3"><span class="d-inline-flex"><img src="assets/img/svg/wand.svg" alt="" class="w-100"></span> Billing Details</div>
+                                <div class="col-12 card border-0 bg-white  bg-opacity-50 px-0 ">
+                                    <div class="card-body row mx-0 gap-md-4 gap-3 p-md-4 p-3 pb-md-5 pb-4">
+                                        <div class="col-12 imnformation fw-medium">Credit Card Information</div>
+                                        <div class="col-12 px-0 companyForm">
+                                            <div class="row mx-0 gap-3">
+                                                <div class="col-12 formGroup">
+                                                    <label for="cardname" class="form-label fw-normal px-3">Name on Card</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="cardname" placeholder="Name on Card" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 px-0">
+                                                    <div class="row mx-0 formGroup gap-md-0">
+                                                        <div class="col-md col-12 mb-md-0 mb-2">
+                                                            <label for="cardNumber" class="form-label fw-normal px-3">Credit Card Number</label>
+                                                            <div class="input-group flex-nowrap">
+                                                                <input type="tel" class="form-control shadow-none border-end-0 rounded-end-0" id="cardNumber" placeholder="0000 0000 0000 0000" aria-label="0000 0000 0000 0000" aria-describedby="addon-wrapping">
+                                                                <span class="input-group-text bg-white  border-start-0 rounded-start-0 d-flex align-items-center gap-3 ps-0" ><div class="arrowImg d-flex border-0 p-0"><img src="assets/img/svg/Card logos.svg" class="h-100" alt=""></div></span>
+                                                            </div>
+                                                            <div id="cardNumber" class="form-text invalidText">Invalid Card Details</div>
+                                                        </div>
+                                                        <div class="col-md-3 col-6">
+                                                            <label for="expiry" class="form-label fw-normal px-3">Expiry</label>
+                                                            <input type="text" class="form-control shadow-none bg-white fw-normal" id="expiry" placeholder="MM/YY" aria-describedby="emailHelp">
+                                                            <div id="expiry" class="form-text invalidText">Invalid Expiry Date</div>
+                                                        </div>
+                                                        <div class="col-md-3 col-6">
+                                                            <label for="cvv" class="form-label fw-normal px-3">CVC</label>
+                                                            <input type="text" class="form-control shadow-none bg-white fw-normal" id="cvv" placeholder="CVC/CVV" aria-describedby="emailHelp">
+                                                            <div id="cvv" class="form-text invalidText">Invalid CVC/CVV</div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-12 imnformation fw-medium mt-3">Billing Address</div>
+                                                <div class="col-12">
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label fw-normal" for="flexCheckDefault">Same as Company Address</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="country1" class="form-label fw-normal px-3">Country</label>
+                                                    <select class="form-select shadow-none" id="country1" aria-label="Default select example">
+                                                        <option selected>Country</option>
+                                                        <option value="1">India</option>
+                                                        <option value="2">Rusia</option>
+                                                        <option value="3">Japan</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="state1" class="form-label fw-normal px-3">State</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="state1" placeholder="State" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="streetAddress1" class="form-label fw-normal px-3">Street Address</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="streetAddress1" placeholder="Street Address" aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="col-12 formGroup">
+                                                    <label for="code1" class="form-label fw-normal px-3">ZIP Code</label>
+                                                    <input type="text" class="form-control shadow-none bg-white fw-normal" id="code1" placeholder="ZIP Code" aria-describedby="emailHelp">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mx-0 paymentGroup gap-2">
+                                <div class="col-12 text-center">
+                                    <div class="form-check d-inline-block">
+                                        <input class="form-check-input  bg-white shadow-none" type="checkbox" value="" id="flexCheckDefault1">
+                                        <label class="form-check-label fw-normal text-start" for="flexCheckDefault1">Before you proceed, please take a moment to read and accept our terms and conditions.</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center"><button type="button" class="btn paymentBtn border-0 text-white fw-medium">Make Payment of $1,200</button></div>
+                                <div class="col-12 text-center timeingPyment fw-normal">Lite Tier, Yearly</div>
                             </div>
                         </form>
                     </div>
