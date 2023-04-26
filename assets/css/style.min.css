@@ -433,7 +433,7 @@ body .overflow-auto-hidden {
 .rightPart .dashboardCardDetail .dashboardCard .dashboardIcon {
   width: 50px;
   height: 50px;
-  border-radius: 6px;
+  border-radius: 10px;
   background-color: #FFFFFF;
   display: flex;
   justify-content: center;
@@ -480,6 +480,8 @@ body .overflow-auto-hidden {
   padding: 16px 24px;
   position: relative;
   margin-bottom: 2px;
+  display: flex;
+  align-items: center;
 }
 .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi.active {
   background-color: #90A0B8;
@@ -546,9 +548,17 @@ body .overflow-auto-hidden {
 }
 
 @media (max-width: 991.98px) {
+  .menuIcon.show .leftPart {
+    transform: translateX(0);
+  }
   .leftPart {
     position: absolute;
-    display: none;
+    top: 0;
+    left: 0;
+    background-color: #F8FAFB;
+    z-index: 9;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
   }
   .rightPart {
     margin-left: 20px;

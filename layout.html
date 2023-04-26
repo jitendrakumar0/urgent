@@ -71,7 +71,7 @@
             <div class="row mainInner h-100">
                 <div class="col-12 px-0 flex-fill h-100" data-page-name="categoriesPage">
                     <div class="container-fluid h-100">
-                        <div class="row main h-100">
+                        <div class="row main h-100 menuIcon">
                             <div class="col-auto px-0 leftPart h-100">
                                 <div class="row sideBar h-100">
                                     <div class="col-12 sideBarInner h-100">
@@ -111,7 +111,7 @@
                                         <div class="row mx-0 justify-content-center align-items-center">
                                             <div class="col-8 leftSide">
                                                 <div class="row mx-0 align-items-center">
-                                                    <div class="col-auto me-2 d-lg-none d-lg-block">
+                                                    <div class="col-auto menuIconBtn me-2 d-lg-none d-lg-block">
                                                         <img src="assets/img/svg/grid.svg" alt="">
                                                     </div>
                                                     <div class="col textSide ps-0">
@@ -215,5 +215,12 @@
         </main>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
+        <script>
+            let menuIcon = document.querySelector('.menuIcon')
+            let menuIconBtn = document.querySelector('.menuIconBtn')
+            menuIconBtn.addEventListener('click', ()=>{
+                menuIcon.classList.toggle('show')
+            })
+        </script>
     </body>
 </html>

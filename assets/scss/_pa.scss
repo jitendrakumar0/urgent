@@ -142,7 +142,7 @@
                 & .dashboardIcon{
                     width: 50px;
                     height: 50px;
-                    border-radius: 6px;
+                    border-radius: 10px;
                     background-color:#FFFFFF;
                     display: flex;
                     justify-content: center;
@@ -194,6 +194,8 @@
                         padding: 16px 24px;
                         position: relative;
                         margin-bottom: 2px;
+                        display: flex;
+                        align-items: center;
                         &.active{
                             background-color: #90A0B8;
                             border-radius: 18px;
@@ -471,9 +473,21 @@
             }
         }
     }
+    .menuIcon{
+        &.show{
+            & .leftPart{
+                transform: translateX(0);
+            }
+        }
+    }
     .leftPart{
         position: absolute;
-        display: none;
+        top: 0;
+        left: 0;
+        background-color: #F8FAFB;
+        z-index: 9;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in-out;
         & .sideBar{
             & .sideBarInner{
                 & .sideBarHeader{
