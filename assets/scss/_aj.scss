@@ -651,3 +651,102 @@
         }
     }
 }
+
+
+
+
+
+// ? ######################## [ Dashboard Chart Side ] ################
+@include media-breakpoint(basic) {
+    .chartSide {
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                    background: #EAF0F8;
+                    border-radius: 22px;
+                    height: 70px;
+                    padding: 23px 32px;
+                    color: #A3A3A3;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                & .input-group-text {
+                    border-radius: 22px;
+                    background: #EAF0F8;
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                border-radius: 24px;
+                & .accordion-header {
+                    border-radius: 24px;
+                    & .accordion-button  {
+                        border-radius: 24px;
+                        &::after{
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                color: #464255;
+                                font-size: 24px;
+                                line-height: 36px;
+                                & span {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                            & .chartValue{
+                                font-size: 32px;
+                                line-height: 48px;
+                                color: #4A5C77;
+                            }
+                            & .progress {
+                                height: 8px;
+                                background: #C5C5C5;
+                                & .progress-bar {
+                                    background: #4A5C77;
+                                }
+                            }
+                            & .renewsContent {
+                                color: #4A5C77;
+                                font-size: 14px;
+                                line-height: 26px;
+                            }
+                            & .reviewCounting {
+                                color: #4A5C77;
+                                font-size: 14px;
+                                line-height: 26px;
+                                & span {
+                                    color: #838383;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
