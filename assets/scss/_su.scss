@@ -94,13 +94,189 @@
 
 @include media-breakpoint-up(xxl) {}
 
+@media (max-width: 1599px) {
+    .main {
+        & .leftPart {
+        }
+        & .rightPart {
+            & .header {
+                & .leftSide {
+                    padding: 25px;
+                    & .textSide {
+                        & .pageHeading {
+                            font-size: 30px;
+                            line-height: 40px;
+                        }
+                        & .pageSubheading {
+                            font-size: 14px;
+                        }
+                    }
+                    & .imgSide {
+                        & .imgSideInner {
+                            & .notificationBtn {
+                                width: 68px;
+                                height: 68px;
+                                & .notificationText {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+                            & .userImgBtn {
+                                width: 68px;
+                                height: 68px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xxl) {
+    
+.main {
+    & .leftPart {
+    }
+    & .rightPart {
+        & .header {
+            & .leftSide {
+                & .textSide {
+                    & .pageHeading {
+                    }
+                    & .pageSubheading {
+                    }
+                }
+                & .imgSide {
+                    & .imgSideInner {
+                        & .notificationBtn {
+                            & .notificationText {
+                            }
+                        }
+                        & .userImgBtn {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(xl) {
+    .main {
+        & .leftPart {
+            width: 300px;
+        }
+        & .rightPart {
+            & .header {
+                & .leftSide {
+                    & .textSide {
+                        & .pageHeading {
+                        }
+                        & .pageSubheading {
+                        }
+                    }
+                    & .imgSide {
+                        & .imgSideInner {
+                            & .notificationBtn {
+                                & .notificationText {
+                                }
+                            }
+                            & .userImgBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {
+    .main {
+        & .leftPart {
+        }
+        & .rightPart {
+            & .header {
+                & .leftSide {
+                    & .textSide {
+                        & .pageHeading {
+                        }
+                        & .pageSubheading {
+                        }
+                    }
+                    & .imgSide {
+                        & .imgSideInner {
+                            & .notificationBtn {
+                                & .notificationText {
+                                }
+                            }
+                            & .userImgBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(md) {
+    .main {
+        & .leftPart {
+        }
+        & .rightPart {
+            & .header {
+                & .leftSide {
+                    & .textSide {
+                        & .pageHeading {
+                        }
+                        & .pageSubheading {
+                        }
+                    }
+                    & .imgSide {
+                        & .imgSideInner {
+                            & .notificationBtn {
+                                & .notificationText {
+                                }
+                            }
+                            & .userImgBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .main {
+        & .leftPart {
+        }
+        & .rightPart {
+            & .header {
+                & .leftSide {
+                    & .textSide {
+                        & .pageHeading {
+                        }
+                        & .pageSubheading {
+                        }
+                    }
+                    & .imgSide {
+                        & .imgSideInner {
+                            & .notificationBtn {
+                                & .notificationText {
+                                }
+                            }
+                            & .userImgBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
