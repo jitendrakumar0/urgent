@@ -11,7 +11,13 @@
         background-size: cover;
     }
     & .rightPart {
-        width: calc(100% - 4000px);
+        width: calc(100% - 400px);
+        &.rightBgInnerPart {
+            width: calc(100% - 350px);
+            background-image: url('../img/bg/Background-artwork.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         & .stickyHeader {
             &.blur {
                 backdrop-filter: blur(8px);
