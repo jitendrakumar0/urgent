@@ -5,9 +5,15 @@
         width: 350px;
     }
     & .rightPart {
-        width: calc(100% - 350px);
+        width: calc(100% - 750px);
         background-image: url('../img/bg/Background-artwork.png');
         background-repeat: no-repeat;
+        background-size: cover;
+        & .stickyHeader {
+            &.blur {
+                backdrop-filter: blur(8px);
+            }
+        }
         & .header {
             & .leftSide {
                 padding: 37px 26px;
@@ -83,6 +89,9 @@
             }
         }
     }
+    & .lastPart {
+        width: 400px;
+    }
   }
 }
 @include media-breakpoint-up(sm) {}
@@ -100,6 +109,7 @@
         & .leftPart {
         }
         & .rightPart {
+            width: calc(100% - 720px);
             & .header {
                 & .leftSide {
                     padding: 25px;
@@ -134,6 +144,9 @@
                 }
             }
         }
+        & .lastPart {
+            width: 370px;
+        }
     }
 }
 
@@ -144,6 +157,7 @@
     & .leftPart {
     }
     & .rightPart {
+        width: calc(100% - 350px);
         & .header {
             & .leftSide {
                 & .textSide {
@@ -176,6 +190,18 @@
                     transform: translateY(0);
                 }
             }
+        }
+    }
+    & .lastPart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #F8FAFB;
+        z-index: 1055;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+        &.show {
+            transform: translateX(0);
         }
     }
 }
