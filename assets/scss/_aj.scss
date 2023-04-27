@@ -1754,6 +1754,21 @@
     }
     .dpaSection {
         &.card{
+            & > .row {
+                & > .col {
+                    &.d-flex {
+                        width: 100% !important;
+                        flex: 0 0 auto;
+                        justify-content: space-between;
+                    }
+                }
+                & > .col-auto {
+                    margin-top: 7px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: end;
+                }
+            }
             & .dpaUsesHeading {
             }
             & .formSelectGroup {
