@@ -938,6 +938,7 @@
         &  .searchgroup {
             & .input-group {
                 & .form-control {
+                    font-size: 14px;
                 }
                 & .input-group-text {
                 }
@@ -953,20 +954,26 @@
                         }
                         & .accordionHeader {
                             & .dpausage {
+                                font-size: 22px;
                                 & span {
+                                    width: 28px;
+                                    height: 28px;
                                     & img {
                                     }
                                 }
                             }
                             & .chartValue{
+                                font-size: 30px;
                             }
                             & .progress {
                                 & .progress-bar {
                                 }
                             }
                             & .renewsContent {
+                                font-size: 12px;
                             }
                             & .reviewCounting {
+                                font-size: 12px;
                                 & span {
                                 }
                             }
@@ -982,6 +989,7 @@
                         & .token , & .tokenCounting {
                         }
                         & .tokenCounting {
+                            font-size: 24px;
                         }
                     }
                 }
@@ -989,11 +997,15 @@
         }
         & .latestActivity{
             & .activityHeading {
+                font-size: 22px;
             }
             & .activityTime {
                 & .timing {
+                    font-size: 14px;
                 }
                 & .timecaption {
+                    font-size: 13px;
+                    line-height: 23px;
                 }
                 &::before{
                 }
@@ -1013,8 +1025,9 @@
                 line-height: normal;
             }
             & .formSelectGroup {
-                font-size: 13px;
-                line-height: normal;
+                & .form-select {
+                    font-size: 13px;
+                }
                 &:focus{
                 }
             }
@@ -1086,14 +1099,21 @@
 @include media-breakpoint-down(xxl) {
     .chartSide {
         &.rightSidebarHeader {
+            height: 110px;
         }
         &  .searchgroup {
             & .input-group {
                 & .form-control {
+                    height: 60px;
+                    padding: 23px;
+                    border-radius: 18px;
                 }
                 & .input-group-text {
                 }
             }
+        }
+        & .searchCloseIcon {
+            height: 55px;
         }
         & .accordion {
             & .accordion-item {
@@ -1105,14 +1125,16 @@
                         }
                         & .accordionHeader {
                             & .dpausage {
-                                font-size: 22px;
+                                font-size: 21px;
                                 line-height: 34px;
                                 & span {
                                     & img {
+                                        height: 21px;
                                     }
                                 }
                             }
                             & .chartValue{
+                                font-size: 28px;
                             }
                             & .progress {
                                 & .progress-bar {
@@ -1163,6 +1185,7 @@
     .dpaSection {
         &.card{
             & .dpaUsesHeading {
+                font-size: 26px;
             }
             & .formSelectGroup {
                 &:focus{
@@ -1179,8 +1202,10 @@
                     & .workColor {
                     }
                     & .workHeading {
+                        font-size: 15px;
                     }
                     & .workToken {
+                        font-size: 12px;
                     }
                     & .trackBtn {
                         & span{
@@ -1230,6 +1255,9 @@
                 }
             }
         }
+        & .searchCloseIcon {
+            height: 52px;
+        }
         & .accordion {
             & .accordion-item {
                 & .accordion-header {
@@ -1240,14 +1268,19 @@
                         }
                         & .accordionHeader {
                             & .dpausage {
+                                font-size: 20px;
+                                line-height: 30px;
                                 & span {
                                     & img {
+                                        height: 20px;
                                     }
                                 }
                             }
                             & .chartValue{
+                                font-size: 26px;
                             }
                             & .progress {
+                                height: 7px;
                                 & .progress-bar {
                                 }
                             }
@@ -1269,6 +1302,7 @@
                         & .token , & .tokenCounting {
                         }
                         & .tokenCounting {
+                            font-size: 22px;
                         }
                     }
                 }
@@ -1296,8 +1330,12 @@
     .dpaSection {
         &.card{
             & .dpaUsesHeading {
+                font-size: 24px;
             }
             & .formSelectGroup {
+                & .form-select {
+                    font-size: 12px;
+                }
                 &:focus{
                 }
             }
@@ -1487,14 +1525,22 @@
 @include media-breakpoint-down(md) {
     .chartSide {
         &.rightSidebarHeader {
+            height: 90px;
         }
         &  .searchgroup {
             & .input-group {
                 & .form-control {
+                    height: 54px;
                 }
                 & .input-group-text {
+                    & img {
+                        height: 22px;
+                    }
                 }
             }
+        }
+        & .searchCloseIcon {
+            height: 46px;
         }
         & .accordion {
             & .accordion-item {
@@ -1506,12 +1552,18 @@
                         }
                         & .accordionHeader {
                             & .dpausage {
+                                font-size: 18px;
                                 & span {
                                     & img {
+                                        height: 22px;
+                                    }
+                                    & .iconImg {
+                                        height: 18px;
                                     }
                                 }
                             }
                             & .chartValue{
+                                font-size: 22px;
                             }
                             & .progress {
                                 & .progress-bar {
@@ -1542,6 +1594,8 @@
         }
         & .latestActivity{
             & .activityHeading {
+                font-size: 20px;
+                margin-bottom: 0.5rem !important;
             }
             & .activityTime {
                 & .timing {
@@ -1562,8 +1616,13 @@
     .dpaSection {
         &.card{
             & .dpaUsesHeading {
+                font-size: 20px;
             }
             & .formSelectGroup {
+                & .form-select {
+                    padding: 4px 16px 4px 4px;
+                    background-position: right 0.5rem center;
+                }
                 &:focus{
                 }
             }
@@ -1578,6 +1637,7 @@
                     & .workColor {
                     }
                     & .workHeading {
+                        font-size: 14px;
                     }
                     & .workToken {
                     }
