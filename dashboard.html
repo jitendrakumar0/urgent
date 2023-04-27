@@ -84,9 +84,9 @@
                                             </div>
                                             <div class="col-12 sideBarBody flex-fill overflow-hidden-auto h-100">
                                                 <ul class="sidebarUL list-unstyled">
-                                                    <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/home.svg" alt=""></a> Dashboard</li>
+                                                    <li class="sidebarLi active"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/home.svg" alt=""></a> Dashboard</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/message.svg" alt=""></a> DPA Interface</li>
-                                                    <li class="sidebarLi active"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/users.svg" alt=""></a> Users</li>
+                                                    <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/users.svg" alt=""></a> Users</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/trending-up.svg" alt=""></a> Usage Tracking</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/grid.svg" alt=""></a> Database & DPA</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/creditcard.svg" alt=""></a> Billing & Plans</li>
@@ -112,7 +112,7 @@
                                         <div class="row mx-0 flex-column h-100 flex-nowrap px-3 ps-lg-0 pe-xxl-0">
                                             <div class="col-12 px-0 mainContent overflow-hidden h-100 flex-fill">
                                                 <div class="row h-100 mx-0">
-                                                    <div class="col-12 overflow-hidden-auto h-100 px-0 scrollPart userOverViewMain">
+                                                    <div class="col-12 overflow-hidden-auto h-100 px-0 scrollPart">
                                                         <div class="row mx-0 sticky-top stickyHeader">
                                                             <div class="col-12 header px-0">
                                                                 <div class="row mx-0 justify-content-center align-items-center">
@@ -123,7 +123,7 @@
                                                                             </div>
                                                                             <div class="col textSide ps-0">
                                                                                 <div class="row flex-column mx-0 d-none d-md-flex">
-                                                                                    <div class="col pageHeading px-0">User Management</div>
+                                                                                    <div class="col pageHeading px-0">Dashboard</div>
                                                                                     <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
                                                                                 </div>
                                                                             </div>
@@ -168,7 +168,7 @@
                                                         <div class="row py-3">
                                                             <div class="col-12">
                                                                 <div class="row flex-column mx-0 d-md-none headerHiddenDetails mb-3">
-                                                                    <div class="col pageHeading px-0">User Management</div>
+                                                                    <div class="col pageHeading px-0">Dashboard</div>
                                                                     <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
                                                                 </div>
                                                                 <div class="row dashboardCardDetail g-3">
@@ -189,33 +189,126 @@
                                                                         <div class="dashboardCard"style="--color:#9BB7C2">
                                                                             <div class="row">
                                                                                 <div class="col-12 d-flex justify-content-between">
-                                                                                    <div class="dashboardNumber">2</div>
-                                                                                    <div class="dashboardIcon"><img src="assets/img/svg/crown.svg" alt=""></div>
+                                                                                    <div class="dashboardNumber">6</div>
+                                                                                    <div class="dashboardIcon"><img src="assets/img/svg/grid.svg" alt=""></div>
                                                                                 </div>
                                                                                 <div class="col-12 pe-0">
-                                                                                    <div class="dashboardCardText">Admins</div>
+                                                                                    <div class="dashboardCardText">of 12 DPAs</div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-auto col-12 ms-auto">
-                                                                        <div class="row flex-md-column mx-0 gy-3 gy-sm-0 justify-content-between h-100 align-items-center">
-                                                                            <div class="col-sm-auto col-12 px-0">
-                                                                                <a href="javascript:;" class="addNewUserBtn">+ Add New User</a>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="dashboardCard" style="--color:#A5B3C9">
+                                                                            <div class="row">
+                                                                                <div class="col-12 d-flex justify-content-between">
+                                                                                    <div class="dashboardNumber">20k</div>
+                                                                                    <div class="dashboardIcon"><img src="assets/img/svg/trending-up.svg" alt=""></div>
+                                                                                </div>
+                                                                                <div class="col-12 pe-0">
+                                                                                    <div class="dashboardCardText">remaining for 10 days</div>
+                                                                                </div>
                                                                             </div>
-                                                                            <div class="col-sm-auto col-12 searchInp px-0">
-                                                                                <input type="text" class="form-control" placeholder="Search user">
-                                                                                <div class="searchBtn">
-                                                                                    <img src="assets/img/svg/032-search.svg" class="w-100" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="dashboardCard" style="--color:#898989">
+                                                                            <div class="row">
+                                                                                <div class="col-12 d-flex justify-content-between">
+                                                                                    <div class="dashboardNumber">Lite</div>
+                                                                                    <!-- <div class="dashboardIcon"><img src="assets/img/svg/user.svg" alt=""></div> -->
+                                                                                </div>
+                                                                                <div class="col-12 pe-0">
+                                                                                    <div class="dashboardCardText">Tier renews <span class="">21st May</span></div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="card shadow-none border-0 p-0 dpaSection  my-4">
+                                                                <div class="card shadow-none border-0 p-3 dpaSection  my-4">
                                                                     <div class="row mx-0 align-items-center">
-                                                                        <div class="col-12 p-0">
-                                                                            <img src="assets/img/svg/user-table.svg" class="w-100" alt="">
+                                                                        <div class="col d-flex align-items-center gap-2">
+                                                                            <div class="dpaUsesHeading fw-semibold">DPA Usage</div>
+                                                                            <div class="formSelectGroup">
+                                                                                <select class="form-select shadow-none" aria-label="Default select example">
+                                                                                    <option selected>7 Days</option>
+                                                                                    <option value="1">7 Days</option>
+                                                                                    <option value="2">2 Weeks</option>
+                                                                                    <option value="3">1 Month</option>
+                                                                                    <option value="4">3 Months</option>
+                                                                                    <option value="5">YTD</option>
+                                                                                    <option value="6">Custom</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button type="button" class="exportBtn rounded-pill d-inline-flex align-items-center gap-2 btn fw-medium"><span class="d-inline-flex"><img src="assets/img/svg/download.svg" class="h-100" alt=""></span>Export</button></div>
+                                                                        <div class="col-12  mt-3">
+                                                                            <img src="assets/img/svg/tokenChart.svg" class="w-100" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card shadow-none border-0 p-3 dpaSection topDapSection  mb-4">
+                                                                    <div class="row mx-0 align-items-center">
+                                                                        <div class="col-12 dpaUsesHeading fw-semibold mb-3">Top 3 DPA Usage</div>
+                                                                        <div class="col-12 px-0">
+                                                                            <div class="row mx-0 align-items-center">
+                                                                                <div class="col-xl-6 px-0 leftSide">
+                                                                                    <div class="workPlace commonWork row mx-0 align-items-center mb-3">
+                                                                                        <div class="col-auto"><div class="workColor rounded-circle"></div></div>
+                                                                                        <div class="col px-0">
+                                                                                            <div class="row mx-0 align-items-center">
+                                                                                                <div class="col">
+                                                                                                    <div class="workHeading fw-medium">Workplace Relations</div>
+                                                                                                    <div class="workToken fw-normal">Total Token Used: <span class="fw-semibold">27k</span></div>
+                                                                                                </div>
+                                                                                                <div class="col-auto"><button type="button" class="btn trackBtn rounded-pill text-white d-flex align-items-center gap-2">Track <span class="d-inline-flex"><img src="assets/img/svg/030-right-arrow.svg" class="h-100" alt=""></span></button></div>
+                                                                                                <div class="col-12 progressGroup mt-2">
+                                                                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-bar w-75 rounded-pill"></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="hrWork commonWork row mx-0 align-items-center mb-3">
+                                                                                        <div class="col-auto"><div class="workColor rounded-circle"></div></div>
+                                                                                        <div class="col px-0">
+                                                                                            <div class="row mx-0 align-items-center">
+                                                                                                <div class="col">
+                                                                                                    <div class="workHeading fw-medium">HR</div>
+                                                                                                    <div class="workToken fw-normal">Total Token Used: <span class="fw-semibold">15k</span></div>
+                                                                                                </div>
+                                                                                                <div class="col-auto"><button type="button" class="btn trackBtn rounded-pill text-white d-flex align-items-center gap-2">Track <span class="d-inline-flex"><img src="assets/img/svg/030-right-arrow.svg" class="h-100" alt=""></span></button></div>
+                                                                                                <div class="col-12 progressGroup mt-2">
+                                                                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-bar w-75 rounded-pill"></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="customerService commonWork row mx-0 align-items-center mb-3">
+                                                                                        <div class="col-auto"><div class="workColor rounded-circle"></div></div>
+                                                                                        <div class="col px-0">
+                                                                                            <div class="row mx-0 align-items-center">
+                                                                                                <div class="col">
+                                                                                                    <div class="workHeading fw-medium">Customer Service</div>
+                                                                                                    <div class="workToken fw-normal">Total Token Used: <span class="fw-semibold">10k</span></div>
+                                                                                                </div>
+                                                                                                <div class="col-auto"><button type="button" class="btn trackBtn rounded-pill text-white d-flex align-items-center gap-2">Track <span class="d-inline-flex"><img src="assets/img/svg/030-right-arrow.svg" class="h-100" alt=""></span></button></div>
+                                                                                                <div class="col-12 progressGroup mt-2">
+                                                                                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                                                        <div class="progress-bar w-75 rounded-pill"></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-xl-6 mt-3 mt-xl-0">
+                                                                                    <img src="assets/img/svg/workchart.svg" class="w-100" alt="">
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
