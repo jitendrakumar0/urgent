@@ -219,7 +219,7 @@
       user-select: auto;
     }
 
-    & main {
+    & .main, & main {
       width: 100vw !important;
       max-width: none !important;
       height: 100% !important;
@@ -241,6 +241,11 @@
         flex-wrap: nowrap;
         &> [data-page-name] {
           overflow: hidden auto;
+          & > .container-fluid {
+            &.h-100 {
+              padding: 0 !important;
+            }
+          }
         }
       }
     }
