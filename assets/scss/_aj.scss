@@ -659,6 +659,12 @@
 // ? ######################## [ Dashboard Chart Side ] ################
 @include media-breakpoint(basic) {
     .chartSide {
+        &.rightSidebarHeader {
+            height: 170px;
+            display: flex;
+            align-items: center;
+            background-color: #f3f4f8;
+        }
         &  .searchgroup {
             & .input-group {
                 & .form-control {
@@ -700,9 +706,20 @@
                                 color: #464255;
                                 font-size: 24px;
                                 line-height: 36px;
+                                // & .iconImg1 {
+                                //     height: 16px;
+                                // }
+                                // & .iconImg {
+                                //     height: 16px;
+                                // }
                                 & span {
+                                    align-items: center;
+                                    justify-content: center;
                                     width: 30px;
                                     height: 30px;
+                                    & img {
+                                        max-width: 100%;
+                                    }
                                 }
                             }
                             & .chartValue{
@@ -912,19 +929,83 @@
 
 @include media-breakpoint-up(xxl) {}
 
+@media (max-width: 1599px) {
 
-@include media-breakpoint-down(xxl) {}
-
-@include media-breakpoint-down(xl) {}
-
-@include media-breakpoint-down(lg) {}
-
-@include media-breakpoint-down(md) {}
-
-@include media-breakpoint-down(sm) {}
-
-@media screen and (max-width: 1599px) {
-
+    .chartSide {
+        &.rightSidebarHeader {
+            height: 140px;
+        }
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                }
+                & .input-group-text {
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button  {
+                        &::after{
+                        }
+                        &:not(.collapsed)::after {
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .chartValue{
+                            }
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                            & .renewsContent {
+                            }
+                            & .reviewCounting {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .accordion-collapse {
+                    & .accordion-body {
+                        & .chart {
+                        }
+                        & .token {
+                        }
+                        & .token , & .tokenCounting {
+                        }
+                        & .tokenCounting {
+                        }
+                    }
+                }
+            }
+        }
+        & .latestActivity{
+            & .activityHeading {
+            }
+            & .activityTime {
+                & .timing {
+                }
+                & .timecaption {
+                }
+                &::before{
+                }
+                &::after{
+                }
+                &:last-child{
+                    &::after{
+                    }
+                }
+            }
+        }
+    }
     .dpaSection {
         &.card{
             & .dpaUsesHeading {
@@ -1001,3 +1082,671 @@
     }
 }
 }
+
+@include media-breakpoint-down(xxl) {
+    .chartSide {
+        &.rightSidebarHeader {
+        }
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                }
+                & .input-group-text {
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button  {
+                        &::after{
+                        }
+                        &:not(.collapsed)::after {
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                font-size: 22px;
+                                line-height: 34px;
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .chartValue{
+                            }
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                            & .renewsContent {
+                            }
+                            & .reviewCounting {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .accordion-collapse {
+                    & .accordion-body {
+                        & .chart {
+                        }
+                        & .token {
+                        }
+                        & .token , & .tokenCounting {
+                        }
+                        & .tokenCounting {
+                        }
+                    }
+                }
+            }
+        }
+        & .latestActivity{
+            & .activityHeading {
+            }
+            & .activityTime {
+                & .timing {
+                }
+                & .timecaption {
+                }
+                &::before{
+                }
+                &::after{
+                }
+                &:last-child{
+                    &::after{
+                    }
+                }
+            }
+        }
+    }
+    .dpaSection {
+        &.card{
+            & .dpaUsesHeading {
+            }
+            & .formSelectGroup {
+                &:focus{
+                }
+            }
+            & .exportBtn {
+                & span {
+                }
+            }
+        }
+        &.topDapSection {
+            & .leftSide {
+                & .commonWork {
+                    & .workColor {
+                    }
+                    & .workHeading {
+                    }
+                    & .workToken {
+                    }
+                    & .trackBtn {
+                        & span{
+                        }
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+                    &.hrWork {
+                        & .workColor, & .trackBtn {
+                        }
+                        & .progressGroup {
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                        }
+                }
+                &.customerService {
+                    & .workColor, & .trackBtn {
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+}
+
+@include media-breakpoint-down(xl) {
+    .chartSide {
+        &.rightSidebarHeader {
+        }
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                }
+                & .input-group-text {
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button  {
+                        &::after{
+                        }
+                        &:not(.collapsed)::after {
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .chartValue{
+                            }
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                            & .renewsContent {
+                            }
+                            & .reviewCounting {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .accordion-collapse {
+                    & .accordion-body {
+                        & .chart {
+                        }
+                        & .token {
+                        }
+                        & .token , & .tokenCounting {
+                        }
+                        & .tokenCounting {
+                        }
+                    }
+                }
+            }
+        }
+        & .latestActivity{
+            & .activityHeading {
+            }
+            & .activityTime {
+                & .timing {
+                }
+                & .timecaption {
+                }
+                &::before{
+                }
+                &::after{
+                }
+                &:last-child{
+                    &::after{
+                    }
+                }
+            }
+        }
+    }
+    .dpaSection {
+        &.card{
+            & .dpaUsesHeading {
+            }
+            & .formSelectGroup {
+                &:focus{
+                }
+            }
+            & .exportBtn {
+                & span {
+                }
+            }
+        }
+        &.topDapSection {
+            & .leftSide {
+                & .commonWork {
+                    & .workColor {
+                    }
+                    & .workHeading {
+                    }
+                    & .workToken {
+                    }
+                    & .trackBtn {
+                        & span{
+                        }
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+                    &.hrWork {
+                        & .workColor, & .trackBtn {
+                        }
+                        & .progressGroup {
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                        }
+                }
+                &.customerService {
+                    & .workColor, & .trackBtn {
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+}
+
+@include media-breakpoint-down(lg) {
+    .chartSide {
+        &.rightSidebarHeader {
+        }
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                }
+                & .input-group-text {
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button  {
+                        &::after{
+                        }
+                        &:not(.collapsed)::after {
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .chartValue{
+                            }
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                            & .renewsContent {
+                            }
+                            & .reviewCounting {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .accordion-collapse {
+                    & .accordion-body {
+                        & .chart {
+                        }
+                        & .token {
+                        }
+                        & .token , & .tokenCounting {
+                        }
+                        & .tokenCounting {
+                        }
+                    }
+                }
+            }
+        }
+        & .latestActivity{
+            & .activityHeading {
+            }
+            & .activityTime {
+                & .timing {
+                }
+                & .timecaption {
+                }
+                &::before{
+                }
+                &::after{
+                }
+                &:last-child{
+                    &::after{
+                    }
+                }
+            }
+        }
+    }
+    .dpaSection {
+        &.card{
+            & .dpaUsesHeading {
+            }
+            & .formSelectGroup {
+                &:focus{
+                }
+            }
+            & .exportBtn {
+                & span {
+                }
+            }
+        }
+        &.topDapSection {
+            & .leftSide {
+                & .commonWork {
+                    & .workColor {
+                    }
+                    & .workHeading {
+                    }
+                    & .workToken {
+                    }
+                    & .trackBtn {
+                        & span{
+                        }
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+                    &.hrWork {
+                        & .workColor, & .trackBtn {
+                        }
+                        & .progressGroup {
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                        }
+                }
+                &.customerService {
+                    & .workColor, & .trackBtn {
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+}
+
+@include media-breakpoint-down(md) {
+    .chartSide {
+        &.rightSidebarHeader {
+        }
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                }
+                & .input-group-text {
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button  {
+                        &::after{
+                        }
+                        &:not(.collapsed)::after {
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .chartValue{
+                            }
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                            & .renewsContent {
+                            }
+                            & .reviewCounting {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .accordion-collapse {
+                    & .accordion-body {
+                        & .chart {
+                        }
+                        & .token {
+                        }
+                        & .token , & .tokenCounting {
+                        }
+                        & .tokenCounting {
+                        }
+                    }
+                }
+            }
+        }
+        & .latestActivity{
+            & .activityHeading {
+            }
+            & .activityTime {
+                & .timing {
+                }
+                & .timecaption {
+                }
+                &::before{
+                }
+                &::after{
+                }
+                &:last-child{
+                    &::after{
+                    }
+                }
+            }
+        }
+    }
+    .dpaSection {
+        &.card{
+            & .dpaUsesHeading {
+            }
+            & .formSelectGroup {
+                &:focus{
+                }
+            }
+            & .exportBtn {
+                & span {
+                }
+            }
+        }
+        &.topDapSection {
+            & .leftSide {
+                & .commonWork {
+                    & .workColor {
+                    }
+                    & .workHeading {
+                    }
+                    & .workToken {
+                    }
+                    & .trackBtn {
+                        & span{
+                        }
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+                    &.hrWork {
+                        & .workColor, & .trackBtn {
+                        }
+                        & .progressGroup {
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                        }
+                }
+                &.customerService {
+                    & .workColor, & .trackBtn {
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+}
+
+@include media-breakpoint-down(sm) {
+    .chartSide {
+        &.rightSidebarHeader {
+        }
+        &  .searchgroup {
+            & .input-group {
+                & .form-control {
+                }
+                & .input-group-text {
+                }
+            }
+        }
+        & .accordion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button  {
+                        &::after{
+                        }
+                        &:not(.collapsed)::after {
+                        }
+                        & .accordionHeader {
+                            & .dpausage {
+                                & span {
+                                    & img {
+                                    }
+                                }
+                            }
+                            & .chartValue{
+                            }
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                            & .renewsContent {
+                            }
+                            & .reviewCounting {
+                                & span {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .accordion-collapse {
+                    & .accordion-body {
+                        & .chart {
+                        }
+                        & .token {
+                        }
+                        & .token , & .tokenCounting {
+                        }
+                        & .tokenCounting {
+                        }
+                    }
+                }
+            }
+        }
+        & .latestActivity{
+            & .activityHeading {
+            }
+            & .activityTime {
+                & .timing {
+                }
+                & .timecaption {
+                }
+                &::before{
+                }
+                &::after{
+                }
+                &:last-child{
+                    &::after{
+                    }
+                }
+            }
+        }
+    }
+    .dpaSection {
+        &.card{
+            & .dpaUsesHeading {
+            }
+            & .formSelectGroup {
+                &:focus{
+                }
+            }
+            & .exportBtn {
+                & span {
+                }
+            }
+        }
+        &.topDapSection {
+            & .leftSide {
+                & .commonWork {
+                    & .workColor {
+                    }
+                    & .workHeading {
+                    }
+                    & .workToken {
+                    }
+                    & .trackBtn {
+                        & span{
+                        }
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+                    &.hrWork {
+                        & .workColor, & .trackBtn {
+                        }
+                        & .progressGroup {
+                            & .progress {
+                                & .progress-bar {
+                                }
+                            }
+                        }
+                }
+                &.customerService {
+                    & .workColor, & .trackBtn {
+                    }
+                    & .progressGroup {
+                        & .progress {
+                            & .progress-bar {
+                            }
+                        }
+                    }
+            }
+            }
+        }
+    }
+}
+}
+
