@@ -1,6 +1,40 @@
 @include media-breakpoint(basic) {
-  
+    .usedByUser {
+        & .topForm {
+            & .form-control {
+                background: #EAF0F8;
+                border-radius: 18px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #4A5C77;
+                padding: 10px 60px 10px 19px;
+            }
+
+            & .usageSlect {
+
+                & .form-select {
+                    background: #EAF0F8 url(../img/svg/down.svg);
+                    background-repeat: no-repeat;
+                    background-position: top 50% right 10px;
+                    width: 250.53px;
+                    border: 1px solid #E0E0E0;
+                    border-radius: 30px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: 0.4px;
+                    color: #464255;
+                    padding: 10px 30px 10px 20px;
+
+                    & .slected {}
+                }
+            }
+
+        }
+    }
 }
+
 @include media-breakpoint-up(sm) {}
 
 @include media-breakpoint-up(md) {}
@@ -18,6 +52,62 @@
 
 @include media-breakpoint-down(lg) {}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .usedByUser {
+        & .topForm {
+            & .inputcol{
+                width: 100%;
+                & .form-control {
+                    font-size: 13px;
+                    padding: 10px 50px 10px 19px;
+                }
+            }
+            & .Selectcol{
+                width: 100%;
+                & .usageSlect {
+                    
+                    & .form-select {
+                        padding: 8px 30px 10px 20px;
+                        font-size: 13px;
+                        width: 100%;
+    
+                        & .slected {}
+                    }
+                }
+            }
 
-@include media-breakpoint-down(sm) {}
+            
+
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .usedByUser {
+        & .topForm {
+            & .inputcol{
+                width: 100%;
+                & .form-control {
+                    font-size: 13px;
+                    padding: 10px 50px 10px 19px;
+                }
+            }
+            & .Selectcol{
+                width: 100%;
+                & .usageSlect {
+                    
+                    & .form-select {
+                        padding: 8px 30px 10px 20px;
+                        font-size: 13px;
+                        width: 100%;
+    
+                        & .slected {}
+                    }
+                }
+            }
+
+            
+
+        }
+    }
+}
