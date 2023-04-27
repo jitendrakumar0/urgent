@@ -323,6 +323,7 @@
         & .upgradeBtn{
             background: #464255;
             border-radius: 18px;
+            border: 0;
             height: 40px;
             font-family: 'Poppins';
             font-style: normal;
@@ -334,16 +335,20 @@
             padding: 9px 24px;
             display: flex;
             align-items: center;
+            transition: 0.3s ease-in-out;
             & img{
                 height: 18px;
                 margin-left: 5px;
             }
+            &:hover {
+                background-color: darken(#464255, 5);
+            }
         }
     }
     .upgradeOffcanvas{
-        width: 468px !important;
+        width: 370px !important;
         & .upgradeOffcanvasHeader{
-            padding: 20px 36px;
+            padding: 30px 36px;
             & .upgradeOffcanvasHeaderTitle{
                 font-family: 'Poppins';
                 font-style: normal;
@@ -362,7 +367,7 @@
             & .upgradeOffcanvasBodyHead{
                 background: #F9EAEC;
                 border-radius: 14px;
-                padding: 10px 20px;
+                padding: 8px 18px;
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 600;
@@ -371,7 +376,7 @@
                 letter-spacing: 0.4px;
                 color: #464255;
                 display: inline-flex;
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
             & .upgradeOffcanvasBodySubHead{
                 font-family: 'Poppins';
@@ -392,6 +397,7 @@
                     font-size: 16px;
                     line-height: 24px;
                     color: #464255;
+                    margin-bottom: 3px;
                 }
             }
         }
@@ -399,7 +405,7 @@
             padding: 20px 36px;
             & .upgradeBtn{
                 background: #897FFF;
-                border-color:#897FFF ;
+                border: 0;
                 border-radius: 18px;
                 padding: 18px 32px;
                 font-family: 'Poppins';
@@ -409,10 +415,14 @@
                 line-height: 24px;
                 letter-spacing: 0.4px;
                 color: #FFFFFF;
+                transition: 0.3s ease-in-out;
                 & img{
                     height: 28px;
                     border: none;
-                    margin-right: 5px;
+                    margin-right: 9px;
+                }
+                &:hover {
+                    background-color: darken(#897FFF, 5);
                 }
             }
         }
@@ -1046,24 +1056,33 @@
     }
     .upgradeOffcanvas{
         & .upgradeOffcanvasHeader{
+            padding: 25px 36px;
             & .upgradeOffcanvasHeaderTitle{
+                font-size: 22px;
             }
             & .btnClose{
             }
         }
         & .upgradeOffcanvasBody{
             & .upgradeOffcanvasBodyHead{
+                font-size: 28px;
+                line-height: 40px;
             }
             & .upgradeOffcanvasBodySubHead{
+                font-size: 22px;
             }
             & .upgradebodyUl{
                 & .upgradebodyLi{
+                    font-size: 14px;
                 }
             }
         }
         & .upgradeOffcanvasFooter{
             & .upgradeBtn{
+                padding: 16px 28px;
+                font-size: 14px;
                 & img{
+                    height: 22px;
                 }
             }
         }
@@ -1184,6 +1203,7 @@
     .upgradeOffcanvas{
         & .upgradeOffcanvasHeader{
             & .upgradeOffcanvasHeaderTitle{
+                font-size: 22px;
             }
             & .btnClose{
             }
@@ -1483,16 +1503,23 @@
         }
     }
     .upgradeOffcanvas{
+        width: 300px !important;
         & .upgradeOffcanvasHeader{
+            padding: 25px;
             & .upgradeOffcanvasHeaderTitle{
+                font-size: 20px;
             }
             & .btnClose{
             }
         }
         & .upgradeOffcanvasBody{
+            padding: 0 25px;
             & .upgradeOffcanvasBodyHead{
+                font-size: 24px;
+                line-height: 34px;
             }
             & .upgradeOffcanvasBodySubHead{
+                font-size: 20px;
             }
             & .upgradebodyUl{
                 & .upgradebodyLi{
@@ -1500,6 +1527,7 @@
             }
         }
         & .upgradeOffcanvasFooter{
+            padding: 20px 25px;
             & .upgradeBtn{
                 & img{
                 }
