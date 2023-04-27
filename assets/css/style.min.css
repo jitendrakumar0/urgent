@@ -679,6 +679,249 @@ body .overflow-auto-hidden {
   height: 16px;
 }
 
+.planDetail {
+  background-color: var(--color);
+  border-radius: 24px;
+  padding: 36px 50px;
+}
+.planDetail .planDetailMainHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #464255;
+}
+.planDetail .planDetailSubHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #464255;
+}
+.planDetail .planDetailUl {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.planDetail .planDetailUl .planDetailLi {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464255;
+}
+.planDetail .planDetailAnchor {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #464255;
+  text-decoration: none;
+}
+.planDetail .upgradeBtn {
+  background: #464255;
+  border-radius: 18px;
+  height: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  padding: 9px 24px;
+  display: flex;
+  align-items: center;
+}
+.planDetail .upgradeBtn img {
+  height: 18px;
+  margin-left: 5px;
+}
+
+.upgradeOffcanvas {
+  width: 468px !important;
+}
+.upgradeOffcanvas .upgradeOffcanvasHeader {
+  padding: 20px 36px;
+}
+.upgradeOffcanvas .upgradeOffcanvasHeader .upgradeOffcanvasHeaderTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #464255;
+}
+.upgradeOffcanvas .upgradeOffcanvasHeader .btnClose {
+  height: 28px;
+  box-shadow: none;
+}
+.upgradeOffcanvas .upgradeOffcanvasBody {
+  padding: 0 36px;
+}
+.upgradeOffcanvas .upgradeOffcanvasBody .upgradeOffcanvasBodyHead {
+  background: #F9EAEC;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.4px;
+  color: #464255;
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+.upgradeOffcanvas .upgradeOffcanvasBody .upgradeOffcanvasBodySubHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #464255;
+  margin-bottom: 5px;
+}
+.upgradeOffcanvas .upgradeOffcanvasBody .upgradebodyUl {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.upgradeOffcanvas .upgradeOffcanvasBody .upgradebodyUl .upgradebodyLi {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464255;
+}
+.upgradeOffcanvas .upgradeOffcanvasFooter {
+  padding: 20px 36px;
+}
+.upgradeOffcanvas .upgradeOffcanvasFooter .upgradeBtn {
+  background: #897FFF;
+  border-color: #897FFF;
+  border-radius: 18px;
+  padding: 18px 32px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+}
+.upgradeOffcanvas .upgradeOffcanvasFooter .upgradeBtn img {
+  height: 28px;
+  border: none;
+  margin-right: 5px;
+}
+
+.billingAddressForm .billingAddressFormHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  color: #464255;
+  margin-bottom: 15px;
+}
+.billingAddressForm .formLbl {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4A5C77;
+  margin-bottom: 3px;
+}
+.billingAddressForm .formSelect {
+  background: #FFFFFF;
+  border: 1px solid #ECEAF3;
+  border-radius: 18px;
+  height: 62px;
+  width: 265px;
+  box-shadow: none;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/svg/selectdown.svg);
+  background-repeat: no-repeat;
+  background-position: top 50% right 20px;
+  background-size: 16px;
+  margin-bottom: 5px;
+}
+.billingAddressForm .formInp {
+  background: #FFFFFF;
+  border: 1px solid #ECEAF3;
+  border-radius: 18px;
+  height: 62px;
+  box-shadow: none;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3;
+}
+.billingAddressForm .formInp.inpWidth {
+  width: 265px;
+}
+.billingAddressForm .imgParent {
+  position: absolute;
+  top: 43px;
+  right: 33px;
+  height: 62px;
+}
+.billingAddressForm .imgParent img {
+  height: 28px;
+  margin-left: 5px;
+}
+
+.applyBtn {
+  background: #5BCD97;
+  border-radius: 14px;
+  height: 45px;
+  padding: 10px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.cancleBtn {
+  background: #E26F6F;
+  border-radius: 14px;
+  height: 45px;
+  padding: 10px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1599px) {
   .billingCard .billingCardHeading {
     font-size: 30px;
@@ -693,6 +936,9 @@ body .overflow-auto-hidden {
   }
   .paymentTable.table > :not(caption) > * > * {
     padding: 26px 19px;
+  }
+  .formPadding.formPadding1 {
+    padding: 0 50px 0 80px;
   }
 }
 @media (max-width: 1399.98px) {
@@ -712,6 +958,12 @@ body .overflow-auto-hidden {
   .billingCard .close {
     width: 48px;
     height: 48px;
+  }
+  .formPadding.formPadding1 {
+    padding: 0 50px 0 0;
+  }
+  .formPadding .billingAddressForm .imgParent img {
+    height: 20px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -736,6 +988,29 @@ body .overflow-auto-hidden {
   }
   .tableHeading .paymentHistory {
     font-size: 19px;
+  }
+  .formPadding.formPadding1 {
+    padding: 0 0 0 12px;
+  }
+  .formPadding .billingAddressForm .formSelect {
+    width: 100%;
+  }
+  .formPadding .billingAddressForm .formInp {
+    width: 100%;
+  }
+  .applyBtn {
+    font-size: 15px;
+  }
+  .cancleBtn {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .applyBtn {
+    font-size: 15px;
+  }
+  .cancleBtn {
+    font-size: 15px;
   }
 }
 @media (max-width: 767.98px) {
@@ -771,6 +1046,12 @@ body .overflow-auto-hidden {
   .tableHeading .uploadBtn {
     width: 100%;
   }
+  .applyBtn {
+    font-size: 14px;
+  }
+  .cancleBtn {
+    font-size: 14px;
+  }
 }
 @media (max-width: 575.98px) {
   .tableHeading .formSelect {
@@ -780,6 +1061,50 @@ body .overflow-auto-hidden {
     margin-top: 10px;
   }
   .paymentTable .tableHead {
+    font-size: 14px;
+  }
+  .planDetail {
+    padding: 20px 20px;
+  }
+  .planDetail .planDetailMainHeading {
+    font-size: 20px;
+  }
+  .planDetail .planDetailSubHeading {
+    font-size: 13px;
+  }
+  .planDetail .planDetailUl .planDetailLi {
+    font-size: 13px;
+  }
+  .planDetail .planDetailAnchor {
+    font-size: 12px;
+  }
+  .planDetail .upgradeBtn {
+    height: 35px;
+    font-size: 11px;
+    padding: 9px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .planDetail .upgradeBtn img {
+    height: 14px;
+  }
+  .formPadding .billingAddressForm .formSelect {
+    height: 50px;
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+  .formPadding .billingAddressForm .formInp {
+    height: 50px;
+    font-size: 14px;
+  }
+  .formPadding .billingAddressForm .imgParent img {
+    display: none;
+  }
+  .applyBtn {
+    font-size: 14px;
+  }
+  .cancleBtn {
     font-size: 14px;
   }
 }
