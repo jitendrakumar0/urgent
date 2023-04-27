@@ -1,19 +1,21 @@
 [data-page-name="signUpFormPage"] {
     @include media-breakpoint(basic) {
         &.signUpFormPage {
-            background-color: #F4F4F4;
+            background: url(../img/bg1.png), #F4F4F4;
+            background-repeat: no-repeat;
+            background-size: contain;
             z-index: 1;
-            &::before{
-                content: '';
-                background: url(../img/bg1.png) no-repeat, center;
-                background-size: cover;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 1000px;
-                width: 1000px;
-                z-index: -1;
-            }
+            // &::before{
+            //     content: '';
+            //     background: url(../img/bg1.png) no-repeat, center;
+            //     background-size: cover;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     height: 1000px;
+            //     width: 1000px;
+            //     z-index: -1;
+            // }
             & .innerSection {
                 // max-width: 853px;
                 & .form {
