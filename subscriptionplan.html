@@ -76,9 +76,6 @@
                                 <div class="row sideBar h-100">
                                     <div class="col-12 sideBarInner h-100">
                                         <div class="row d-flex  flex-column h-100 flex-nowrap">
-                                            <div class="col-12">
-                                                <img src="" alt="">
-                                            </div>
                                             <div class="col-12 sideBarHeader">
                                                 <div class="companyLogo">
                                                     <img src="assets/img/logo/logo.svg" alt="">
@@ -87,7 +84,7 @@
                                             </div>
                                             <div class="col-12 sideBarBody flex-fill overflow-hidden-auto h-100">
                                                 <ul class="sidebarUL list-unstyled">
-                                                    <li class="sidebarLi active"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/home.svg" alt=""></a> Dashboard</li>
+                                                    <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/home.svg" alt=""></a> Dashboard</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/message.svg" alt=""></a> DPA Interface</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/users.svg" alt=""></a> Users</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/trending-up.svg" alt=""></a> Usage Tracking</li>
@@ -109,45 +106,175 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col px-0 rightPart h-100">
-                                <div class="row mx-0 flex-column h-100 flex-nowrap px-3 ps-lg-0 pe-xxl-0">
-                                    <div class="col-12 header px-0">
-                                        <div class="row mx-0 justify-content-center align-items-center">
-                                            <div class="col-xxl-8 leftSide">
-                                                <div class="row mx-0 align-items-center">
-                                                    <div class="col-auto menuIconBtn me-2 d-lg-none d-lg-block ps-0">
-                                                        <img src="assets/img/svg/grid.svg" alt="">
-                                                    </div>
-                                                    <div class="col textSide ps-0">
-                                                        <div class="row flex-column mx-0 d-none d-md-flex">
-                                                            <div class="col pageHeading px-0">Billing & Plans</div>
-                                                            <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
+                            <div class="col rightBgPart px-0 h-100">
+                                <div class="row mx-0 h-100">
+                                    <div class="col px-0 rightPart h-100">
+                                        <div class="row mx-0 flex-column h-100 flex-nowrap px-3 ps-lg-0 pe-xxl-0">
+                                            <div class="col-12 px-0 mainContent overflow-hidden h-100 flex-fill">
+                                                <div class="row h-100 mx-0">
+                                                    <div class="col-12 overflow-hidden-auto h-100 px-0 scrollPart">
+                                                        <div class="row mx-0 sticky-top stickyHeader">
+                                                            <div class="col-12 header px-0">
+                                                                <div class="row mx-0 justify-content-center align-items-center">
+                                                                    <div class="col-12 leftSide">
+                                                                        <div class="row mx-0 align-items-center">
+                                                                            <div class="col-auto menuIconBtn me-2 d-lg-none d-lg-block ps-0">
+                                                                                <img src="assets/img/svg/grid.svg" alt="">
+                                                                            </div>
+                                                                            <div class="col textSide ps-0">
+                                                                                <div class="row flex-column mx-0 d-none d-md-flex">
+                                                                                    <div class="col pageHeading px-0">Billing & Plans</div>
+                                                                                    <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto imgSide pe-0">
+                                                                                <div class="row mx-0 imgSideInner">
+                                                                                    <div class="col-auto px-0 d-xxl-none">
+                                                                                        <a href="javascript:;" class="notificationBtn" id="openSearch">
+                                                                                            <img src="assets/img/svg/topSearch.svg" class="w100" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <a href="javascript:;" class="notificationBtn">
+                                                                                            <img src="assets/img/svg/001-notification.svg" class="w100" alt="">
+                                                                                            <div class="notificationText">2</div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="col-auto px-0">
+                                                                                        <a href="javascript:;" class="userImgBtn">
+                                                                                            <img src="assets/img/bg/Avatar.png" class="w-100" alt="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- <div class="col-xxl-4 rightSide chartSide" id="SearchOffcanvas">
+                                                                        <div class="row mx-0 align-items-center">
+                                                                            <div class="col-xxl-12 col searchgroup">
+                                                                                <div class="input-group">
+                                                                                    <input type="search" class="form-control shadow-none fw-normal border-0" placeholder="Search here..." aria-label="Username" aria-describedby="basic-addon1">
+                                                                                    <button type="button" class="input-group-text border-0" id="basic-addon1"><img src="assets/img/svg/032-search.svg" alt=""></button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-auto d-xxl-none">
+                                                                                <img src="assets/img/svg/menuClose.svg" class="searchCloseIcon" id="searchClose" alt="menu close">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-auto imgSide pe-0">
-                                                        <div class="row mx-0 imgSideInner">
-                                                            <div class="col-auto px-0 d-xxl-none">
-                                                                <a href="javascript:;" class="notificationBtn" id="openSearch">
-                                                                    <img src="assets/img/svg/topSearch.svg" class="w100" alt="">
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-auto px-0">
-                                                                <a href="javascript:;" class="notificationBtn">
-                                                                    <img src="assets/img/svg/001-notification.svg" class="w100" alt="">
-                                                                    <div class="notificationText">2</div>
-                                                                </a>
-                                                            </div>
-                                                            <div class="col-auto px-0">
-                                                                <a href="javascript:;" class="userImgBtn">
-                                                                    <img src="assets/img/bg/Avatar.png" class="w-100" alt="">
-                                                                </a>
+                                                        <div class="row py-3">
+                                                            <div class="col-12">
+                                                                <div class="row flex-column mx-0 d-md-none headerHiddenDetails mb-3">
+                                                                    <div class="col pageHeading px-0">Billing & Plans</div>
+                                                                    <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row py-sm-3 py-2">
+                                                                            <div class="col-12">
+                                                                                <div class="planDetail" style="--color:#CAE6E499">
+                                                                                    <div class="row">
+                                                                                        <div class="col">
+                                                                                            <div class="row">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailMainHeading">Lite</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <ul class="planDetailUl">
+                                                                                                        <li class="planDetailLi">2M Training Tokens</li>
+                                                                                                        <li class="planDetailLi">10M Database Usage</li>
+                                                                                                        <li class="planDetailLi">3 DPAs</li>
+                                                                                                        <li class="planDetailLi">5 Users</li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <a href="javascript:;" class="planDetailAnchor">Current Plan</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row py-sm-3 py-2">
+                                                                            <div class="col-12">
+                                                                                <div class="planDetail" style="--color:#FDE4E499">
+                                                                                    <div class="row">
+                                                                                        <div class="col">
+                                                                                            <div class="row">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailMainHeading">Lite</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <ul class="planDetailUl">
+                                                                                                        <li class="planDetailLi">2M Training Tokens</li>
+                                                                                                        <li class="planDetailLi">10M Database Usage</li>
+                                                                                                        <li class="planDetailLi">3 DPAs</li>
+                                                                                                        <li class="planDetailLi">5 Users</li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <button class="upgradeBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Upgrade <img src="assets/img/svg/add.svg" alt="">
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row py-sm-3 py-2">
+                                                                            <div class="col-12">
+                                                                                <div class="planDetail" style="--color:#FFF5E599">
+                                                                                    <div class="row">
+                                                                                        <div class="col">
+                                                                                            <div class="row">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailMainHeading">Lite</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <ul class="planDetailUl">
+                                                                                                        <li class="planDetailLi">2M Training Tokens</li>
+                                                                                                        <li class="planDetailLi">10M Database Usage</li>
+                                                                                                        <li class="planDetailLi">3 DPAs</li>
+                                                                                                        <li class="planDetailLi">5 Users</li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <button class="upgradeBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Upgrade <img src="assets/img/svg/add.svg" alt="">
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xxl-4 rightSide chartSide" id="SearchOffcanvas">
-                                                <div class="row mx-0 align-items-center">
+                                        </div>
+                                    </div>
+                                    <div class="col-auto lastPart h-100 overflow-hidden px-0" id="SearchOffcanvas">
+                                        <div class="row overflow-hidden-auto h-100 w-100 mx-0">
+                                            <div class="col-12 rightSide chartSide sticky-top rightSidebarHeader">
+                                                <div class="row mx-0 align-items-center pt-xxl-4 pb-xxl-5 w-100">
                                                     <div class="col-xxl-12 col searchgroup">
                                                         <div class="input-group">
                                                             <input type="search" class="form-control shadow-none fw-normal border-0" placeholder="Search here..." aria-label="Username" aria-describedby="basic-addon1">
@@ -159,109 +286,75 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 px-0 mainContent overflow-hidden h-100 flex-fill">
-                                        <div class="row h-100 mx-0">
-                                            <div class="col-12 overflow-hidden-auto h-100 px-0">
-                                                <div class="row py-3">
+                                            <div class="col-12 chartSide">
+                                                <div class="accordion row mx-0 g-4" id="accordionExample">
                                                     <div class="col-12">
-                                                        <div class="row flex-column mx-0 d-md-none headerHiddenDetails mb-3">
-                                                            <div class="col pageHeading px-0">Billing & Plans</div>
-                                                            <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
+                                                        <div class="accordion-item border-0">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button bg-white shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    <div class="accordionHeader w-100">
+                                                                        <div class="dpausage d-flex align-items-center gap-2 fw-semibold justify-content-center"><span class="d-inline-flex"><img src="assets/img/svg/message-square-dots.svg" class="iconImg1" alt=""></span> DPA Usage</div>
+                                                                        <div class="row mx-0 align-items-center my-1">
+                                                                            <div class="col-auto chartValue fw-semibold">80%</div>
+                                                                            <div class="col">
+                                                                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                                    <div class="progress-bar rounded-pill w-75"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mx-0 align-items-center">
+                                                                            <div class="col renewsContent fw-normal">Usage renews <span class="fw-bold">21st May</span></div>
+                                                                            <div class="col-auto reviewCounting">80K <span>out of 100k</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                                <!-- <div class="accordion-body"></div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button bg-white shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                    <div class="accordionHeader w-100">
+                                                                        <div class="dpausage d-flex align-items-center gap-2 fw-semibold justify-content-center"><span class="d-inline-flex"><img src="assets/img/svg/trained.svg" class="iconImg" alt=""></span>Trained Data</div>
+                                                                    </div>
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body px-1">
+                                                                    <div class="chart mx-auto mb-3"><img src="assets/img/svg/renewChart.svg" class="w-100" alt=""></div>
+                                                                    <div class="row mx-0 gx-1">
+                                                                        <div class="col text-center d-flex flex-column">
+                                                                            <div class="token fw-normal flex-fill">Total Tokens</div>
+                                                                            <div class="tokenCounting text-center fw-semibold">100k</div>
+                                                                        </div>
+                                                                        <div class="col text-center d-flex flex-column">
+                                                                            <div class="token fw-normal flex-fill">Total Tokens used</div>
+                                                                            <div class="tokenCounting text-center fw-semibold">80k</div>
+                                                                        </div>
+                                                                        <div class="col text-center d-flex flex-column">
+                                                                            <div class="token fw-normal flex-fill">Tokens remaining</div>
+                                                                            <div class="tokenCounting text-center fw-semibold">20k</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
-                                                    <div class="col-xxl-8">
-                                                        <div class="row py-sm-3 py-2">
-                                                            <div class="col-12">
-                                                                <div class="planDetail" style="--color:#CAE6E499">
-                                                                    <div class="row">
-                                                                        <div class="col">
-                                                                            <div class="row">
-                                                                                <div class="col-12">
-                                                                                    <div class="planDetailMainHeading">Lite</div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <ul class="planDetailUl">
-                                                                                        <li class="planDetailLi">2M Training Tokens</li>
-                                                                                        <li class="planDetailLi">10M Database Usage</li>
-                                                                                        <li class="planDetailLi">3 DPAs</li>
-                                                                                        <li class="planDetailLi">5 Users</li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <a href="javascript:;" class="planDetailAnchor">Current Plan</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                <div class="latestActivity mt-4">
+                                                    <div class="row mx-0 ps-4">
+                                                        <div class="col-12 activityHeading fw-medium mb-3 px-0">Latest Activity</div>
+                                                        <div class="col-12 activityTime position-relative ms-4 mb-2">
+                                                            <div class="timing fw-medium">January 2nd, 04:35 AM</div>
+                                                            <div class="timecaption fw-normal">Illum omnis quo illum nisi. Nesciunt est accusamus. Blanditiis nisi quae eum nisi similique. Modi consequuntur totam</div>
                                                         </div>
-                                                        <div class="row py-sm-3 py-2">
-                                                            <div class="col-12">
-                                                                <div class="planDetail" style="--color:#FDE4E499">
-                                                                    <div class="row">
-                                                                        <div class="col">
-                                                                            <div class="row">
-                                                                                <div class="col-12">
-                                                                                    <div class="planDetailMainHeading">Lite</div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <ul class="planDetailUl">
-                                                                                        <li class="planDetailLi">2M Training Tokens</li>
-                                                                                        <li class="planDetailLi">10M Database Usage</li>
-                                                                                        <li class="planDetailLi">3 DPAs</li>
-                                                                                        <li class="planDetailLi">5 Users</li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <button class="upgradeBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Upgrade <img src="assets/img/svg/add.svg" alt="">
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row py-sm-3 py-2">
-                                                            <div class="col-12">
-                                                                <div class="planDetail" style="--color:#FFF5E599">
-                                                                    <div class="row">
-                                                                        <div class="col">
-                                                                            <div class="row">
-                                                                                <div class="col-12">
-                                                                                    <div class="planDetailMainHeading">Lite</div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
-                                                                                </div>
-                                                                                <div class="col-12">
-                                                                                    <ul class="planDetailUl">
-                                                                                        <li class="planDetailLi">2M Training Tokens</li>
-                                                                                        <li class="planDetailLi">10M Database Usage</li>
-                                                                                        <li class="planDetailLi">3 DPAs</li>
-                                                                                        <li class="planDetailLi">5 Users</li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <button class="upgradeBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Upgrade <img src="assets/img/svg/add.svg" alt="">
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-12 activityTime position-relative ms-4 mb-2">
+                                                            <div class="timing fw-medium">January 2nd, 04:35 AM</div>
+                                                            <div class="timecaption fw-normal">Illum omnis quo illum nisi. Nesciunt est accusamus. Blanditiis nisi quae eum nisi similique. Modi consequuntur totam</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -275,8 +368,8 @@
                 </div>
             </div>
         </main>
-        <!-- upgrade button offcanvas -->
-        <div class="offcanvas offcanvas-start upgradeOffcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+         <!-- upgrade button offcanvas -->
+         <div class="offcanvas offcanvas-end upgradeOffcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header upgradeOffcanvasHeader">
                 <div class="offcanvas-title upgradeOffcanvasHeaderTitle" id="offcanvasExampleLabel">Upgrade Plan</div>
                 <button type="button" class="btn-close btnClose" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -309,6 +402,7 @@
         </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
+        <!-- sidebar open close -->
         <script>
             let menuIcon = document.querySelector('.menuIcon');
             let menuIconBtn = document.querySelector('.menuIconBtn');
@@ -321,18 +415,31 @@
             })
         </script>
 
+        <!-- search open close -->
         <script>
             let openSearch= document.querySelector('#openSearch');
             let SearchOffcanvas= document.querySelector('#SearchOffcanvas');
             let searchClose= document.querySelector('#searchClose');
-
             openSearch.addEventListener('click', ()=> {
                 SearchOffcanvas.classList.add('show')
             })
             searchClose.addEventListener('click', ()=> {
                 SearchOffcanvas.classList.remove('show')
             })
+        </script>
 
+        <script>
+            let scrollPart = document.querySelector('.scrollPart');
+            let stickyHeader = document.querySelector('.stickyHeader');
+
+            scrollPart.addEventListener('scroll', (e)=> {
+                if(scrollPart.scrollTop > 10) {
+                    stickyHeader.classList.add('blur')
+                }
+                else {
+                    stickyHeader.classList.remove('blur')
+                }
+            })
         </script>
     </body>
 </html>
