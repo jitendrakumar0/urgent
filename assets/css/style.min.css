@@ -1213,6 +1213,137 @@ body .overflow-auto-hidden {
   margin-top: 20px;
 }
 
+.trainedDataBox {
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 9px 29px 17px 29px;
+}
+.trainedDataBox .trainedDataBoxHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #464255;
+}
+.trainedDataBox .trainedDataBoxHead img {
+  height: 30px;
+}
+.trainedDataBox .progressBarTxt .percent {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #9BB7C2;
+  margin-right: 2px;
+}
+.trainedDataBox .progressBarTxt span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #838383;
+}
+.trainedDataBox .progressBarTxt1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: right;
+  color: #838383;
+}
+.trainedDataBox .progressBar {
+  border-radius: 16px;
+  height: 8px;
+}
+.trainedDataBox .progressBar .progressBar1 {
+  background: #9BB7C2 !important;
+}
+.trainedDataBox .progressBottomTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #838383;
+  margin-top: 5px;
+}
+.trainedDataBox .progressBottomTxt span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  color: #9BB7C2;
+}
+
+.alldpaTable {
+  width: 100%;
+}
+.alldpaTable .alldpaTableHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #464255;
+}
+.alldpaTable .btnnn {
+  background: #5BCD97;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+  margin-left: 15px;
+  padding: 6px 10px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alldpaTable .INP {
+  background: #FFFFFF;
+  border-radius: 18px;
+  height: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A5C77;
+  border: none;
+  box-shadow: none;
+  padding-left: 15px;
+}
+.alldpaTable .INP:focus-visible {
+  outline: unset;
+}
+.alldpaTable .parent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  padding: 10px 10px;
+}
+.tableImg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tableImg img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1599px) {
   .billingCard .billingCardHeading {
     font-size: 30px;
@@ -1469,6 +1600,24 @@ body .overflow-auto-hidden {
   }
   .cancleBtn {
     font-size: 14px;
+  }
+  .trainedDataBox .trainedDataBoxHead {
+    font-size: 18px;
+  }
+  .trainedDataBox .trainedDataBoxHead img {
+    height: 20px;
+  }
+  .trainedDataBox .progressBottomTxt {
+    font-size: 15px;
+  }
+  .trainedDataBox .progressBottomTxt span {
+    font-size: 12px;
+  }
+  .alldpaTable .alldpaTableHead {
+    font-size: 18px;
+  }
+  .alldpaTable .btnnn {
+    font-size: 12px;
   }
 }
 .loginPageFluid {
