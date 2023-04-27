@@ -1218,9 +1218,10 @@
             font-size: 16px;
         }
         & .edit{
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             & img{
+                height: 16px;
             }
         }
         & .lightPlan{
@@ -1230,10 +1231,10 @@
             font-size: 13px;
         }
         & .close{
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             & img{
-
+                height: 12px;
             }
         }
     }
@@ -1261,26 +1262,32 @@
     }
     .paymentTable{
         &.table > :not(caption) > * > * {
+            padding: 20px;
         }
         &.table > tbody > tr:nth-of-type(odd) > * {
         }
         & .tableHead{
+            font-size: 12px;
             & .Radius{
             }
         }
         & .Radiuss{
         }
         & .date{
+            font-size: 12px;
         }
         & .order{
+            font-size: 12px;
         }
         & .description{
+            font-size: 12px;
         }
         & .amount{
+            font-size: 12px;
         }
         & .status{
             & img{
-
+                height: 16px;
             }
         }
         & .invoice{
@@ -1401,7 +1408,6 @@
         &.table > tbody > tr:nth-of-type(odd) > * {
         }
         & .tableHead{
-            font-size: 14px;
             & .Radius{
             }
         }
