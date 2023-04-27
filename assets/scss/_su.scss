@@ -4,11 +4,20 @@
     & .leftPart {
         width: 350px;
     }
-    & .rightPart {
-        width: calc(100% - 750px);
+    & .rightBgPart {
+        width: calc(100% - 350px);
         background-image: url('../img/bg/Background-artwork.png');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    & .rightPart {
+        width: calc(100% - 400px);
+        &.rightBgInnerPart {
+            width: calc(100% - 350px);
+            background-image: url('../img/bg/Background-artwork.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         & .stickyHeader {
             &.blur {
                 backdrop-filter: blur(8px);
@@ -109,7 +118,7 @@
         & .leftPart {
         }
         & .rightPart {
-            width: calc(100% - 720px);
+            width: calc(100% - 370px);
             & .header {
                 & .leftSide {
                     padding: 25px;
@@ -162,6 +171,7 @@
             & .leftSide {
                 & .textSide {
                     & .pageHeading {
+                        font-size: 28px;
                     }
                     & .pageSubheading {
                     }
@@ -169,10 +179,14 @@
                 & .imgSide {
                     & .imgSideInner {
                         & .notificationBtn {
+                            width: 64px;
+                            height: 64px;
                             & .notificationText {
                             }
                         }
                         & .userImgBtn {
+                            width: 64px;
+                            height: 64px;
                         }
                     }
                 }
@@ -196,10 +210,11 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: #F8FAFB;
+        background-color: #F2F4F7;
         z-index: 1055;
         transform: translateX(100%);
         transition: 0.3s ease-in-out;
+        width: 380px;
         &.show {
             transform: translateX(0);
         }
@@ -356,6 +371,9 @@
                     }
                 }
             }
+        }
+        & .lastPart {
+            width: 100%;
         }
     }
 }
