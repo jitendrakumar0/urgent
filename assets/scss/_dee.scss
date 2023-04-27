@@ -1,4 +1,179 @@
 @include media-breakpoint(basic) {
+    .trackingusing {
+        & .leftSection {
+            & .dpaSection {
+                height: 274px;
+
+                & .dpaUsesHeading {}
+
+                & .formSelectGroup {
+                    & .form-select {}
+                }
+
+                & .cardImage {
+                    height: 193px;
+                    width: 100%;
+                }
+            }
+        }
+
+        & .rightSection {
+            & .dashboardCardDetail {
+                & .dashboardCard {
+                    padding: 27px 15px;
+                }
+            }
+
+            & .imageHeading {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #464255;
+
+                & .imageicon {
+                    width: 21.05px;
+                    height: 20px;
+                }
+            }
+
+            & .managebtn {
+                background: #9bb7c2;
+                border-radius: 18px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+
+                & span {
+                    width: 15px;
+                }
+            }
+
+            & .persentaheading {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                color: #9BB7C2;
+            }
+
+            & .progress {
+                height: 8px;
+
+                & .progress-bar {
+                    background: #9BB7C2;
+
+                }
+
+                &.progressbar2 {
+                    background: #658490;
+                }
+            }
+
+            & .tokens {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+            }
+
+            & .kmmetter {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+
+                & span {
+                    color: #838383;
+                }
+            }
+
+            & .bottomSection {
+                & .heading {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #464255;
+                }
+
+                & .number {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 39px;
+                    color: #464255;
+                    text-align: center;
+                }
+            }
+
+            & .bottomcard {
+                & .dpetext {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .graphimage {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                & .heading {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .subheading {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #A3A3A3;
+                }
+
+                & .topForm {
+                    & .form-control {
+                        background: #eaf0f8;
+                        border-radius: 18px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 9px;
+                        color: #4a5c77;
+                        padding: 9px 23px 9px 23px;
+                    }
+
+                    & .usageSlect {
+
+                        & .form-select {
+                            background: #EAF0F8 url(../img/svg/down.svg);
+                            background-repeat: no-repeat;
+                            background-position: top 50% right 10px;
+                            width: 200.53px;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 30px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 12px;
+                            letter-spacing: .4px;
+                            color: #464255;
+                            padding: 10px 23px 10px 23px;
+
+                            & .slected {}
+                        }
+                    }
+
+                }
+                & .imagetable{
+
+                }
+            }
+
+        }
+    }
     .usedByUser {
         & .topForm {
             & .form-control {
@@ -33,6 +208,10 @@
 
         }
     }
+
+    .imagecard {
+        height: 277px;
+    }
 }
 
 @include media-breakpoint-up(sm) {}
@@ -45,6 +224,221 @@
 
 @include media-breakpoint-up(xxl) {}
 
+@media (max-width: 1599px) {
+    .trackingusing {
+        & .leftSection {
+            & .dpaSection {
+                height: 274px;
+
+                & .dpaUsesHeading {}
+
+                & .formSelectGroup {
+                    & .form-select {}
+                }
+
+                & .cardImage {
+                    height: 193px;
+                    width: 100%;
+                }
+            }
+        }
+
+        & .rightSection {
+            & .dashboardCardDetail {
+                & .dashboardCard {
+                    padding: 27px 15px;
+                }
+            }
+
+            & .imageHeading {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #464255;
+
+                & .imageicon {
+                    width: 21.05px;
+                    height: 20px;
+                }
+            }
+
+            & .managebtn {
+                background: #9bb7c2;
+                border-radius: 18px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+
+                & span {
+                    width: 15px;
+                }
+            }
+
+            & .persentaheading {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                color: #9BB7C2;
+            }
+
+            & .progress {
+                height: 8px;
+
+                & .progress-bar {
+                    background: #9BB7C2;
+
+                }
+
+                &.progressbar2 {
+                    background: #658490;
+                }
+            }
+
+            & .tokens {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+            }
+
+            & .kmmetter {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+
+                & span {
+                    color: #838383;
+                }
+            }
+
+            & .bottomSection {
+                & .heading {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #464255;
+                }
+
+                & .number {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 39px;
+                    color: #464255;
+                    text-align: center;
+                }
+            }
+
+            & .bottomcard {
+                & .dpetext {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .graphimage {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                & .heading {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .subheading {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #A3A3A3;
+                }
+
+                & .topForm {
+                    & .form-control {
+                        background: #eaf0f8;
+                        border-radius: 18px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 9px;
+                        color: #4a5c77;
+                        padding: 9px 23px 9px 23px;
+                    }
+
+                    & .usageSlect {
+
+                        & .form-select {
+                            background: #EAF0F8 url(../img/svg/down.svg);
+                            background-repeat: no-repeat;
+                            background-position: top 50% right 10px;
+                            width: 200.53px;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 30px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 12px;
+                            letter-spacing: .4px;
+                            color: #464255;
+                            padding: 10px 23px 10px 23px;
+
+                            & .slected {}
+                        }
+                    }
+
+                }
+                & .imagetable{
+
+                }
+            }
+
+        }
+    }
+    .usedByUser {
+        & .topForm {
+            & .form-control {
+                background: #EAF0F8;
+                border-radius: 18px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #4A5C77;
+                padding: 10px 60px 10px 19px;
+            }
+
+            & .usageSlect {
+
+                & .form-select {
+                    background: #EAF0F8 url(../img/svg/down.svg);
+                    background-repeat: no-repeat;
+                    background-position: top 50% right 10px;
+                    width: 250.53px;
+                    border: 1px solid #E0E0E0;
+                    border-radius: 30px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: 0.4px;
+                    color: #464255;
+                    padding: 10px 30px 10px 20px;
+
+                    & .slected {}
+                }
+            }
+
+        }
+    }
+
+    .imagecard {
+        height: 277px;
+    }
+}
 
 @include media-breakpoint-down(xxl) {}
 
@@ -53,61 +447,431 @@
 @include media-breakpoint-down(lg) {}
 
 @include media-breakpoint-down(md) {
-    .usedByUser {
-        & .topForm {
-            & .inputcol{
-                width: 100%;
-                & .form-control {
-                    font-size: 13px;
-                    padding: 10px 50px 10px 19px;
+    .trackingusing {
+        & .leftSection {
+            & .dpaSection {
+                height: 274px;
+
+                & .dpaUsesHeading {}
+
+                & .formSelectGroup {
+                    & .form-select {}
+                }
+
+                & .cardImage {
+                    height: 193px;
+                    width: 100%;
                 }
             }
-            & .Selectcol{
-                width: 100%;
-                & .usageSlect {
-                    
-                    & .form-select {
-                        padding: 8px 30px 10px 20px;
-                        font-size: 13px;
-                        width: 100%;
-    
-                        & .slected {}
-                    }
+        }
+
+        & .rightSection {
+            & .dashboardCardDetail {
+                & .dashboardCard {
+                    padding: 27px 15px;
                 }
             }
 
-            
+            & .imageHeading {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #464255;
+
+                & .imageicon {
+                    width: 21.05px;
+                    height: 20px;
+                }
+            }
+
+            & .managebtn {
+                background: #9bb7c2;
+                border-radius: 18px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+
+                & span {
+                    width: 15px;
+                }
+            }
+
+            & .persentaheading {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                color: #9BB7C2;
+            }
+
+            & .progress {
+                height: 8px;
+
+                & .progress-bar {
+                    background: #9BB7C2;
+
+                }
+
+                &.progressbar2 {
+                    background: #658490;
+                }
+            }
+
+            & .tokens {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+            }
+
+            & .kmmetter {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+
+                & span {
+                    color: #838383;
+                }
+            }
+
+            & .bottomSection {
+                & .heading {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #464255;
+                }
+
+                & .number {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 39px;
+                    color: #464255;
+                    text-align: center;
+                }
+            }
+
+            & .bottomcard {
+                & .dpetext {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .graphimage {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                & .heading {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .subheading {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #A3A3A3;
+                }
+
+                & .topForm {
+                    & .form-control {
+                        background: #eaf0f8;
+                        border-radius: 18px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 9px;
+                        color: #4a5c77;
+                        padding: 9px 23px 9px 23px;
+                    }
+
+                    & .usageSlect {
+
+                        & .form-select {
+                            background: #EAF0F8 url(../img/svg/down.svg);
+                            background-repeat: no-repeat;
+                            background-position: top 50% right 10px;
+                            width: 200.53px;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 30px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 12px;
+                            letter-spacing: .4px;
+                            color: #464255;
+                            padding: 10px 23px 10px 23px;
+
+                            & .slected {}
+                        }
+                    }
+
+                }
+                & .imagetable{
+
+                }
+            }
 
         }
+    }
+    .usedByUser {
+        & .topForm {
+            & .form-control {
+                background: #EAF0F8;
+                border-radius: 18px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #4A5C77;
+                padding: 10px 60px 10px 19px;
+            }
+
+            & .usageSlect {
+
+                & .form-select {
+                    background: #EAF0F8 url(../img/svg/down.svg);
+                    background-repeat: no-repeat;
+                    background-position: top 50% right 10px;
+                    width: 250.53px;
+                    border: 1px solid #E0E0E0;
+                    border-radius: 30px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: 0.4px;
+                    color: #464255;
+                    padding: 10px 30px 10px 20px;
+
+                    & .slected {}
+                }
+            }
+
+        }
+    }
+    .imagecard {
+        height: 277px;
     }
 }
 
 @include media-breakpoint-down(sm) {
-    .usedByUser {
-        & .topForm {
-            & .inputcol{
-                width: 100%;
-                & .form-control {
-                    font-size: 13px;
-                    padding: 10px 50px 10px 19px;
+    .trackingusing {
+        & .leftSection {
+            & .dpaSection {
+                height: unset;
+
+                & .dpaUsesHeading {}
+
+                & .formSelectGroup {
+                    & .form-select {}
+                }
+
+                & .cardImage {
+                    height: 193px;
+                    width: 100%;
                 }
             }
-            & .Selectcol{
-                width: 100%;
-                & .usageSlect {
-                    
-                    & .form-select {
-                        padding: 8px 30px 10px 20px;
-                        font-size: 13px;
-                        width: 100%;
-    
-                        & .slected {}
-                    }
+        }
+
+        & .rightSection {
+            & .dashboardCardDetail {
+                & .dashboardCard {
+                    padding: 27px 15px;
                 }
             }
 
-            
+            & .imageHeading {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: #464255;
+
+                & .imageicon {
+                    width: 21.05px;
+                    height: 20px;
+                }
+            }
+
+            & .managebtn {
+                background: #9bb7c2;
+                border-radius: 18px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+
+                & span {
+                    width: 15px;
+                }
+            }
+
+            & .persentaheading {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                color: #9BB7C2;
+            }
+
+            & .progress {
+                height: 8px;
+
+                & .progress-bar {
+                    background: #9BB7C2;
+
+                }
+
+                &.progressbar2 {
+                    background: #658490;
+                }
+            }
+
+            & .tokens {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+            }
+
+            & .kmmetter {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #9BB7C2;
+
+                & span {
+                    color: #838383;
+                }
+            }
+
+            & .bottomSection {
+                & .heading {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #464255;
+                }
+
+                & .number {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 39px;
+                    color: #464255;
+                    text-align: center;
+                }
+            }
+
+            & .bottomcard {
+                & .dpetext {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .graphimage {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                & .heading {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #464255;
+                }
+
+                & .subheading {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 26px;
+                    color: #A3A3A3;
+                }
+
+                & .topForm {
+                    & .form-control {
+                        background: #eaf0f8;
+                        border-radius: 18px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 9px;
+                        color: #4a5c77;
+                        padding: 9px 23px 9px 23px;
+                    }
+
+                    & .usageSlect {
+
+                        & .form-select {
+                            background: #EAF0F8 url(../img/svg/down.svg);
+                            background-repeat: no-repeat;
+                            background-position: top 50% right 10px;
+                            width: 200.53px;
+                            border: 1px solid #e0e0e0;
+                            border-radius: 30px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 12px;
+                            letter-spacing: .4px;
+                            color: #464255;
+                            padding: 10px 23px 10px 23px;
+
+                            & .slected {}
+                        }
+                    }
+
+                }
+                & .imagetable{
+
+                }
+            }
 
         }
+    }
+    .usedByUser {
+        & .topForm {
+            & .form-control {
+                background: #EAF0F8;
+                border-radius: 18px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #4A5C77;
+                padding: 10px 60px 10px 19px;
+            }
+
+            & .usageSlect {
+
+                & .form-select {
+                    background: #EAF0F8 url(../img/svg/down.svg);
+                    background-repeat: no-repeat;
+                    background-position: top 50% right 10px;
+                    width: 250.53px;
+                    border: 1px solid #E0E0E0;
+                    border-radius: 30px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: 0.4px;
+                    color: #464255;
+                    padding: 10px 30px 10px 20px;
+
+                    & .slected {}
+                }
+            }
+
+        }
+    }
+    .imagecard {
+        height: 277px;
     }
 }
