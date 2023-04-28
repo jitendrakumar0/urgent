@@ -1192,9 +1192,14 @@
                             &.uploadBtnGroup {
                                 & .cancleBtn {
                                     background: #DF9292;
+                                    border-radius: 5px;
                                 }
                                 & .saveChangeBtn {
                                     background: #4A3AFF66;
+                                    border-radius: 5px;
+                                    &.approvBtn {
+                                        background: #4A3AFF;
+                                    }
                                 }
                             }
                         }
@@ -3555,6 +3560,32 @@
         }
         & .dash {
             font-size: 23px;
+        }
+    }
+    .TableCointainer {
+        & .documetnUploadReq {
+            font-size: 15px;
+        }
+        & .ReqsubHeading {
+            font-size: 10px;
+        }
+        & .searchgroup {
+            & .input-group {
+                & .form-control , & .input-group-text {
+                    height: 32px;
+                    font-size: 10px;
+                }
+                & .input-group-text {
+                    & img {
+                    }
+                }
+            }
+        }
+        & .filtterBTn {
+            font-size: 10px;
+            height: 32px;
+            &:active{
+            }
         }
     }
 }
