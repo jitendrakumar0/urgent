@@ -468,6 +468,814 @@ body .overflow-auto-hidden {
     width: 100%;
   }
 }
+.userOverViewMain .addNewUserBtn {
+  display: inline-flex;
+  width: 201px;
+  height: 71px;
+  align-items: center;
+  justify-content: center;
+  background-color: #5BCD97;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.userOverViewMain .addNewUserBtn:hover {
+  background-color: #47c78b;
+}
+.userOverViewMain .searchInp {
+  position: relative;
+}
+.userOverViewMain .searchInp .form-control {
+  background: #FFFFFF;
+  border-radius: 18px;
+  width: 188px;
+  height: 38px;
+  padding: 8px 42px 8px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A5C77;
+  box-shadow: none;
+  border: none;
+}
+.userOverViewMain .searchInp .form-control::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A5C77;
+}
+.userOverViewMain .searchInp .searchBtn {
+  position: absolute;
+  top: 11.5px;
+  right: 17px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  cursor: pointer;
+}
+
+.addNewUserSection {
+  padding: 25px 68px 30px 56px;
+  background: #FDFDFD;
+  border-radius: 24px;
+}
+.addNewUserSection .secHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #464255;
+  margin-bottom: 8px;
+}
+.addNewUserSection .subHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A3A3A3;
+  margin-bottom: 34px;
+}
+.addNewUserSection .inpSection {
+  gap: 25px;
+}
+.addNewUserSection .inpSection .form-control {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3;
+  padding: 18px 24px;
+  box-shadow: none;
+}
+.addNewUserSection .inpSection .form-control::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3;
+}
+.addNewUserSection .inpSection .nameInp {
+  position: relative;
+}
+.addNewUserSection .inpSection .nameInp .form-control {
+  padding-right: 190px;
+}
+.addNewUserSection .inpSection .nameInp .characterLimit {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: right;
+  color: #A3A3A3;
+}
+.addNewUserSection .inpSection .chooseUserRoleText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A3A3A3;
+  margin-bottom: 6px;
+  margin-top: -9px;
+}
+.addNewUserSection .inpSection .customSelect {
+  position: relative;
+}
+.addNewUserSection .inpSection .customSelect .form-select {
+  width: 100%;
+  background: rgba(234, 240, 248, 0.44);
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #464255;
+  padding: 18px 24px;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+.addNewUserSection .inpSection .customSelect .selectImg {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  z-index: 0;
+}
+.addNewUserSection .inpSection .userUssageLimitSection {
+  padding-top: 29px;
+}
+.addNewUserSection .inpSection .userUssageLimitSection .userHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #464255;
+}
+.addNewUserSection .inpSection .userUssageLimitSection .tokenOuter {
+  border-radius: 18px;
+  border: 1px solid #E0E0E0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #464255;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 15px;
+}
+.addNewUserSection .inpSection .userUssageLimitSection .tokenOuter .tokenText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8F8F8F;
+}
+.addNewUserSection .inpSection .userUssageLimitSection .sliderImg {
+  margin-top: 8px;
+  margin-bottom: 48px;
+}
+.addNewUserSection .inpSection .assignDpaSection .assignDpaHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #464255;
+}
+.addNewUserSection .inpSection .assignDpaSection .assignBox {
+  border: 2px solid #E8EAEE;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.addNewUserSection .inpSection .assignDpaSection .assignBox .deleteIcon {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.addNewUserSection .inpSection .assignDpaSection .assignBox.colorOne {
+  background: #AEC7E8;
+}
+.addNewUserSection .inpSection .assignDpaSection .assignBox.colorTwo {
+  background: #F0CECE;
+}
+.addNewUserSection .inpSection .assignDpaSection .assignBox.colorThree {
+  background: #FFBB78;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .addBtn {
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu {
+  width: 412px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  border-radius: 16px;
+  padding: 25px 23px 25px 26px;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter {
+  position: relative;
+  margin-bottom: 15px;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .form-control {
+  width: 100%;
+  padding: 8px 24px 8px 55px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  background: #F2F4F8;
+  border-radius: 20px;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .searchBtn {
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .colorCirle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #CEC0EC;
+  margin-right: 14px;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .itemText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+.addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .asignBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background: #5BCD97;
+  border-radius: 18px;
+  padding: 8px 26px;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+}
+.addNewUserSection .cancleBtn {
+  background-color: rgba(225, 86, 86, 0.81);
+  border-radius: 18px;
+  padding: 16px 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-flex;
+  margin-right: 15px;
+  height: 56px;
+}
+.addNewUserSection .cancleBtn:hover {
+  background-color: rgba(225, 86, 86, 0.91);
+}
+.addNewUserSection .addUserBtn {
+  height: 56px;
+  background-color: #5BCD97;
+  border-radius: 18px;
+  padding: 16px 24px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-flex;
+}
+.addNewUserSection .addUserBtn:hover {
+  background-color: #47c78b;
+}
+
+.individualUser .userProfileOuter {
+  padding: 30px;
+  background: #FDFDFD;
+  border-radius: 24px;
+  margin-bottom: 26px;
+}
+.individualUser .userProfileOuter .userImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 35px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 39px;
+}
+.individualUser .userProfileOuter .userName {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #4A5C77;
+}
+.individualUser .userProfileOuter .userPosition {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  color: #9BB7C2;
+}
+.individualUser .userProfileOuter .userMail {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464255;
+}
+.individualUser .userProfileOuter .trackUsageBtn {
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #4A5C77;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.individualUser .userProfileOuter .trackUsageBtn img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(10);
+}
+.individualUser .userProfileOuter .trackUsageBtn:hover {
+  background-color: #405067;
+}
+.individualUser .userProfileOuter .deleteUserBtn {
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background-color: #E15656;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+.individualUser .userProfileOuter .deleteUserBtn img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(10);
+}
+.individualUser .userProfileOuter .deleteUserBtn:hover {
+  background-color: #dd4040;
+}
+
+@media (max-width: 1599px) {
+  .userOverViewMain .addNewUserBtn {
+    width: 190px;
+    height: 55px;
+    font-size: 14px;
+  }
+  .userOverViewMain .searchInp .form-control {
+    width: 188px;
+    height: 38px;
+  }
+  .individualUser .userProfileOuter {
+    padding: 25px;
+    border-radius: 24px;
+    margin-bottom: 26px;
+  }
+  .individualUser .userProfileOuter .userImg {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+  }
+  .individualUser .userProfileOuter .userName {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .individualUser .userProfileOuter .userPosition {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  .individualUser .userProfileOuter .userMail {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .individualUser .userProfileOuter .trackUsageBtn {
+    padding: 8px 30px;
+    gap: 14px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .individualUser .userProfileOuter .trackUsageBtn img {
+    width: 20px;
+    height: 20px;
+  }
+  .individualUser .userProfileOuter .deleteUserBtn {
+    padding: 8px 30px;
+    gap: 14px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .individualUser .userProfileOuter .deleteUserBtn img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu {
+    width: 390px;
+    padding: 20px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter {
+    margin-bottom: 10px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .searchBtn {
+    top: 12px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .colorCirle {
+    width: 20px;
+    height: 20px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .itemText {
+    font-size: 14px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .asignBtn {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 6px 24px;
+  }
+  .addNewUserSection .cancleBtn {
+    border-radius: 15px;
+    padding: 14px 22px;
+    font-size: 15px;
+    line-height: 18px;
+    height: 46px;
+  }
+  .addNewUserSection .addUserBtn {
+    border-radius: 15px;
+    padding: 14px 22px;
+    font-size: 15px;
+    line-height: 18px;
+    height: 46px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .addNewUserSection {
+    padding: 25px;
+  }
+  .addNewUserSection .secHeading {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .addNewUserSection .subHeading {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 30px;
+  }
+  .addNewUserSection .cancleBtn {
+    border-radius: 16px;
+    padding: 12px 20px;
+    height: 43px;
+  }
+  .addNewUserSection .addUserBtn {
+    border-radius: 16px;
+    padding: 12px 20px;
+    height: 43px;
+  }
+}
+@media (max-width: 991.98px) {
+  .addNewUserSection .cancleBtn {
+    border-radius: 14px;
+    padding: 10px 18px;
+    font-size: 15px;
+    line-height: 20px;
+    height: 40px;
+  }
+  .addNewUserSection .addUserBtn {
+    border-radius: 14px;
+    padding: 10px 18px;
+    font-size: 15px;
+    line-height: 20px;
+    height: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .userOverViewMain .addNewUserBtn {
+    width: 170px;
+    height: 45px;
+    font-size: 13px;
+  }
+  .userOverViewMain .searchInp .form-control {
+    font-size: 13px;
+  }
+  .userOverViewMain .searchInp .form-control::placeholder {
+    font-size: 13px;
+  }
+  .addNewUserSection {
+    height: auto !important;
+    padding: 22px;
+  }
+  .addNewUserSection .secHeading {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .addNewUserSection .subHeading {
+    margin-bottom: 25px;
+  }
+  .addNewUserSection .inpSection {
+    gap: 20px;
+  }
+  .addNewUserSection .inpSection .form-control {
+    padding: 12px 16px;
+    line-height: 20px;
+    border-radius: 12px;
+  }
+  .addNewUserSection .inpSection .form-control::placeholder {
+    line-height: 20px;
+  }
+  .addNewUserSection .inpSection .nameInp .form-control {
+    padding-right: 160px;
+  }
+  .addNewUserSection .inpSection .nameInp .characterLimit {
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .addNewUserSection .inpSection .customSelect .form-select {
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 20px;
+  }
+  .addNewUserSection .inpSection .customSelect .selectImg {
+    top: 14px;
+    width: 20px;
+    height: 20px;
+  }
+  .addNewUserSection .inpSection .userUssageLimitSection {
+    padding-top: 15px;
+  }
+  .addNewUserSection .inpSection .userUssageLimitSection .userHeading {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .addNewUserSection .inpSection .userUssageLimitSection .tokenOuter {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .assignDpaHeading {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .assignBox {
+    padding: 6px 10px;
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .assignBox .deleteIcon {
+    width: 8px;
+    height: 8px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .addBtn {
+    width: 20px;
+    height: 20px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu {
+    width: 300px;
+    padding: 15px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .form-control {
+    padding: 6px 20px 6px 45px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .searchBtn {
+    top: 10px;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .colorCirle {
+    width: 18px;
+    height: 18px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .itemText {
+    font-size: 13px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .asignBtn {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 6px 20px;
+  }
+  .addNewUserSection .cancleBtn {
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 35px;
+  }
+  .addNewUserSection .addUserBtn {
+    border-radius: 12px;
+    padding: 8px 16px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .userOverViewMain .addNewUserBtn {
+    width: 100%;
+    height: 45px;
+  }
+  .userOverViewMain .searchInp .form-control {
+    width: 100%;
+  }
+  .addNewUserSection {
+    padding: 16px;
+  }
+  .addNewUserSection .secHeading {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .addNewUserSection .subHeading {
+    margin-bottom: 20px;
+  }
+  .addNewUserSection .inpSection {
+    gap: 20px;
+  }
+  .addNewUserSection .inpSection .form-control {
+    padding: 10px 14px;
+    line-height: 18px;
+    border-radius: 10px;
+  }
+  .addNewUserSection .inpSection .form-control::placeholder {
+    line-height: 18px;
+  }
+  .addNewUserSection .inpSection .nameInp .form-control {
+    padding-right: 135px;
+  }
+  .addNewUserSection .inpSection .nameInp .characterLimit {
+    top: 15px;
+    right: 10px;
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .addNewUserSection .inpSection .customSelect .form-select {
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px 18px;
+  }
+  .addNewUserSection .inpSection .customSelect .selectImg {
+    top: 12px;
+    width: 18px;
+    height: 18px;
+  }
+  .addNewUserSection .inpSection .userUssageLimitSection {
+    padding-top: 10px;
+  }
+  .addNewUserSection .inpSection .userUssageLimitSection .userHeading {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .addNewUserSection .inpSection .userUssageLimitSection .tokenOuter {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .assignDpaHeading {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .assignBox {
+    padding: 6px 10px;
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .assignBox .deleteIcon {
+    width: 8px;
+    height: 8px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .addBtn {
+    width: 18px;
+    height: 18px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu {
+    width: 270px;
+    padding: 15px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .form-control {
+    padding: 6px 20px 6px 45px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .serchInpOuter .searchBtn {
+    top: 10px;
+    left: 16px;
+    width: 16px;
+    height: 16px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .colorCirle {
+    width: 16px;
+    height: 16px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .itemText {
+    font-size: 12px;
+  }
+  .addNewUserSection .inpSection .assignDpaSection .addBtnOuter .dropdown-menu .dropdown-item .asignBtn {
+    font-size: 11px;
+    line-height: 14px;
+    padding: 5px 18px;
+  }
+}
 .modalMain .modalContent {
   border-radius: 25px;
 }
@@ -561,7 +1369,7 @@ body .overflow-auto-hidden {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 48px;
   color: #464255;
 }
@@ -689,11 +1497,24 @@ body .overflow-auto-hidden {
   line-height: 24px;
   color: #A3A3A3;
 }
-.paymentTable .tableHead .Radius {
+.paymentTable .tableHead th:first-child {
   border-radius: 24px 0 0 0;
 }
-.paymentTable .Radiuss {
+.paymentTable .tableHead th:last-child {
   border-radius: 0 24px 0 0;
+}
+.paymentTable tbody tr:last-child {
+  border-bottom: 0 !important;
+  border-radius: 0 0 24px 24px;
+}
+.paymentTable tbody tr:last-child td {
+  border-bottom: 0 !important;
+}
+.paymentTable tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 24px;
+}
+.paymentTable tbody tr:last-child td:last-child {
+  border-radius: 0 0 24px 0;
 }
 .paymentTable .date {
   font-family: "Poppins";
@@ -1344,6 +2165,243 @@ body .overflow-auto-hidden {
   height: 100%;
 }
 
+.createHeroSection {
+  background: rgba(253, 253, 253, 0.36);
+  border-radius: 24px;
+  padding: 25px 95px;
+}
+.createHeroSection .creteHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #464255;
+}
+.createHeroSection .creteSubHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #A3A3A3;
+  margin-bottom: 18px;
+}
+.createHeroSection .createInp {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3 !important;
+  box-shadow: none;
+  height: 62px;
+  padding-left: 24px;
+}
+.createHeroSection .createSpan {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 35px;
+}
+.createHeroSection .createSelectTxt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A3A3A3;
+}
+.createHeroSection .createSelectBox {
+  background: rgba(234, 240, 248, 0.44);
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  height: 60px;
+  box-shadow: none;
+  padding-left: 24px;
+  background-image: url(../img/svg/down.svg);
+  background-repeat: no-repeat;
+  background-position: top 50% right 20px;
+}
+.createHeroSection .selectColour {
+  background: #4A5C77;
+  border-radius: 64px;
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+.createHeroSection .uploadSection {
+  background: rgba(174, 199, 232, 0.13);
+  border-radius: 24px;
+  padding: 10px 30px;
+}
+.createHeroSection .uploadSection .uploadSectionHead {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: #515151;
+}
+.createHeroSection .uploadSection .para {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #515151;
+}
+.createHeroSection .uploadSection input[type=checkbox] {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: red;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.createHeroSection .uploadSection input[type=checkbox]::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.createHeroSection .uploadSection input[type=checkbox]:checked::before {
+  transform: translateX(100%);
+  background: #fff;
+}
+.createHeroSection .uploadSection input[type=checkbox]:checked {
+  background: #AAF298;
+}
+.createHeroSection .asignUsers {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A3A3A3;
+  margin-bottom: 7px;
+}
+.createHeroSection .asignUsersBtn {
+  background-color: rgba(74, 92, 119, 0.6);
+  border: 2px solid #E8EAEE;
+  border-radius: 4px;
+  height: 36px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 8px 12px;
+}
+.createHeroSection .circlePlus {
+  background-color: transparent;
+  border: none;
+}
+.createHeroSection .search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.createHeroSection .cardBody {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 15px 16px;
+}
+.createHeroSection .cardBody .formInp {
+  border-radius: 20px;
+  background-color: #F2F4F8;
+  box-shadow: none;
+  border-color: #F2F4F8;
+  padding-left: 50px;
+}
+.createHeroSection .cardBody .search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.createHeroSection .cardBody .data {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.createHeroSection .cardBody .data img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.createHeroSection .cardBody .spann {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.createHeroSection .cardBody .assignBtn {
+  background: #5BCD97;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+  padding: 4px 15px;
+}
+.createHeroSection .cancleBtn {
+  background: rgba(225, 86, 86, 0.81);
+  border-radius: 18px;
+  height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+}
+.createHeroSection .closeBtn {
+  background: #5BCD97;
+  border-radius: 18px;
+  height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+  padding: 18px 26px;
+}
+
 @media (max-width: 1599px) {
   .billingCard .billingCardHeading {
     font-size: 30px;
@@ -1527,6 +2585,9 @@ body .overflow-auto-hidden {
   .cancleBtn {
     font-size: 14px;
   }
+  .createHeroSection {
+    padding: 25px 82px;
+  }
 }
 @media (max-width: 575.98px) {
   .tableHeading .formSelect {
@@ -1619,13 +2680,87 @@ body .overflow-auto-hidden {
   .alldpaTable .btnnn {
     font-size: 12px;
   }
+  .createHeroSection {
+    padding: 25px 35px;
+  }
+  .createHeroSection .creteHead {
+    font-size: 18px;
+  }
+  .createHeroSection .creteSubHead {
+    font-size: 12px;
+  }
+  .createHeroSection .createInp {
+    height: 50px;
+    font-size: 13px;
+  }
+  .createHeroSection .createSelectBox {
+    height: 50px;
+    font-size: 13px;
+  }
+  .createHeroSection .uploadSection {
+    padding: 10px 18px;
+  }
+  .createHeroSection .uploadSection .uploadSectionHead {
+    font-size: 12px;
+  }
+  .createHeroSection .uploadSection .para {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .createHeroSection .uploadSection input[type=checkbox] {
+    width: 40px;
+    height: 22px;
+  }
+  .createHeroSection .uploadSection input[type=checkbox]::before {
+    width: 22px;
+    height: 22px;
+  }
+  .createHeroSection .uploadSection input[type=checkbox]:checked::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+  }
+  .createHeroSection .cardBody .formInp {
+    font-size: 12px;
+  }
+  .createHeroSection .cardBody .spann {
+    font-size: 14px;
+  }
+  .createHeroSection .cardBody .assignBtn {
+    font-size: 12px;
+  }
+  .createHeroSection .cancleBtn {
+    height: 50px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .createHeroSection .closeBtn {
+    height: 50px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 10px;
+  }
+  .createHeroSection .closeBtn img {
+    height: 20px;
+  }
 }
 .loginPageFluid {
   background-color: #F4F4F4;
   background-image: url(../img/bg1.png);
   background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
 }
 .loginPageFluid .loginPageContainer {
   padding: 40px 30px;
@@ -1906,6 +3041,7 @@ body .overflow-auto-hidden {
   }
   .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi img {
     height: 24px;
+    width: 24px;
   }
   .leftPart .sideBar .sideBarInner .sideBarFooter .logout {
     margin-bottom: 25px;
@@ -1953,6 +3089,7 @@ body .overflow-auto-hidden {
   }
   .leftPart .sideBar .sideBarInner .sideBarBody .sidebarUL .sidebarLi .sidebarImg {
     height: 22px;
+    width: 22px;
   }
   .leftPart .sideBar .sideBarInner .sideBarFooter .logout {
     font-size: 13px;
@@ -2065,19 +3202,10 @@ body .overflow-auto-hidden {
   }
 }
 [data-page-name=signUpFormPage].signUpFormPage {
-  background-color: #F4F4F4;
+  background: url(../img/bg1.png), #F4F4F4;
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: 1;
-}
-[data-page-name=signUpFormPage].signUpFormPage::before {
-  content: "";
-  background: url(../img/bg1.png) no-repeat, center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1000px;
-  width: 1000px;
-  z-index: -1;
 }
 [data-page-name=signUpFormPage].signUpFormPage .innerSection .form .topSection .userName {
   font-size: 60px;
@@ -2868,5 +3996,18 @@ body .overflow-auto-hidden {
   }
   .dpaSection.topDapSection .leftSide .commonWork .workHeading {
     font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .dpaSection.card > .row > .col.d-flex {
+    width: 100% !important;
+    flex: 0 0 auto;
+    justify-content: space-between;
+  }
+  .dpaSection.card > .row > .col-auto {
+    margin-top: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
   }
 }/*# sourceMappingURL=style.min.css.map */

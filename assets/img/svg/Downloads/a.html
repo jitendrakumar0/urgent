@@ -1,0 +1,344 @@
+ var swiper = new Swiper(".heroSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+
+    // Hero section code starts here
+.heroSection {
+    & .heroSlideBox {
+        & .heroSlide {
+            // background-size: cover;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            & .heroproShoes {
+                transform: rotate(-30deg);
+            }
+            & .Offer {
+                font-size: 20px;
+            }
+            & .mainHead {
+                font-size: 70px;
+                font-weight: 500;
+                line-height: normal;
+            }
+            & .subHead {
+                font-size: 20px;
+            }
+            & .shopBtn {
+                font-size: 14px;
+                padding: 9px 20px;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+    & .swiper-pagination {
+        &.swiper-pagination-bullets{ 
+            &.swiper-pagination-horizontal {
+                display: none !important;
+                & .swiper-pagination-bullet {
+                    height: 12px !important;
+                    width: 12px !important;
+                    border-radius: 20px !important;
+                    &.swiper-pagination-bullet-active {
+                        width: 40px !important;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@mixin heroSection-mixin-min-sm(){
+    .heroSection {
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+            }
+            & .mainHead {
+            }
+            & .subHead {
+            }
+            & .shopBtn {
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-min-md(){
+    .heroSection {
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+            }
+            & .mainHead {
+            }
+            & .subHead {
+            }
+            & .shopBtn {
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-min-lg(){
+    .heroSection {
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+            }
+            & .mainHead {
+            }
+            & .subHead {
+            }
+            & .shopBtn {
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-min-xl(){
+    .heroSection {
+        // height: 450px;
+        height: calc(100vh - 106px);
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+            }
+            & .mainHead {
+            }
+            & .subHead {
+            }
+            & .shopBtn {
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-min-xxl(){
+    .heroSection {
+        // height: 550px;
+        height: calc(100vh - 106px);
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+            }
+            & .mainHead {
+            }
+            & .subHead {
+            }
+            & .shopBtn {
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-max-xl(){
+    .heroSection {
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+            }
+            & .mainHead {
+                font-size: 63px
+            }
+            & .subHead {
+            }
+            & .shopBtn {
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-max-1300(){
+    .heroSection {
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+                font-size: 19px
+            }
+            & .mainHead {
+                font-size: 60px;
+            }
+            & .subHead {
+                font-size: 19px
+            }
+            & .shopBtn {
+                font-size: 15px
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-max-lg(){
+    .heroSection {
+        height: 400px !important;
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+                font-size: 18px;
+            }
+            & .mainHead {
+                font-size: 54px;
+            }
+            & .subHead {
+                font-size: 18px;
+            }
+            & .shopBtn {
+                font-size: 14px;
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-max-md(){
+    .heroSection {
+        height: 280px !important;
+    & .heroSlideBox {
+        & .heroSlide {
+            background-size: cover;
+            & .Offer {
+                font-size: 16px;
+            }
+            & .mainHead {
+                font-size: 32px;
+            }
+            & .subHead {
+                font-size: 16px;
+            }
+            & .shopBtn {
+                font-size: 13px;
+                padding: 7px 14px
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-max-sm(){
+    .heroSection {
+        height: 270px !important;
+    & .heroSlideBox {
+        & .heroSlide {
+            & .Offer {
+                font-size: 15px;
+            }
+            & .mainHead {
+                font-size: 26px;
+            }
+            & .subHead {
+                font-size: 15px;
+            }
+            & .shopBtn {
+                font-size: 13px;
+                padding: 7px 14px
+            }
+        }
+    }
+}
+};
+@mixin heroSection-mixin-max-xs(){
+    .heroSection {
+        height: 200px !important;
+    & .heroSlideBox {
+        & .heroSlide {
+            background-size: 100% 100%;
+            & .heroProImg {
+                width: auto !important;
+                max-height: 100% !important;
+                max-width: 100%;
+            }
+            & .Offer {
+                font-size: 12px;
+            }
+            & .mainHead {
+                font-size: 18px;
+                margin: 3px 0;
+            }
+            & .subHead {
+                font-size: 12px;
+                margin-bottom: 3px;
+            }
+            & .shopBtn {
+                font-size: 10px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid px-0 heroSection">
+                        <div class="swiper heroSwiper h-100">
+                            <div class="swiper-wrapper heroSlideBox h-100">
+                                <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/jewellery/hero1.jpg);">
+                                    <div class="container h-100">
+                                        <div class="row mx-0 align-items-center h-100">
+                                            <div class="col-7 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12 Offer text-dark">New Collection</div>
+                                                    <div class="col-12 mainHead text-dark">The New Ring Sensation</div>
+                                                    <div class="col-12 subHead text-dark">New collection of wedding rings is out now</div>
+                                                    <div class="col-12 mt-1 mt-lg-3">
+                                                        <a href="product-category.html" class="btn btn-outline-dark rounded-0 shadow-none shopBtn">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/jewellery/hero2.png);">
+                                    <div class="container h-100">
+                                        <div class="row mx-0 align-items-center h-100">
+                                            <div class="col-7 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12 Offer">Rings of the Week</div>
+                                                    <div class="col-12 mainHead">Elegant Collections</div>
+                                                    <div class="col-12 subHead">Lab-Grown Diamond Rings For A Bright Future.</div>
+                                                    <div class="col-12 mt-1 mt-lg-3">
+                                                        <a href="product-category.html" class="btn btn-outline-dark rounded-0 shadow-none shopBtn">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide heroSlide h-100" style="background-image: url(assets/img/jewellery/hero3.png);">
+                                    <div class="container h-100">
+                                        <div class="row mx-0 align-items-center h-100">
+                                            <div class="col-7 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-12 Offer">New Collection</div>
+                                                    <div class="col-12 mainHead">The New Ring Sensation</div>
+                                                    <div class="col-12 subHead">Shine With High Quality Jewellery</div>
+                                                    <div class="col-12 mt-1 mt-lg-3">
+                                                        <a href="product-category.html" class="btn btn-outline-dark rounded-0 shadow-none shopBtn">Shop Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
