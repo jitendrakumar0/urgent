@@ -800,7 +800,7 @@
     .trainedDataBox{
         background: #FFFFFF;
         border-radius: 24px;
-        padding: 9px 29px 17px 29px;
+        padding: 10px 25px;
         & .trainedDataBoxHead{
             font-family: 'Poppins';
             font-style: normal;
@@ -858,7 +858,7 @@
             & span{
                 font-family: 'Poppins';
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 20px;
                 line-height: 26px;
                 text-align: right;
@@ -1558,6 +1558,38 @@
         }
         & .closeBtn{
         }
+    }
+    
+    .trainedDataBox{
+        & .trainedDataBoxHead{
+            font-size: 22px;
+            & img{
+                height: 28px;
+            }
+        }
+        & .progressBarTxt{
+            & .percent{
+                font-size: 14px;
+            }
+            & span{
+                font-size: 14px;
+            }
+        }
+        & .progressBarTxt1{
+            font-size: 14px;
+        }
+        & .progressBar{
+            & .progressBar1{
+            }
+        }
+        & .progressBottomTxt{
+            font-size: 18px;
+            & span{
+            }
+        }
+    }
+    .alldpaTable .btnnn {
+        font-size: 14px;
     }
 }
 @include media-breakpoint-down(xxl) {
