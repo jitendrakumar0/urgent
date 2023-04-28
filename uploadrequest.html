@@ -124,7 +124,7 @@
                                                                     </div>
                                                                     <div class="col textSide ps-0">
                                                                         <div class="row flex-column mx-0 d-none d-md-flex">
-                                                                            <div class="col pageHeading px-0 fw-semibold">Document Upload</div>
+                                                                            <div class="col pageHeading px-0 fw-semibold">Document Upload Request</div>
                                                                             <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
                                                                         </div>
                                                                     </div>
@@ -169,7 +169,7 @@
                                                 <div class="row py-3 dpaSettingInnerPage mx-0 bg-transparent">
                                                     <div class="col-12 pe-xxl-0">
                                                         <div class="row flex-column mx-0 d-md-none headerHiddenDetails mb-3">
-                                                            <div class="col pageHeading px-0 fw-semibold">Document Upload</div>
+                                                            <div class="col pageHeading px-0 fw-semibold">Document Upload Request</div>
                                                             <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
                                                         </div>
                                                         <div class="row pe-xxl-4 pe-0 py-3 mx-0">
@@ -221,71 +221,28 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-12 editSetting uploadFile px-0 mt-4">
+                                                            <div class="col-12 editSetting uploadFile px-0 pt-4">
                                                                 <div class="row mx-0">
-                                                                    <div class="col-12 px-0 mt-2 mb-5 pb-md-5">
-                                                                        <div class="row mx-0 editGroup">
-                                                                            <div class="col-xxl-6 px-0 rightSide">
-                                                                                <div class="training mb-1  px-3">File Upload</div>
-                                                                                <div class="h-100 d-flex flex-column">
-                                                                                    <div class="documentCard me-xxl-2 py-4 px-2 rounded-4 h-100">
-                                                                                        <div class="row mx-0">
-                                                                                            <div class="col-12">
-                                                                                                <label for="choose" class="chooseFile w-100 h-100">
-                                                                                                    <div class="row mx-0 py-4">
-                                                                                                        <div class="col-12 text-center"><div class="fileImg d-inline-flex justify-content-center align-items-center"><img src="assets/img/svg/feather_upload-cloud.svg" class="h-100" alt=""></div></div>
-                                                                                                        <div class="col-12 trainingSubContent my-3 text-black text-center">Select a file or drag and drop here</div>
-                                                                                                        <div class="col-12 trainingSubContent text-center">PDF, docx or xslx, file size no more than 10MB</div>
-                                                                                                        <div class="col-12 text-center mt-3"><button type="" class="btn selectFilrBtn d-inline-flex align-items-center justify-content-center">Select file</button></div>
-                                                                                                    </div>
-                                                                                                </label>
-                                                                                                <input type="file" id="choose" class="form-control" hidden>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="documentCard me-xxl-2 py-4 px-2 rounded-4 mt-3 h-100">
-                                                                                        <div class="row mx-0">
-                                                                                            <div class="col-12">
-                                                                                                <div class="uploadFileGroup align-items-center row mx-0  p-2 position-relative">
-                                                                                                    <div class="col-auto"><div class="uploadFileImg"><img src="assets/img/svg/fileimg.svg" class="h-100" alt=""></div></div>
-                                                                                                    <div class="col px-0">
-                                                                                                        <div class="row mx-0 align-items-center">
-                                                                                                            <div class="col trainingSubContent px-sm-2 px-0">Onboarding new employee SOP.pdf</div>
-                                                                                                            <div class="col-auto fileSize">5.7MB</div>
-                                                                                                            <div class="col-12 mt-2 px-sm-2 px-0">
-                                                                                                                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                                                                                    <div class="progress-bar rounded-pill w-75"></div>
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <button class="closeBtn btn rounded-circle d-flex justify-content-center align-items-center border-0"><img src="assets/img/svg/close.svg" class=" h-100" alt=""></button>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                    <div class="col-12 px-0 TableCointainer mt-xxl-0 mt-4">
+                                                                        <div class="row mx-0 align-items-center">
+                                                                            <div class="col px-0"> 
+                                                                                <div class="row mx-0 align-items-center gap-2">
+                                                                                    <div class="col-auto documetnUploadReq pe-0">Document Upload Request</div>
+                                                                                    <div class="col-auto ReqsubHeading">Documents will be deleted after 5 days if no action is taken</div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="col-xxl-6 px-0 mt-xxl-0 mt-4">
-                                                                                <div class="training mb-1 px-3">Text Training</div>
-                                                                                <div class="h-100">
-                                                                                    <div class="documentCard ms-xxl-2 py-3 px-2 rounded-4 h-100">
-                                                                                        <div class="row mx-0">
-                                                                                            <div class="col-12 trainingSubContent mb-3">Train the DPA via direct text input. Useful for e-mails. </div>
-                                                                                            <div class="col-12 inputGroup mb-xxl-4 mb-3">
-                                                                                                <div class="input-group">
-                                                                                                    <input type="text" id="exampleFormControlInput1" class="form-control shadow-none" placeholder="Document Title" aria-label="Document Title" aria-describedby="basic-addon1">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div class="col-12 inputGroup">
-                                                                                                <div class="input-group">
-                                                                                                    <textarea name="" class="form-control shadow-none h-auto" id="" cols="30" rows="10" placeholder="Type in the information you want to train the DPA with here..."></textarea>
-                                                                                                </div>
-                                                                                            </div>
+                                                                            <div class="col-xl-auto px-0 mt-xl-0 mt-3">
+                                                                                <div class="row mx-0 gap-2">
+                                                                                    <div class="col-auto searchgroup pe-0">
+                                                                                        <div class="input-group">
+                                                                                            <input type="search" class="form-control shadow-none fw-normal border-0 rounded-pill rounded-end-0 bg-white px-3 pe-0" placeholder="Search user" aria-label="Username" aria-describedby="basic-addon1">
+                                                                                            <button type="button" class="input-group-text border-0 rounded-pill rounded-start-0 bg-white py-0 ps-0" id="basic-addon1"><img src="assets/img/svg/032-search.svg" alt=""></button>
                                                                                         </div>
                                                                                     </div>
+                                                                                    <div class="col-auto"><button type="button" class="btn filtterBTn bg-white d-flex align-items-center justify-content-center">Reset Filters</button></div>
                                                                                 </div>
                                                                             </div>
+                                                                            <div class="col-12 my-4"><img src="assets/img/svg/TableCointainer.svg" class="w-100" alt=""></div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-12 px-0 assignedUsersGroup mt-xxl-0 mt-4">
