@@ -3212,6 +3212,19 @@ body .overflow-auto-hidden {
   object-fit: cover;
 }
 
+.trainedDataBox .progressBar {
+  background: #C5C5C5;
+}
+.trainedDataBox .progressBar .progress {
+  height: 8px;
+}
+.trainedDataBox .progressBar .progress .progressBar1 {
+  background: #E7EBB8 !important;
+}
+.trainedDataBox .progressBar .progress .progressBar2 {
+  background: #9BB7C2;
+}
+
 @media (max-width: 1599px) {
   .billingCard .billingCardHeading {
     font-size: 26px;
@@ -4651,6 +4664,259 @@ body .overflow-auto-hidden {
   background: #CEC0EC;
 }
 
+.dpasetting .dpaSettingInnerPage {
+  background: rgba(253, 253, 253, 0.36);
+}
+.dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard {
+  border-radius: 24px;
+  background: #FDFDFD;
+}
+.dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workplacePoint {
+  width: 40px;
+  height: 40px;
+  background: #E7EBB8;
+}
+.dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workrelation {
+  font-size: 32px;
+  line-height: 48px;
+  color: #4A5C77;
+}
+.dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn {
+  background: #E15656;
+  height: 35px;
+  padding: 8px 26px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+}
+.dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn span {
+  height: 24px;
+  width: 24px;
+}
+.dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn.backBtn {
+  padding: 16px 26px 16px 15px;
+  background: #90A0B8;
+}
+.dpasetting .dpaSettingInnerPage .trainedDataBox .progressBar {
+  background: #C5C5C5;
+}
+.dpasetting .dpaSettingInnerPage .trainedDataBox .progressBar .progress {
+  height: 8px;
+}
+.dpasetting .dpaSettingInnerPage .trainedDataBox .progressBar .progress .progressBar1 {
+  background: #E7EBB8 !important;
+}
+.dpasetting .dpaSettingInnerPage .trainedDataBox .progressBar .progress .progressBar2 {
+  background: #9BB7C2;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .editsettingHeading {
+  font-size: 22px;
+  line-height: 33px;
+  color: #464255;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .clickingEvent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #A3A3A3;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup {
+  position: relative;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #464255;
+  position: absolute;
+  z-index: 2;
+  left: 50px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group {
+  z-index: 1;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .form-control, .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .input-group-text {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  padding: 18px 24px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #A3A3A3;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .form-control::placeholder, .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .input-group-text::placeholder {
+  color: #A3A3A3;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #464255;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .form-select {
+  background-color: rgba(234, 240, 248, 0.44);
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  height: 60px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: #464255;
+  padding: 16px 26px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .colorPointer {
+  height: 35px;
+  width: 35px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile {
+  background: rgba(174, 199, 232, 0.13);
+  border-radius: 24px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .content .uploadheading {
+  font-size: 14px;
+  line-height: 20px;
+  color: #515151;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .content .uploadcontent {
+  font-size: 12px;
+  line-height: 20px;
+  color: #515151;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input {
+  box-shadow: inset 0px 6px 8px 3px rgba(0, 0, 0, 0.1);
+  width: 71px;
+  height: 31.95px;
+  cursor: pointer;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input:focus {
+  border: none !important;
+  filter: grayscale(1);
+}
+.dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input:checked {
+  background-color: #AAF298;
+  filter: grayscale(0);
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #A3A3A3;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading.subHeading {
+  font-size: 12px;
+  line-height: 18px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assignedwork {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #464255;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .searchgroup .input-group .form-control {
+  padding: 2px 17px 2px 10px;
+  height: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A5C77;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .searchgroup .input-group .input-group-text img {
+  height: 15px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .usereventSection .userName {
+  background: rgba(74, 92, 119, 0.6);
+  border: 2px solid #E8EAEE;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .usereventSection .userName span {
+  display: flex;
+  height: 11px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .eventBtn {
+  height: 30px;
+  width: 30px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control {
+  background: #F2F4F8;
+  color: #000000;
+  height: 42px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text img, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control img {
+  fill: #000;
+  height: 25px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo .userImg {
+  width: 35px;
+  height: 35px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .assignBtn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  background: #5BCD97;
+  height: 26px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+  height: 60px;
+  border-radius: 18px;
+  padding: 16px 26px;
+  gap: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn span, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn span {
+  height: 28px;
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn {
+  background: rgba(225, 86, 86, 0.8117647059);
+}
+.dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+  background: #5BCD97;
+}
+
+.uploadFile .training {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  color: #585858;
+}
+.uploadFile .trainingSubContent {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A3A3A3;
+}
+.uploadFile .documentCard {
+  background: rgba(255, 255, 255, 0.38);
+}
+.uploadFile .chooseFile {
+  border: 1px dashed rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
 @media (max-width: 1599px) {
   .chartSide.rightSidebarHeader {
     height: 140px;
@@ -4723,6 +4989,146 @@ body .overflow-auto-hidden {
     height: 16px;
     width: 16px;
   }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard {
+    border-radius: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workplacePoint {
+    width: 38px;
+    height: 38px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workrelation {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn {
+    height: 32px;
+    padding: 8px 22px;
+    font-size: 13px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn span {
+    height: 22px;
+    width: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn.backBtn {
+    padding: 14px 24px 14px 15px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editsettingHeading {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .clickingEvent {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .form-label {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .form-control, .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .input-group-text {
+    padding: 16px 22px;
+    height: 50px;
+    font-size: 13px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .form-label {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .form-select {
+    border-radius: 16px;
+    height: 50px;
+    font-size: 14px;
+    line-height: normal;
+    padding: 14px 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .colorPointer {
+    height: 33px;
+    width: 33px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile {
+    border-radius: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .content .uploadheading {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .content .uploadcontent {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input {
+    width: 60px;
+    height: 28px;
+    cursor: pointer;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading.subHeading {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assignedwork {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .searchgroup .input-group .form-control {
+    padding: 2px 15px 2px 8px;
+    height: 27px;
+    font-size: 13px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .searchgroup .input-group .input-group-text img {
+    height: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .usereventSection .userName {
+    padding: 7px 10px;
+    font-size: 13px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .usereventSection .userName span {
+    height: 10px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .eventBtn {
+    height: 27px;
+    width: 27px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu {
+    border-radius: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control {
+    height: 38px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text img, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control img {
+    height: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo .userImg {
+    width: 32px;
+    height: 32px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .assignBtn {
+    font-size: 13px;
+    line-height: normal;
+    height: 23px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+    height: 50px;
+    border-radius: 16px;
+    padding: 14px 24px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn span, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn span {
+    height: 25px;
+  }
 }
 @media (max-width: 1399.98px) {
   .chartSide.rightSidebarHeader {
@@ -4782,6 +5188,157 @@ body .overflow-auto-hidden {
   .dpaSection.card .formSelectGroup .form-select {
     font-size: 12px;
   }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workplacePoint {
+    width: 36px;
+    height: 36px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workrelation {
+    font-size: 28px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn {
+    height: 30px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn span {
+    height: 20px;
+    width: 20px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editsettingHeading {
+    font-size: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .form-control, .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .input-group-text {
+    height: 45px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .form-select {
+    height: 45px;
+    font-size: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .colorPointer {
+    height: 31px;
+    width: 31px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading {
+    font-size: 15px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assignedwork {
+    font-size: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .searchgroup .input-group .form-control {
+    height: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .eventBtn {
+    height: 25px;
+    width: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control {
+    height: 35px;
+    font-size: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text img, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control img {
+    height: 20px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo {
+    font-size: 14px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo .userImg {
+    width: 30px;
+    height: 30px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .assignBtn {
+    height: 21px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+    height: 45px;
+    font-size: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn span, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn span {
+    height: 22px;
+  }
+}
+@media (max-width: 991.98px) {
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workplacePoint {
+    width: 32px;
+    height: 32px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workrelation {
+    font-size: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn {
+    height: 27px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn span {
+    height: 18px;
+    width: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editsettingHeading {
+    font-size: 16px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .form-label {
+    font-size: 10px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .form-control, .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .input-group-text {
+    height: 40px;
+    font-size: 12px;
+    border-radius: 14px;
+    padding: 8px 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .form-select {
+    height: 40px;
+    border-radius: 14px;
+    padding: 8px 22px !important;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .colorPointer {
+    height: 28px;
+    width: 28px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile {
+    border-radius: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input {
+    width: 45px;
+    height: 23px;
+    cursor: pointer;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading {
+    font-size: 14px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assignedwork {
+    font-size: 16px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .searchgroup .input-group .form-control {
+    height: 23px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .eventBtn {
+    height: 23px;
+    width: 23px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control {
+    height: 32px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text img, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control img {
+    height: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo {
+    font-size: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo .userImg {
+    width: 27px;
+    height: 27px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .assignBtn {
+    height: 19px;
+    font-size: 11px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+    height: 40px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn span, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn span {
+    height: 20px;
+  }
 }
 @media (max-width: 767.98px) {
   .chartSide.rightSidebarHeader {
@@ -4822,6 +5379,66 @@ body .overflow-auto-hidden {
   .dpaSection.topDapSection .leftSide .commonWork .workHeading {
     font-size: 14px;
   }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workplacePoint {
+    width: 30px;
+    height: 30px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workrelation {
+    font-size: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn {
+    height: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn span {
+    height: 17px;
+    width: 17px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editsettingHeading {
+    font-size: 14px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .colorPointer {
+    height: 25px;
+    width: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input {
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading {
+    font-size: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assignedwork {
+    font-size: 15px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .usereventSection .userName {
+    font-size: 11px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .eventBtn {
+    height: 22px;
+    width: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control {
+    height: 30px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text img, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control img {
+    height: 16px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo .userImg {
+    width: 25px;
+    height: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .assignBtn {
+    height: 18px;
+    font-size: 10px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+    height: 35px;
+    border-radius: 12px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn span, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn span {
+    height: 18px;
+  }
 }
 @media (max-width: 575.98px) {
   .dpaSection.card > .row > .col.d-flex {
@@ -4834,6 +5451,76 @@ body .overflow-auto-hidden {
     width: 100%;
     display: flex;
     justify-content: end;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workplacePoint {
+    width: 28px;
+    height: 28px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .workplaceCard .innerbody .workrelation {
+    font-size: 18px;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn {
+    font-size: 12px;
+    padding: 4px 15px;
+    gap: 10px !important;
+  }
+  .dpasetting .dpaSettingInnerPage .realtionCard .dpadeleteBtn span {
+    height: 16px;
+    width: 16px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editsettingHeading {
+    font-size: 14px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .form-control, .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .input-group .input-group-text {
+    border-right: 1px solid #E0E0E0 !important;
+    border-radius: 14px !important;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .editGroup .inputGroup .textgroup {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .colorPointer {
+    height: 25px;
+    width: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .rightSide .uploadFile .switchBtn .form-check-input {
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assognedHeading {
+    font-size: 13px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .assignedwork {
+    font-size: 15px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .usereventSection .userName {
+    font-size: 11px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .eventBtn {
+    height: 22px;
+    width: 22px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control {
+    height: 30px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .input-group-text img, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .searchgroup .input-group .form-control img {
+    height: 16px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .usersInfo .userImg {
+    width: 25px;
+    height: 25px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .dropdown .dropdown-menu .innerbody .userGroup .assignBtn {
+    height: 18px;
+    font-size: 10px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn {
+    height: 35px;
+    border-radius: 12px;
+  }
+  .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .cancleBtn span, .dpasetting .dpaSettingInnerPage .editSetting .assignedUsersGroup .userAssign .btnGroup .saveChangeBtn span {
+    height: 18px;
   }
 }
 .trackingusing .leftSection .dpaSection {

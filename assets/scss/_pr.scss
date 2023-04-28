@@ -1341,6 +1341,20 @@
             object-fit: cover;
         }
     }
+    .trainedDataBox {
+        & .progressBar {
+            background: #C5C5C5;
+            & .progress {
+                height: 8px;
+                & .progressBar1 {
+                    background: #E7EBB8 !important;
+                }
+                & .progressBar2 {
+                    background: #9BB7C2;
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
