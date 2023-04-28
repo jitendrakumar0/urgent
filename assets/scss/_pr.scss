@@ -1301,12 +1301,44 @@
         font-size: 14px;
         line-height: 21px;
         color: #4A5C77;
-        box-shadow: none;
+        border-color: #FFFFFF;
         height: 46px;
+        padding: 10px 11px;
+        padding-left: 10px;
+        width: 330px;
+        &:focus{
+        border-color: #FFFFFF;
+        }
     }
     .parent{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 24px;
         & img{
 
+        }
+    }
+    .resetBtn{
+        background: #FFFFFF;
+        border: 1px solid #9291A5;
+        border-radius: 8px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+        color: #615E83;
+    }
+    .dpaDatabase{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
