@@ -918,7 +918,304 @@
             }
         }
     }
-}
+    }
+    .dpasetting {
+        & .dpaSettingInnerPage {
+            background: rgba(253, 253, 253, 0.36);
+            & .realtionCard {
+                & .workplaceCard {
+                    border-radius: 24px;
+                    background: #FDFDFD;
+                    & .innerbody {
+                        & .workplacePoint {
+                            width: 40px;
+                            height: 40px;
+                            background: #E7EBB8;
+                        }
+                        & .workrelation {
+                            font-size: 32px;
+                            line-height: 48px;
+                            color: #4A5C77;
+                        }
+                    }
+                }
+                & .dpadeleteBtn {
+                    background: #E15656;
+                    height: 35px;
+                    padding: 8px 26px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.4px;
+                    & span {
+                        height: 24px;
+                        width: 24px;
+                    }
+                    &.backBtn {
+                        padding: 16px 26px 16px 15px;
+                        background: #90A0B8;
+                    }
+                }
+            }
+            & .trainedDataBox {
+                & .progressBar {
+                    background: #C5C5C5;
+                    & .progress {
+                        height: 8px;
+                        & .progressBar1 {
+                            background: #E7EBB8 !important;
+                        }
+                        & .progressBar2 {
+                            background: #9BB7C2;
+                        }
+                    }
+                }
+            }
+            & .editSetting {
+                & .editsettingHeading {
+                    font-size: 22px;
+                    line-height: 33px;
+                    color: #464255;
+                }
+                & .clickingEvent {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #A3A3A3;
+                }
+                & .editGroup {
+                    & .inputGroup {
+                        position: relative;
+                        & .form-label{
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #464255;
+                            position: absolute;
+                            z-index: 2;
+                            left: 50px;
+                        }
+                        & .input-group {
+                            z-index: 1;
+                            & .form-control, & .input-group-text{
+                                background: #FFFFFF;
+                                border: 1px solid #E0E0E0;
+                                border-radius: 18px;
+                                padding: 18px 24px;
+                                height: 60px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 26px;
+                                color: #A3A3A3;
+                                &::placeholder{
+                                    color: #A3A3A3;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                & .rightSide {
+                    & .form-label {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #464255;
+                    }
+                    & .form-select {
+                        background-color: rgba(234, 240, 248, 0.44);
+                        border: 1px solid #E0E0E0;
+                        border-radius: 18px;
+                        height: 60px;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 22px;
+                        letter-spacing: 0.4px;
+                        color: #464255;
+                        padding: 16px 26px;
+                    }
+                    & .colorPointer {
+                        height: 35px;
+                        width: 35px;
+                    }
+                    & .uploadFile {
+                        background: rgba(174, 199, 232, 0.13);
+                        border-radius: 24px;
+                        & .content {
+                            & .uploadheading {
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #515151;
+                            }
+                            & .uploadcontent {
+                                font-size: 12px;
+                                line-height: 20px;
+                                color: #515151;
+                            }
+                        }
+                        & .switchBtn {
+                            & .form-check-input{
+                                box-shadow: inset 0px 6px 8px 3px rgba(0, 0, 0, 0.1);
+                                width: 71px;
+                                height: 31.95px;
+                                cursor: pointer;
+                            &:focus{
+                                border: none !important;
+                                filter: grayscale(1);
+                                
+                            }
+                            &:checked {
+                                background-color: #AAF298;
+                                filter: grayscale(0);
+                            }
+                            }
+                        }
+                    }
+                }
+                & .assignedUsersGroup {
+                    & .assognedHeading {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        color: #A3A3A3;
+                        &.subHeading {
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                    & .assignedwork {
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 33px;
+                        color: #464255;
+                    }
+                    & .searchgroup {
+                        & .input-group {
+                            & .form-control {
+                                padding: 2px 17px 2px 10px;
+                                height: 30px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #4A5C77;
+                            }
+                            & .input-group-text {
+                                & img {
+                                    height: 15px;
+                                }
+                            }
+                        }
+                    }
+                    & .userAssign {
+                        & .usereventSection {
+                            & .userName {
+                                background: rgba(74, 92, 119, 0.6);
+                                border: 2px solid #E8EAEE;
+                                border-radius: 4px;
+                                padding: 8px 12px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 16px;
+                                & span{
+                                    display: flex;
+                                    height: 11px;
+                                }
+                            }
+                        }
+                        & .dropdown {
+                            & .eventBtn {
+                                height: 30px;
+                                width: 30px;
+                            }
+                            & .dropdown-menu {
+                                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                                background: #FFFFFF;
+                                border-radius: 20px;
+                                & .innerbody {
+                                    & .searchgroup {
+                                        & .input-group {
+                                            & .input-group-text , & .form-control {
+                                                background: #F2F4F8;
+                                                color: #000000;
+                                                height: 42px;
+                                                font-size: 16px;
+                                                line-height: 26px;
+                                                & img {
+                                                    fill: #000;
+                                                    height: 25px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .userGroup {
+                                        & .usersInfo {
+                                            font-weight: 400;
+                                            font-size: 18px;
+                                            line-height: 26px;
+                                            color: #000000;
+                                            & .userImg {
+                                                width: 35px;
+                                                height: 35px;
+                                            }
+                                        }
+                                        & .assignBtn {
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 21px;
+                                            letter-spacing: 0.4px;
+                                            background: #5BCD97;
+                                            height: 26px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .btnGroup {
+                            & .cancleBtn, & .saveChangeBtn {
+                                height: 60px;
+                                border-radius: 18px;
+                                padding: 16px 26px;
+                                gap: 14px;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                letter-spacing: 0.4px;
+                                & span {
+                                    height: 28px;
+                                }
+                            }
+                            & .cancleBtn {
+                                background: #E15656CF;
+                            }
+                            & .saveChangeBtn {
+                                background: #5BCD97;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .uploadFile {
+        & .training {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 38px;
+            color: #585858;
+        }
+        & .trainingSubContent {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #A3A3A3;
+        }
+        & .documentCard {
+            background: rgba(255, 255, 255, 0.38);
+        }
+        & .chooseFile {
+            border: 1px dashed rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+    }
 }
 
 @include media-breakpoint-up(sm) {}
@@ -1095,7 +1392,215 @@
             }
         }
     }
-}
+    }
+
+    .dpasetting {
+        & .dpaSettingInnerPage {
+            & .realtionCard {
+                & .workplaceCard {
+                    border-radius: 22px;
+                    & .innerbody {
+                        & .workplacePoint {
+                            width: 38px;
+                            height: 38px;
+                        }
+                        & .workrelation {
+                            font-size: 30px;
+                            line-height: normal;
+                        }
+                    }
+                }
+                & .dpadeleteBtn {
+                    height: 32px;
+                    padding: 8px 22px;
+                    font-size: 13px;
+                    line-height: normal;
+                    & span {
+                        height: 22px;
+                        width: 22px;
+                    }
+                    &.backBtn {
+                        padding: 14px 24px 14px 15px;
+                    }
+                }
+            }
+            & .trainedDataBox {
+                & .progressBar {
+                    & .progress {
+                        & .progressBar1 {
+                        }
+                        & .progressBar2 {
+                        }
+                    }
+                }
+            }
+            & .editSetting {
+                & .editsettingHeading {
+                    font-size: 20px;
+                    line-height: normal;
+                }
+                & .clickingEvent {
+                    font-size: 13px;
+                    line-height: normal;
+                }
+                & .editGroup {
+                    & .inputGroup {
+                        & .form-label{
+                            font-size: 11px;
+                            line-height: normal;
+                        }
+                        & .input-group {
+                            & .form-control, & .input-group-text{
+                                padding: 16px 22px;
+                                height: 50px;
+                                font-size: 13px;
+                                line-height: normal;
+                                &::placeholder{
+                                }
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .form-label {
+                        font-size: 11px;
+                        line-height: normal;
+                    }
+                    & .form-select {
+                        border-radius: 16px;
+                        height: 50px;
+                        font-size: 14px;
+                        line-height: normal;
+                        padding: 14px 22px;
+                    }
+                    & .colorPointer {
+                        height: 33px;
+                        width: 33px;
+                    }
+                    & .uploadFile {
+                        border-radius: 22px;
+                        & .content {
+                            & .uploadheading {
+                                font-size: 13px;
+                                line-height: normal;
+                            }
+                            & .uploadcontent {
+                                font-size: 11px;
+                                line-height: normal;
+                            }
+                        }
+                        & .switchBtn {
+                            & .form-check-input{
+                                width: 60px;
+                                height: 28px;
+                                cursor: pointer;
+                            &:focus{
+                                
+                            }
+                            &:checked {
+                            }
+                            }
+                        }
+                    }
+                }
+                & .assignedUsersGroup {
+                    & .assognedHeading {
+                        font-size: 16px;
+                        line-height: normal;
+                        &.subHeading {
+                            font-size: 11px;
+                            line-height: normal;
+                        }
+                    }
+                    & .assignedwork {
+                        font-size: 20px;
+                        line-height: normal;
+                    }
+                    & .searchgroup {
+                        & .input-group {
+                            & .form-control {
+                                padding: 2px 15px 2px 8px;
+                                height: 27px;
+                                font-size: 13px;
+                                line-height: normal;
+                            }
+                            & .input-group-text {
+                                & img {
+                                    height: 13px;
+                                }
+                            }
+                        }
+                    }
+                    & .userAssign {
+                        & .usereventSection {
+                            & .userName {
+                                padding: 7px 10px;
+                                font-size: 13px;
+                                line-height: normal;
+                                & span{
+                                    height: 10px;
+                                }
+                            }
+                        }
+                        & .dropdown {
+                            & .eventBtn {
+                                height: 27px;
+                                width: 27px;
+                            }
+                            & .dropdown-menu {
+                                border-radius: 18px;
+                                & .innerbody {
+                                    & .searchgroup {
+                                        & .input-group {
+                                            & .input-group-text , & .form-control {
+                                                height: 38px;
+                                                font-size: 14px;
+                                                line-height: normal;
+                                                & img {
+                                                    height: 22px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .userGroup {
+                                        & .usersInfo {
+                                            font-size: 16px;
+                                            line-height: normal;
+                                            & .userImg {
+                                                width: 32px;
+                                                height: 32px;
+                                            }
+                                        }
+                                        & .assignBtn {
+                                            font-size: 13px;
+                                            line-height: normal;
+                                            height: 23px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .btnGroup {
+                            & .cancleBtn, & .saveChangeBtn {
+                                height: 50px;
+                                border-radius: 16px;
+                                padding: 14px 24px;
+                                font-size: 14px;
+                                line-height: normal;
+                                & span {
+                                    height: 25px;
+                                }
+                            }
+                            & .cancleBtn {
+                            }
+                            & .saveChangeBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xxl) {
@@ -1388,7 +1893,171 @@
             }
         }
     }
-}
+    }
+
+    .dpasetting {
+        & .dpaSettingInnerPage {
+            & .realtionCard {
+                & .workplaceCard {
+                    & .innerbody {
+                        & .workplacePoint {
+                            width: 36px;
+                            height: 36px;
+                        }
+                        & .workrelation {
+                            font-size: 28px;
+                        }
+                    }
+                }
+                & .dpadeleteBtn {
+                    height: 30px;
+                    & span {
+                        height: 20px;
+                        width: 20px;
+                    }
+                    &.backBtn {
+                    }
+                }
+            }
+            & .trainedDataBox {
+                & .progressBar {
+                    & .progress {
+                        & .progressBar1 {
+                        }
+                        & .progressBar2 {
+                        }
+                    }
+                }
+            }
+            & .editSetting {
+                & .editsettingHeading {
+                    font-size: 18px;
+                }
+                & .clickingEvent {
+                }
+                & .editGroup {
+                    & .inputGroup {
+                        & .form-label{
+                        }
+                        & .input-group {
+                            & .form-control, & .input-group-text{
+                                height: 45px;
+                                &::placeholder{
+                                }
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .form-label {
+                    }
+                    & .form-select {
+                        height: 45px;
+                        font-size: 13px;
+                    }
+                    & .colorPointer {
+                        height: 31px;
+                        width: 31px;
+                    }
+                    & .uploadFile {
+                        & .content {
+                            & .uploadheading {
+                            }
+                            & .uploadcontent {
+                            }
+                        }
+                        & .switchBtn {
+                            & .form-check-input{
+                                width: 50px;
+                                height: 25px;
+                                cursor: pointer;
+                            &:focus{
+                                
+                            }
+                            &:checked {
+                            }
+                            }
+                        }
+                    }
+                }
+                & .assignedUsersGroup {
+                    & .assognedHeading {
+                        font-size: 15px;
+                        &.subHeading {
+                        }
+                    }
+                    & .assignedwork {
+                        font-size: 18px;
+                    }
+                    & .searchgroup {
+                        & .input-group {
+                            & .form-control {
+                                height: 25px;
+                            }
+                            & .input-group-text {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                    & .userAssign {
+                        & .usereventSection {
+                            & .userName {
+                                & span{
+                                }
+                            }
+                        }
+                        & .dropdown {
+                            & .eventBtn {
+                                height: 25px;
+                                width: 25px;
+                            }
+                            & .dropdown-menu {
+                                & .innerbody {
+                                    & .searchgroup {
+                                        & .input-group {
+                                            & .input-group-text , & .form-control {
+                                                height: 35px;
+                                                font-size: 13px;
+                                                & img {
+                                                    height: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .userGroup {
+                                        & .usersInfo {
+                                            font-size: 14px;
+                                            & .userImg {
+                                                width: 30px;
+                                                height: 30px;
+                                            }
+                                        }
+                                        & .assignBtn {
+                                            height: 21px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .btnGroup {
+                            & .cancleBtn, & .saveChangeBtn {
+                                height: 45px;
+                                font-size: 13px;
+                                & span {
+                                    height: 22px;
+                                }
+                            }
+                            & .cancleBtn {
+                            }
+                            & .saveChangeBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(lg) {
@@ -1518,6 +2187,175 @@
                         }
                     }
             }
+            }
+        }
+    }
+}
+
+.dpasetting {
+    & .dpaSettingInnerPage {
+        & .realtionCard {
+            & .workplaceCard {
+                & .innerbody {
+                    & .workplacePoint {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    & .workrelation {
+                        font-size: 25px;
+                    }
+                }
+            }
+            & .dpadeleteBtn {
+                height: 27px;
+                & span {
+                    height: 18px;
+                    width: 18px;
+                }
+                &.backBtn {
+                }
+            }
+        }
+        & .trainedDataBox {
+            & .progressBar {
+                & .progress {
+                    & .progressBar1 {
+                    }
+                    & .progressBar2 {
+                    }
+                }
+            }
+        }
+        & .editSetting {
+            & .editsettingHeading {
+                font-size: 16px;
+            }
+            & .clickingEvent {
+            }
+            & .editGroup {
+                & .inputGroup {
+                    & .form-label{
+                        font-size: 10px;
+                    }
+                    & .input-group {
+                        & .form-control, & .input-group-text{
+                            height: 40px;
+                            font-size: 12px;
+                            border-radius: 14px;
+                            padding: 8px 22px;
+                            &::placeholder{
+                            }
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                & .form-label {
+                }
+                & .form-select {
+                    height: 40px;
+                    border-radius: 14px;
+                            padding: 8px 22px !important;
+                }
+                & .colorPointer {
+                    height: 28px;
+                    width: 28px;
+                }
+                & .uploadFile {
+                    border-radius: 18px;
+                    & .content {
+                        & .uploadheading {
+                        }
+                        & .uploadcontent {
+                        }
+                    }
+                    & .switchBtn {
+                        & .form-check-input{
+                            width: 45px;
+                            height: 23px;
+                            cursor: pointer;
+                        &:focus{
+                            
+                        }
+                        &:checked {
+                        }
+                        }
+                    }
+                }
+            }
+            & .assignedUsersGroup {
+                & .assognedHeading {
+                    font-size: 14px;
+                    &.subHeading {
+                    }
+                }
+                & .assignedwork {
+                    font-size: 16px;
+                }
+                & .searchgroup {
+                    & .input-group {
+                        & .form-control {
+                            height: 23px;
+                        }
+                        & .input-group-text {
+                            & img {
+                            }
+                        }
+                    }
+                }
+                & .userAssign {
+                    & .usereventSection {
+                        & .userName {
+                            & span{
+                            }
+                        }
+                    }
+                    & .dropdown {
+                        & .eventBtn {
+                            height: 23px;
+                            width: 23px;
+                        }
+                        & .dropdown-menu {
+                            & .innerbody {
+                                & .searchgroup {
+                                    & .input-group {
+                                        & .input-group-text , & .form-control {
+                                            height: 32px;
+                                            & img {
+                                                height: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+                                & .userGroup {
+                                    & .usersInfo {
+                                        font-size: 13px;
+                                        & .userImg {
+                                            width: 27px;
+                                            height: 27px;
+                                        }
+                                    }
+                                    & .assignBtn {
+                                        height: 19px;
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .btnGroup {
+                        & .cancleBtn, & .saveChangeBtn {
+                            height: 40px;
+                            & span {
+                                height: 20px;
+                            }
+                        }
+                        & .cancleBtn {
+                        }
+                        & .saveChangeBtn {
+                        }
+                    }
+                }
             }
         }
     }
@@ -1676,7 +2514,166 @@
             }
         }
     }
-}
+    }
+    .dpasetting {
+        & .dpaSettingInnerPage {
+            & .realtionCard {
+                & .workplaceCard {
+                    & .innerbody {
+                        & .workplacePoint {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        & .workrelation {
+                            font-size: 22px;
+                        }
+                    }
+                }
+                & .dpadeleteBtn {
+                    height: 25px;
+                    & span {
+                        height: 17px;
+                        width: 17px;
+                    }
+                    &.backBtn {
+                    }
+                }
+            }
+            & .trainedDataBox {
+                & .progressBar {
+                    & .progress {
+                        & .progressBar1 {
+                        }
+                        & .progressBar2 {
+                        }
+                    }
+                }
+            }
+            & .editSetting {
+                & .editsettingHeading {
+                    font-size: 14px;
+                }
+                & .clickingEvent {
+                }
+                & .editGroup {
+                    & .inputGroup {
+                        & .form-label{
+                        }
+                        & .input-group {
+                            & .form-control, & .input-group-text{
+                                &::placeholder{
+                                }
+                            }
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .form-label {
+                    }
+                    & .form-select {
+                    }
+                    & .colorPointer {
+                        height: 25px;
+                        width: 25px;
+                    }
+                    & .uploadFile {
+                        & .content {
+                            & .uploadheading {
+                            }
+                            & .uploadcontent {
+                            }
+                        }
+                        & .switchBtn {
+                            & .form-check-input{
+                                width: 40px;
+                                height: 20px;
+                                cursor: pointer;
+                            &:focus{
+                                
+                            }
+                            &:checked {
+                            }
+                            }
+                        }
+                    }
+                }
+                & .assignedUsersGroup {
+                    & .assognedHeading {
+                        font-size: 13px;
+                        &.subHeading {
+                        }
+                    }
+                    & .assignedwork {
+                        font-size: 15px;
+                    }
+                    & .searchgroup {
+                        & .input-group {
+                            & .form-control {
+                            }
+                            & .input-group-text {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                    & .userAssign {
+                        & .usereventSection {
+                            & .userName {
+                                font-size: 11px;
+                                & span{
+                                }
+                            }
+                        }
+                        & .dropdown {
+                            & .eventBtn {
+                                height: 22px;
+                                width: 22px;
+                            }
+                            & .dropdown-menu {
+                                & .innerbody {
+                                    & .searchgroup {
+                                        & .input-group {
+                                            & .input-group-text , & .form-control {
+                                                height: 30px;
+                                                & img {
+                                                    height: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .userGroup {
+                                        & .usersInfo {
+                                            & .userImg {
+                                                width: 25px;
+                                                height: 25px;
+                                            }
+                                        }
+                                        & .assignBtn {
+                                            height: 18px;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .btnGroup {
+                            & .cancleBtn, & .saveChangeBtn {
+                                height: 35px;
+                                border-radius: 12px;
+                                & span {
+                                    height: 18px;
+                                }
+                            }
+                            & .cancleBtn {
+                            }
+                            & .saveChangeBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -1824,6 +2821,173 @@
             }
         }
     }
-}
+    }
+    .dpasetting {
+        & .dpaSettingInnerPage {
+            & .realtionCard {
+                & .workplaceCard {
+                    & .innerbody {
+                        & .workplacePoint {
+                            width: 28px;
+                            height: 28px;
+                        }
+                        & .workrelation {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                & .dpadeleteBtn {
+                    font-size: 12px;
+                    padding: 4px 15px;
+                    gap: 10px !important;
+                    & span {
+                        height: 16px;
+                        width: 16px;
+                    }
+                    &.backBtn {
+                    }
+                }
+            }
+            & .trainedDataBox {
+                & .progressBar {
+                    & .progress {
+                        & .progressBar1 {
+                        }
+                        & .progressBar2 {
+                        }
+                    }
+                }
+            }
+            & .editSetting {
+                & .editsettingHeading {
+                    font-size: 14px;
+                }
+                & .clickingEvent {
+                }
+                & .editGroup {
+                    & .inputGroup {
+                        & .form-label{
+                        }
+                        & .input-group {
+                            & .form-control, & .input-group-text{
+                                border-right: 1px solid #E0E0E0 !important;
+                                border-radius: 14px !important;
+                                &::placeholder{
+                                }
+                            }
+                        }
+                        & .textgroup {
+                            font-size: 10px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                & .rightSide {
+                    & .form-label {
+                    }
+                    & .form-select {
+                    }
+                    & .colorPointer {
+                        height: 25px;
+                        width: 25px;
+                    }
+                    & .uploadFile {
+                        & .content {
+                            & .uploadheading {
+                            }
+                            & .uploadcontent {
+                            }
+                        }
+                        & .switchBtn {
+                            & .form-check-input{
+                                width: 40px;
+                                height: 20px;
+                                cursor: pointer;
+                            &:focus{
+                                
+                            }
+                            &:checked {
+                            }
+                            }
+                        }
+                    }
+                }
+                & .assignedUsersGroup {
+                    & .assognedHeading {
+                        font-size: 13px;
+                        &.subHeading {
+                        }
+                    }
+                    & .assignedwork {
+                        font-size: 15px;
+                    }
+                    & .searchgroup {
+                        & .input-group {
+                            & .form-control {
+                            }
+                            & .input-group-text {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                    & .userAssign {
+                        & .usereventSection {
+                            & .userName {
+                                font-size: 11px;
+                                & span{
+                                }
+                            }
+                        }
+                        & .dropdown {
+                            & .eventBtn {
+                                height: 22px;
+                                width: 22px;
+                            }
+                            & .dropdown-menu {
+                                & .innerbody {
+                                    & .searchgroup {
+                                        & .input-group {
+                                            & .input-group-text , & .form-control {
+                                                height: 30px;
+                                                & img {
+                                                    height: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    & .userGroup {
+                                        & .usersInfo {
+                                            & .userImg {
+                                                width: 25px;
+                                                height: 25px;
+                                            }
+                                        }
+                                        & .assignBtn {
+                                            height: 18px;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & .btnGroup {
+                            & .cancleBtn, & .saveChangeBtn {
+                                height: 35px;
+                                border-radius: 12px;
+                                & span {
+                                    height: 18px;
+                                }
+                            }
+                            & .cancleBtn {
+                            }
+                            & .saveChangeBtn {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 

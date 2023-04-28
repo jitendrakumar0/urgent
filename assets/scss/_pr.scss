@@ -934,7 +934,7 @@
     .createHeroSection{
         background: rgba(253, 253, 253, 0.36);
         border-radius: 24px;
-        padding: 25px 95px;
+        padding: 25px 53px;
         & .creteHead{
             font-family: 'Poppins';
             font-style: normal;
@@ -1007,7 +1007,7 @@
         & .uploadSection{
             background: rgba(174, 199, 232, 0.13);
             border-radius: 24px;
-            padding: 10px 30px;
+            padding: 11px 21px;
             & .uploadSectionHead{
                 font-family: 'Poppins';
                 font-style: normal;
@@ -1035,7 +1035,7 @@
                 outline: none;
                 border-radius: 2rem;
                 cursor: pointer;
-                box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+                // box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
             }
             input[type="checkbox"]::before {
                 content: "";
@@ -1301,12 +1301,58 @@
         font-size: 14px;
         line-height: 21px;
         color: #4A5C77;
-        box-shadow: none;
+        border-color: #FFFFFF;
         height: 46px;
+        padding: 10px 11px;
+        padding-left: 10px;
+        width: 330px;
+        &:focus{
+        border-color: #FFFFFF;
+        }
     }
     .parent{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 24px;
         & img{
 
+        }
+    }
+    .resetBtn{
+        background: #FFFFFF;
+        border: 1px solid #9291A5;
+        border-radius: 8px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+        color: #615E83;
+    }
+    .dpaDatabase{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .trainedDataBox {
+        & .progressBar {
+            background: #C5C5C5;
+            & .progress {
+                height: 8px;
+                & .progressBar1 {
+                    background: #E7EBB8 !important;
+                }
+                & .progressBar2 {
+                    background: #9BB7C2;
+                }
+            }
         }
     }
 }
