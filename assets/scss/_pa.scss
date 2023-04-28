@@ -4,8 +4,12 @@
         background-color: #F4F4F4;
         background-image: url(../img/bg1.png);
         background-repeat: no-repeat;
+        background-size: contain;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-attachment: fixed;
         & .loginPageContainer{
             padding: 40px 30px;
             & .loginPageMainHeading{
@@ -320,6 +324,7 @@
                             font-size: 14px;
                             & img {
                                 height: 24px;
+                                width: 24px;
                             }
                             &.active{
                                 & img{
@@ -515,6 +520,7 @@
                             }
                             & .sidebarImg{
                                 height: 22px;
+                                width: 22px;
                             }
                         }
                     }
