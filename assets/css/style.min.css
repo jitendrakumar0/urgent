@@ -1850,7 +1850,6 @@ body .overflow-auto-hidden {
 .settingTopBox .settingTopBoxSubHead {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #464255;
@@ -2262,7 +2261,7 @@ body .overflow-auto-hidden {
   background-position: top 50% right 20px;
 }
 .createHeroSection .selectColour {
-  background: #4A5C77;
+  background-color: var(--color);
   border-radius: 64px;
   width: 34px;
   height: 34px;
@@ -2429,6 +2428,142 @@ body .overflow-auto-hidden {
   color: #FFFFFF;
   border: none;
   padding: 18px 26px;
+}
+
+.backBtn {
+  background: #90A0B8;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  border: none;
+  padding: 7px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backBtn img {
+  height: 12px;
+  margin-right: 10px;
+}
+
+.relationBar {
+  background: #FDFDFD;
+  border-radius: 24px;
+  padding: 9px 24px;
+}
+.relationBar .relationBarLeft span:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E7EBB8;
+  display: block;
+}
+.relationBar .relationBarLeft span:last-child {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #4A5C77;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.relationBar .relationBarright .relationBarrightBtn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  background: #E7EBB8;
+  border-radius: 18px;
+  border: none;
+  padding: 9px 25px;
+  display: flex;
+  align-items: center;
+}
+.relationBar .relationBarright .relationBarrightBtn img {
+  height: 24px;
+  filter: brightness(6);
+  margin-right: 5px;
+}
+
+.dashboardCard {
+  background-color: var(--color);
+  border-radius: 24px;
+  width: 100%;
+  height: 100%;
+  padding: 22px 22px;
+}
+.dashboardCard .dashboardNumber {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.dashboardCard .dashboardIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboardCard .dashboardIcon img {
+  width: 25px;
+  height: 25px;
+}
+.dashboardCard .dashboardCardText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+.dashboardCard .dashboardCardText span {
+  font-weight: 600;
+}
+
+.pill {
+  background: var(--color);
+  border-radius: 20px;
+  height: 60px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 18px 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pill img {
+  margin-right: 5px;
+}
+
+.inP {
+  background: #FFFFFF;
+  border-radius: 18px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #4A5C77;
 }
 
 @media (max-width: 1599px) {
