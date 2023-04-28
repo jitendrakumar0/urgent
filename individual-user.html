@@ -168,23 +168,23 @@
                                                             <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
                                                         </div>
                                                         <div class="card shadow-none border-0 userProfileOuter">
-                                                            <div class="row mx-0">
+                                                            <div class="row mx-0 h-100">
                                                                 <div class="col-auto px-0">
                                                                     <div class="userImg">
                                                                         <img src="assets/img/bg/Avatar.png" class="w-100" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="col px-0">
-                                                                    <div class="row flex-column mx-0">
+                                                                    <div class="row flex-column mx-0 h-100">
                                                                         <div class="col px-0">
                                                                             <div class="userName">John Doe</div>
                                                                             <div class="userPosition">User</div>
                                                                         </div>
-                                                                        <div class="col px-0">
-                                                                            <div class="row mx-0">
+                                                                        <div class="col px-0 flex-fill">
+                                                                            <div class="row mx-0 align-items-center mt-auto">
                                                                                 <div class="col px-0 userMail">John@companyx.com</div>
                                                                                 <div class="col-auto px-0">
-                                                                                    <div class="row mx-0 gap-3">
+                                                                                    <div class="row mx-0 gap-3 align-items-center h-100">
                                                                                         <div class="col-auto px-0">
                                                                                             <a href="javascript:;" class="trackUsageBtn">
                                                                                                 <img src="assets/img/svg/trending-up.svg" alt="">Track Usage
@@ -203,85 +203,153 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card shadow-none border-0 addNewUserSection">
-                                                            <form class="row mx-0 align-items-center h-100 flex-column">
-                                                                <div class="col-12 px-0 secHeading fw-semibold">Adding New User</div>
-                                                                <div class="col-12 px-0 subHeading">Add in the relevant fields and the user will receive an e-mail with login details.</div>
-                                                                <div class="col-12 px-0">
-                                                                    <div class="row inpSection mx-0">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="card shadow-none border-0 addNewUserSection updateUserInfo">
+                                                                    <form class="row mx-0 align-items-center h-100 flex-column">
+                                                                        <div class="col-12 px-0 secHeading fw-semibold">Update User Info</div>
+                                                                        <div class="col-12 px-0 subHeading">Only edit the fields you want to & click update</div>
                                                                         <div class="col-12 px-0">
-                                                                            <div class="nameInp">
-                                                                                <input type="text" class="form-control" placeholder="Name">
-                                                                                <div class="characterLimit">(25 Character Limit)</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 px-0">
-                                                                            <input type="email" class="form-control" placeholder="E-mail">
-                                                                        </div>
-                                                                        <div class="col-12 px-0">
-                                                                            <div class="chooseUserRoleText">Choose User Role</div>
-                                                                            <div class="customSelect">
-                                                                                <select class="form-select">
-                                                                                    <option selected>User</option>
-                                                                                    <option value="1">One</option>
-                                                                                    <option value="2">Two</option>
-                                                                                    <option value="3">Three</option>
-                                                                                </select>
-                                                                                <div class="selectImg">
-                                                                                    <img src="assets/img/svg/078-down-chevron.svg" class="w-100" alt="">
+                                                                            <div class="row inpSection mx-0">
+                                                                                <div class="col-12 px-0">
+                                                                                    <input type="text" class="form-control" placeholder="John Doe">
+                                                                                </div>
+                                                                                <div class="col-12 px-0">
+                                                                                    <input type="email" class="form-control" placeholder="John@companyx.com">
+                                                                                </div>
+                                                                                <div class="col-12 px-0">
+                                                                                    <div class="chooseUserRoleText">Choose User Role</div>
+                                                                                    <div class="customSelect">
+                                                                                        <select class="form-select">
+                                                                                            <option selected>User</option>
+                                                                                            <option value="1">One</option>
+                                                                                            <option value="2">Two</option>
+                                                                                            <option value="3">Three</option>
+                                                                                        </select>
+                                                                                        <div class="selectImg">
+                                                                                            <img src="assets/img/svg/078-down-chevron.svg" class="w-100" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 px-0">
+                                                                                    <input type="password" class="form-control" placeholder="New Password">
+                                                                                </div>
+                                                                                <div class="col-auto px-0 mx-auto">
+                                                                                    <a href="javascript:;" class="updateUserBtn">Update User Info</a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="col-12 px-0 userUssageLimitSection">
-                                                                            <div class="row mx-0 align-items-center">
-                                                                                <div class="col px-0 userHeading">User Usage Limit</div>
-                                                                                <div class="col-auto tokenOuter">
-                                                                                    <span>70k</span> <span class="tokenText">Tokens</span>
-                                                                                </div>
-                                                                                <div class="col-12 px-0 sliderImg">
-                                                                                    <img src="assets/img/svg/Slider.svg" class="w-100" alt="">
-                                                                                </div>
-                                                                            </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="card border-0 shadow-none assignedBox h-100">
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 boxHeading px-0">Assigned DPAs (5)
+                                                                            <span class="dropdown addBtnOuter">
+                                                                                <a href="javascript:;" class="addBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                <img src="assets/img/svg/add-icon.svg" class="w-100" alt="">
+                                                                                </a>
+                                                                                <ul class="dropdown-menu">
+                                                                                    <div class="serchInpOuter">
+                                                                                        <input type="text" class="form-control">
+                                                                                        <div class="searchBtn">
+                                                                                            <img src="assets/img/svg/search-icon2.svg" class="w-100" alt="">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <li class="dropdown-item">
+                                                                                        <span class="colorCirle"></span>
+                                                                                        <span class="itemText">Customer Service</span>
+                                                                                        <a class="asignBtn" href="javascript:;">Assign</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </span>
                                                                         </div>
-                                                                        <div class="col-12 px-0 assignDpaSection">
-                                                                            <div class="row mx-0 align-items-center gap-3">
-                                                                                <div class="col-auto assignDpaHeading px-0">Assign DPA to User</div>
-                                                                                <div class="col-auto px-0">
-                                                                                    <div class="row mx-0 gap-2 align-items-center">
-                                                                                        <div class="col-auto assignBox colorOne">HR 
-                                                                                            <span class="deleteIcon">
-                                                                                                <img src="assets/img/svg/cross-icon.svg" class="w-100" alt="">
-                                                                                            </span>
+                                                                        <div class="col-12 px-0 boxSubHeading">These are the assigned DPAs to this user. </div>
+                                                                        <div class="col-12 px-0 resultBoxOuter">
+                                                                            <div class="row mx-0">
+                                                                                <div class="col-12 px-0 resultBox">
+                                                                                    <div class="row mx-0 align-items-center">
+                                                                                        <div class="col-auto px-0 colorCircle colorOne"></div>
+                                                                                        <div class="col px-3">
+                                                                                            <div class="dpaHeadings">Workplace Relations</div>
+                                                                                            <div class="dpaSubHeadings">Description of DPA</div>
                                                                                         </div>
-                                                                                        <div class="col-auto assignBox colorTwo">Marketing 
-                                                                                            <span class="deleteIcon">
-                                                                                                <img src="assets/img/svg/cross-icon.svg" class="w-100" alt="">
-                                                                                            </span>
+                                                                                        <div class="col-auto px-0 dropdown">
+                                                                                            <a href="javascript:;" class="settingBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                <img src="assets/img/svg/settings.svg" class="w-100" alt="">
+                                                                                            </a>
+                                                                                            <ul class="dropdown-menu">
+                                                                                                <li><a class="dropdown-item" href="javascript:;">Revoke Access</a></li>
+                                                                                            </ul>
                                                                                         </div>
-                                                                                        <div class="col-auto assignBox colorThree">Accounting 
-                                                                                            <span class="deleteIcon">
-                                                                                                <img src="assets/img/svg/cross-icon.svg" class="w-100" alt="">
-                                                                                            </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 px-0 resultBox">
+                                                                                    <div class="row mx-0 align-items-center">
+                                                                                        <div class="col-auto px-0 colorCircle colorTwo"></div>
+                                                                                        <div class="col px-3">
+                                                                                            <div class="dpaHeadings">HR</div>
+                                                                                            <div class="dpaSubHeadings">Description of DPA</div>
                                                                                         </div>
-                                                                                        <div class="col-auto px-0 addBtnOuter">
-                                                                                            <div class="dropdown">
-                                                                                                <a href="javascript:;" class="addBtn" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                                                  <img src="assets/img/svg/add-icon.svg" class="w-100" alt="">
-                                                                                                </a>
-                                                                                                <ul class="dropdown-menu">
-                                                                                                    <div class="serchInpOuter">
-                                                                                                        <input type="text" class="form-control">
-                                                                                                        <div class="searchBtn">
-                                                                                                            <img src="assets/img/svg/search-icon2.svg" class="w-100" alt="">
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                    <li class="dropdown-item">
-                                                                                                        <span class="colorCirle"></span>
-                                                                                                        <span class="itemText">Customer Service</span>
-                                                                                                        <a class="asignBtn" href="javascript:;">Assign</a>
-                                                                                                    </li>
-                                                                                                </ul>
-                                                                                            </div>
+                                                                                        <div class="col-auto px-0 dropdown">
+                                                                                            <a href="javascript:;" class="settingBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                <img src="assets/img/svg/settings.svg" class="w-100" alt="">
+                                                                                            </a>
+                                                                                            <ul class="dropdown-menu">
+                                                                                                <li><a class="dropdown-item" href="javascript:;">Revoke Access</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 px-0 resultBox">
+                                                                                    <div class="row mx-0 align-items-center">
+                                                                                        <div class="col-auto px-0 colorCircle colorThree"></div>
+                                                                                        <div class="col px-3">
+                                                                                            <div class="dpaHeadings">Accounting</div>
+                                                                                            <div class="dpaSubHeadings">Description of DPA</div>
+                                                                                        </div>
+                                                                                        <div class="col-auto px-0 dropdown">
+                                                                                            <a href="javascript:;" class="settingBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                <img src="assets/img/svg/settings.svg" class="w-100" alt="">
+                                                                                            </a>
+                                                                                            <ul class="dropdown-menu">
+                                                                                                <li><a class="dropdown-item" href="javascript:;">Revoke Access</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 px-0 resultBox">
+                                                                                    <div class="row mx-0 align-items-center">
+                                                                                        <div class="col-auto px-0 colorCircle colorFour"></div>
+                                                                                        <div class="col px-3">
+                                                                                            <div class="dpaHeadings">IT</div>
+                                                                                            <div class="dpaSubHeadings">Description of DPA</div>
+                                                                                        </div>
+                                                                                        <div class="col-auto px-0 dropdown">
+                                                                                            <a href="javascript:;" class="settingBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                <img src="assets/img/svg/settings.svg" class="w-100" alt="">
+                                                                                            </a>
+                                                                                            <ul class="dropdown-menu">
+                                                                                                <li><a class="dropdown-item" href="javascript:;">Revoke Access</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-12 px-0 resultBox">
+                                                                                    <div class="row mx-0 align-items-center">
+                                                                                        <div class="col-auto px-0 colorCircle colorFive"></div>
+                                                                                        <div class="col px-3">
+                                                                                            <div class="dpaHeadings">Marketing</div>
+                                                                                            <div class="dpaSubHeadings">Description of DPA</div>
+                                                                                        </div>
+                                                                                        <div class="col-auto px-0 dropdown">
+                                                                                            <a href="javascript:;" class="settingBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                                <img src="assets/img/svg/settings.svg" class="w-100" alt="">
+                                                                                            </a>
+                                                                                            <ul class="dropdown-menu">
+                                                                                                <li><a class="dropdown-item" href="javascript:;">Revoke Access</a></li>
+                                                                                            </ul>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -289,11 +357,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-auto mx-auto mt-auto pt-3">
-                                                                    <a href="javascript:;" class="cancleBtn">Cancel</a>
-                                                                    <a href="javascript:;" class="addUserBtn">Add User</a>
-                                                                </div>
-                                                            </form>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-4 chartSide">
