@@ -243,7 +243,11 @@
                         & .sidebarImg{
                             filter: brightness(0);
                             height: 28px;
+                            width: 28px;
                             margin-right: 6px;
+                            &.billingIcon {
+                                width: 26px;
+                            }
                         }
                     }
                 }
@@ -325,6 +329,9 @@
                             & img {
                                 height: 24px;
                                 width: 24px;
+                                &.billingIcon {
+                                    width: 22px;
+                                }
                             }
                             &.active{
                                 & img{

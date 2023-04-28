@@ -19,8 +19,43 @@
             background-size: cover;
         }
         & .stickyHeader {
+            & .header {
+                & > .row {
+                    &:first-child {
+                        align-items: unset !important;
+                        & .rightSide {
+                            & > .row {
+                                &:first-child {
+                                    height: 100%;
+                                    position: relative;
+                                    &::before {
+                                        position: absolute;
+                                        content: '';
+                                        height: 50px;
+                                        width: 50px;
+                                        bottom: 0;
+                                        left: -30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             &.blur {
-                backdrop-filter: blur(8px);
+                & .leftSide {
+                    backdrop-filter: blur(8px);
+                }
+                & .rightSide {
+                    backdrop-filter: blur(8px);
+                    & > .row {
+                        &:first-child {
+                            &::before {
+                                backdrop-filter: blur(8px);
+                            }
+                        }
+                    }
+                }
             }
         }
         & .header {
