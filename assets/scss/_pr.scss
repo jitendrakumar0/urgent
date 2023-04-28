@@ -564,7 +564,7 @@
         & .settingTopBoxHead{
             font-family: 'Poppins';
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 32px;
             line-height: 48px;
             color: #4A5C77;
@@ -724,6 +724,14 @@
             margin-bottom: 31px;
             & img{
                 
+            }
+            & .changeCompanyIcon {
+                position: absolute;
+                bottom: 10px;
+                cursor: pointer;
+                & img {
+                    height: 25px;
+                }
             }
         }
         & .companyInfoFormLbl{
@@ -1296,7 +1304,7 @@
         box-shadow: none;
         height: 46px;
     }
-    & .parent{
+    .parent{
         & img{
 
         }
