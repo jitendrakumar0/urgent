@@ -86,7 +86,7 @@
                                                 <ul class="sidebarUL list-unstyled">
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/home.svg" alt=""></a> Dashboard</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/message.svg" alt=""></a> DPA Interface</li>
-                                                    <li class="sidebarLi active"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/users.svg" alt=""></a> Users</li>
+                                                    <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/users.svg" alt=""></a> Users</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/trending-up.svg" alt=""></a> Usage Tracking</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/grid.svg" alt=""></a> Database & DPA</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="assets/img/svg/creditcard.svg" alt=""></a> Billing & Plans</li>
@@ -112,7 +112,7 @@
                                         <div class="row mx-0 flex-column h-100 flex-nowrap px-3 ps-lg-0 pe-xxl-0">
                                             <div class="col-12 px-0 mainContent overflow-hidden h-100 flex-fill">
                                                 <div class="row h-100 mx-0">
-                                                    <div class="col-12 overflow-hidden-auto h-100 px-0 scrollPart userOverViewMain">
+                                                    <div class="col-12 overflow-hidden-auto h-100 px-0 scrollPart">
                                                         <div class="row mx-0 sticky-top stickyHeader">
                                                             <div class="col-12 header px-0">
                                                                 <div class="row mx-0 justify-content-center align-items-center">
@@ -123,8 +123,8 @@
                                                                             </div>
                                                                             <div class="col textSide ps-0">
                                                                                 <div class="row flex-column mx-0 d-none d-md-flex">
-                                                                                    <div class="col pageHeading px-0">User Management</div>
-                                                                                    <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
+                                                                                    <div class="col pageHeading px-0">Billing & Plans</div>
+                                                                                    <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-auto imgSide pe-0">
@@ -168,54 +168,99 @@
                                                         <div class="row py-3">
                                                             <div class="col-12">
                                                                 <div class="row flex-column mx-0 d-md-none headerHiddenDetails mb-3">
-                                                                    <div class="col pageHeading px-0">User Management</div>
-                                                                    <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
+                                                                    <div class="col pageHeading px-0">Billing & Plans</div>
+                                                                    <div class="col pageSubheading px-0">Welcome Carmen, you can find all your billing history here.</div>
                                                                 </div>
-                                                                <div class="row dashboardCardDetail g-3">
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="dashboardCard"style="--color:#4A5C77">
-                                                                            <div class="row">
-                                                                                <div class="col-12 d-flex justify-content-between">
-                                                                                    <div class="dashboardNumber">12</div>
-                                                                                    <div class="dashboardIcon"><img src="assets/img/svg/userIcon.svg" alt=""></div>
-                                                                                </div>
-                                                                                <div class="col-12 pe-0">
-                                                                                    <div class="dashboardCardText">of 20 Users</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="dashboardCard"style="--color:#9BB7C2">
-                                                                            <div class="row">
-                                                                                <div class="col-12 d-flex justify-content-between">
-                                                                                    <div class="dashboardNumber">2</div>
-                                                                                    <div class="dashboardIcon"><img src="assets/img/svg/crown.svg" alt=""></div>
-                                                                                </div>
-                                                                                <div class="col-12 pe-0">
-                                                                                    <div class="dashboardCardText">Admins</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-auto col-12 ms-auto">
-                                                                        <div class="row flex-md-column mx-0 gy-3 gy-sm-0 justify-content-between h-100 align-items-center">
-                                                                            <div class="col-sm-auto col-12 px-0">
-                                                                                <a href="javascript:;" class="addNewUserBtn">+ Add New User</a>
-                                                                            </div>
-                                                                            <div class="col-sm-auto col-12 searchInp px-0">
-                                                                                <input type="text" class="form-control" placeholder="Search user">
-                                                                                <div class="searchBtn">
-                                                                                    <img src="assets/img/svg/032-search.svg" class="w-100" alt="">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="row py-sm-3 py-2">
+                                                                            <div class="col-12">
+                                                                                <div class="planDetail" style="--color:#CAE6E499">
+                                                                                    <div class="row">
+                                                                                        <div class="col">
+                                                                                            <div class="row">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailMainHeading">Lite</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <ul class="planDetailUl">
+                                                                                                        <li class="planDetailLi">2M Training Tokens</li>
+                                                                                                        <li class="planDetailLi">10M Database Usage</li>
+                                                                                                        <li class="planDetailLi">3 DPAs</li>
+                                                                                                        <li class="planDetailLi">5 Users</li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <a href="javascript:;" class="planDetailAnchor">Current Plan</a>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="card shadow-none border-0 p-0 dpaSection  my-4">
-                                                                    <div class="row mx-0 align-items-center">
-                                                                        <div class="col-12 p-0">
-                                                                            <img src="assets/img/svg/user-table.svg" class="w-100" alt="">
+                                                                        <div class="row py-sm-3 py-2">
+                                                                            <div class="col-12">
+                                                                                <div class="planDetail" style="--color:#FDE4E499">
+                                                                                    <div class="row">
+                                                                                        <div class="col">
+                                                                                            <div class="row">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailMainHeading">Lite</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <ul class="planDetailUl">
+                                                                                                        <li class="planDetailLi">2M Training Tokens</li>
+                                                                                                        <li class="planDetailLi">10M Database Usage</li>
+                                                                                                        <li class="planDetailLi">3 DPAs</li>
+                                                                                                        <li class="planDetailLi">5 Users</li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <button class="upgradeBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Upgrade <img src="assets/img/svg/add.svg" alt="">
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row py-sm-3 py-2">
+                                                                            <div class="col-12">
+                                                                                <div class="planDetail" style="--color:#FFF5E599">
+                                                                                    <div class="row">
+                                                                                        <div class="col">
+                                                                                            <div class="row">
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailMainHeading">Lite</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <div class="planDetailSubHeading">Subscription: Monthly or Yearly</div>
+                                                                                                </div>
+                                                                                                <div class="col-12">
+                                                                                                    <ul class="planDetailUl">
+                                                                                                        <li class="planDetailLi">2M Training Tokens</li>
+                                                                                                        <li class="planDetailLi">10M Database Usage</li>
+                                                                                                        <li class="planDetailLi">3 DPAs</li>
+                                                                                                        <li class="planDetailLi">5 Users</li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-auto">
+                                                                                            <button class="upgradeBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Upgrade <img src="assets/img/svg/add.svg" alt="">
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -323,6 +368,38 @@
                 </div>
             </div>
         </main>
+         <!-- upgrade button offcanvas -->
+         <div class="offcanvas offcanvas-end upgradeOffcanvas" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header upgradeOffcanvasHeader">
+                <div class="offcanvas-title upgradeOffcanvasHeaderTitle" id="offcanvasExampleLabel">Upgrade Plan</div>
+                <button type="button" class="btn-close btnClose" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body upgradeOffcanvasBody">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="upgradeOffcanvasBodyHead">Pro</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="upgradeOffcanvasBodySubHead">Features</div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="upgradebodyUl">
+                            <li class="upgradebodyLi">2M Training Tokens</li>
+                            <li class="upgradebodyLi">10M Database Usage </li>
+                            <li class="upgradebodyLi">3 DPAs</li>
+                            <li class="upgradebodyLi">5 Users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer upgradeOffcanvasFooter">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="upgradeBtn"><img src="assets/img/svg/Upgrade.svg" alt="">Upgrade</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
         <!-- sidebar open close -->

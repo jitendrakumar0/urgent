@@ -4,8 +4,12 @@
         background-color: #F4F4F4;
         background-image: url(../img/bg1.png);
         background-repeat: no-repeat;
+        background-size: contain;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-attachment: fixed;
         & .loginPageContainer{
             padding: 40px 30px;
             & .loginPageMainHeading{
@@ -142,45 +146,45 @@
                 color: #464255;
             }
         }
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                background-color: var(--color);
-                border-radius: 24px;
-                width: 100%;
-                height: 100%;
-                padding: 22px 22px;
-                & .dashboardNumber{
-                    font-family: 'Poppins';
-                    font-style: normal;
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            background-color: var(--color);
+            border-radius: 24px;
+            width: 100%;
+            height: 100%;
+            padding: 22px 22px;
+            & .dashboardNumber{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 48px;
+                color: #FFFFFF;
+            }
+            & .dashboardIcon{
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                background-color:#FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & img{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            & .dashboardCardText{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                color: #FFFFFF;
+                margin-top: 5px;
+                & span {
                     font-weight: 600;
-                    font-size: 32px;
-                    line-height: 48px;
-                    color: #FFFFFF;
-                }
-                & .dashboardIcon{
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 10px;
-                    background-color:#FFFFFF;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    & img{
-                        width: 25px;
-                        height: 25px;
-                    }
-                }
-                & .dashboardCardText{
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 26px;
-                    color: #FFFFFF;
-                    margin-top: 5px;
-                    & span {
-                        font-weight: 600;
-                    }
                 }
             }
         }
@@ -320,6 +324,7 @@
                             font-size: 14px;
                             & img {
                                 height: 24px;
+                                width: 24px;
                             }
                             &.active{
                                 & img{
@@ -352,25 +357,25 @@
         }
     }
     .rightPart{
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                padding: 20px;
-                & .dashboardNumber{
-                    font-size: 30px;
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            padding: 20px;
+            & .dashboardNumber{
+                font-size: 30px;
+            }
+            & .dashboardIcon{
+                height: 42px;
+                width: 42px;
+                & img{
+                    height: 22px;
+                    width: 22px;
                 }
-                & .dashboardIcon{
-                    height: 42px;
-                    width: 42px;
-                    & img{
-                        height: 22px;
-                        width: 22px;
-                    }
-                }
-                & .dashboardCardText{
-                    font-size: 12px;
-                    margin-top: 0;
-                    line-height: 125%;
-                }
+            }
+            & .dashboardCardText{
+                font-size: 12px;
+                margin-top: 0;
+                line-height: 125%;
             }
         }
     }
@@ -444,16 +449,17 @@
         }
     }
     .rightPart{
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                & .dashboardNumber{
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            & .dashboardNumber{
+                font-size: 28px;
+            }
+            & .dashboardIcon{
+                & img{
                 }
-                & .dashboardIcon{
-                    & img{
-                    }
-                }
-                & .dashboardCardText{
-                }
+            }
+            & .dashboardCardText{
             }
         }
     }
@@ -514,6 +520,7 @@
                             }
                             & .sidebarImg{
                                 height: 22px;
+                                width: 22px;
                             }
                         }
                     }
@@ -535,21 +542,21 @@
         }
     }
     .rightPart{
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                & .dashboardNumber{
-                    font-size: 26px;
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            & .dashboardNumber{
+                font-size: 26px;
+            }
+            & .dashboardIcon{
+                height: 40px;
+                width: 40px;
+                & img{
+                    height: 20px;
+                    width: 20px;
                 }
-                & .dashboardIcon{
-                    height: 40px;
-                    width: 40px;
-                    & img{
-                        height: 20px;
-                        width: 20px;
-                    }
-                }
-                & .dashboardCardText{
-                }
+            }
+            & .dashboardCardText{
             }
         }
     }
@@ -594,7 +601,7 @@
         top: 0;
         left: 0;
         background-color: #F8FAFB;
-        z-index: 9;
+        z-index: 1055;
         transform: translateX(-100%);
         transition: 0.3s ease-in-out;
         & .sideBar{
@@ -647,16 +654,16 @@
         }
     }
     .rightPart{
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                & .dashboardNumber{
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            & .dashboardNumber{
+            }
+            & .dashboardIcon{
+                & img{
                 }
-                & .dashboardIcon{
-                    & img{
-                    }
-                }
-                & .dashboardCardText{
-                }
+            }
+            & .dashboardCardText{
             }
         }
     }
@@ -755,16 +762,16 @@
         }
     }
     .rightPart{
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                & .dashboardNumber{
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            & .dashboardNumber{
+            }
+            & .dashboardIcon{
+                & img{
                 }
-                & .dashboardIcon{
-                    & img{
-                    }
-                }
-                & .dashboardCardText{
-                }
+            }
+            & .dashboardCardText{
             }
         }
     }
@@ -846,16 +853,16 @@
         }
     }
     .rightPart{
-        & .dashboardCardDetail{
-            & .dashboardCard{
-                & .dashboardNumber{
+    }
+    .dashboardCardDetail{
+        & .dashboardCard{
+            & .dashboardNumber{
+            }
+            & .dashboardIcon{
+                & img{
                 }
-                & .dashboardIcon{
-                    & img{
-                    }
-                }
-                & .dashboardCardText{
-                }
+            }
+            & .dashboardCardText{
             }
         }
     }
