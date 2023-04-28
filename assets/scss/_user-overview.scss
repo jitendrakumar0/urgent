@@ -767,6 +767,7 @@
     }
     .addNewUserSection {
         & .secHeading {
+            font-size: 21px;
         }
         & .subHeading {
         }
@@ -887,12 +888,14 @@
         & .updateUserInfo {
             padding: 25px;
             & .updateUserBtn {
+                font-size: 15px;
                 &:hover {
                 }
             }
         }
         & .assignedBox {
             & .boxHeading {  
+                font-size: 21px;
                 & .addBtnOuter {
                     & .addBtn {
                     }
@@ -937,8 +940,10 @@
                         }
                     }
                     & .dpaHeadings {
+                        font-size: 17px;
                     }
                     & .dpaSubHeadings {
+                        font-size: 15px;
                     }
                     & .settingBtn {
                     }
@@ -952,12 +957,14 @@
         & .updateUserLimitCard {
             padding: 25px;
             & .cardHeading {
+                font-size: 21px;
             }
             & .tokenOuter {
                 & .tokenText {
                 }
             }
             & .updateBtn {
+                font-size: 15px;
                 &:hover {
                 }
             }
