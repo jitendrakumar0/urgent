@@ -160,4 +160,11 @@
 @import "aj";
 @import "forms";
 @import "dee";
-@import "../../chatbot/scss/chatbot";
+
+
+// master dashboard
+@import './../../Master-Dashboard/scss/masterDasboard';
+
+// chatbot 
+@import './../../chatbot/scss/chatbot'
+
