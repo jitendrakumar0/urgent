@@ -855,13 +855,149 @@
 
 @include media-breakpoint(basic) {
     .indexPageOuter {
+        padding-left: 25px;
         & .sectionHeading {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 700;
             font-size: 35px;
             line-height: 40px;
-            color: #8FA9B6;
+            color: #4A5C77;
+            & span{
+                color: #8FA9B6;
+            }
+        }
+        & .indexBottomSection {
+            & .searchBoxOuter {
+                padding-right: 25px;
+                & .megicTextOuter {
+                    display: flex;
+                    align-items: center;
+                    & .imgOuter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 12px;
+                    }
+                    & .magicText {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 28px;
+                        color: #4A5C77;
+                    }
+                }
+                & .SearchBarOuter {
+                    max-width: 260px;
+                    margin-bottom: 30px;
+                    & .input-group {
+                        height: 30px;
+                        & input {
+                            height: 100%;
+                            box-shadow: none;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #ACB1C6;
+                            padding: 8px 14px;
+                            background-color: #fff;
+                            border-radius: 3px 0px 0px 3px !important;
+                            border: 1px solid #8CA5B2;
+                        }
+                        & button {
+                            box-shadow: none;
+                            background-color: #8CA5B2;
+                            border-radius: 0px 20px 20px 0px !important;
+                            height: 100%;
+                            padding: 4px 7px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #8CA5B2;
+                            & img {
+                                width: 14px;
+                                height: 14px;
+                                filter: invert(1);
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                            &:hover {
+                                background-color: darken(#8CA5B2, 5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dataCard {
+        max-width: 370px;
+        height: 190px;
+        width: 100%;
+        padding: 25px;
+        border-radius: 30.8224px;
+        overflow: hidden;
+        border: none;
+        &.bg-one {
+            background-color:  #E7EBB8;
+        }
+        &.bg-two {
+            background-color:  #B3C6E5;
+        }
+        &.bg-three {
+            background-color:  #F0CECE;
+        }
+        &.bg-four {
+            background-color:  #F5BE82;
+        }
+        &.bg-five {
+            background-color:  #CEC0EC;
+        }
+        &.bg-six {
+            background-color:  #62C0BB;
+        }
+        & .dataCardImg {
+            width: 33px;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            & img {
+                filter: brightness(10);
+            }
+        }
+        & .dataCardHeading {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13.8701px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        & .dataCardText {
+            font-family: 'Cabin';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10.7878px;
+            line-height: 13px;
+            color: #FFFFFF;
+        }
+        & .cardLink {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.67);
         }
     }
 }
