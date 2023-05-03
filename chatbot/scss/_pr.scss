@@ -3,6 +3,12 @@
         & .chatbotMainInner {
             & .rightPart {
                 & .chatArea {
+                    padding: 0 !important;
+                    transform: translate(0);
+                    & .offcanvas-backdrop {
+                        background: rgba(255, 255, 255, 0.5);
+                        backdrop-filter: blur(5px)
+                    }
                     & .userMessage {
                         & .userMessageInner {
                             background: #F3F2F7;
@@ -11,7 +17,7 @@
                                 font-family: 'Cabin';
                                 font-style: normal;
                                 font-weight: 400;
-                                font-size: 14px;
+                                font-size: 15px;
                                 line-height: 21px;
                                 color: #434343;
                             }
@@ -35,7 +41,7 @@
                                 font-family: 'Cabin';
                                 font-style: normal;
                                 font-weight: 400;
-                                font-size: 14px;
+                                font-size: 15px;
                                 line-height: 21px;
                                 color: #FFFFFF;;
                             }
@@ -46,16 +52,17 @@
                                 font-family: 'Cabin';
                                 font-style: normal;
                                 font-weight: 400;
-                                font-size: 12px;
+                                font-size: 13px;
                                 line-height: 20px;
                                 color: rgba(255, 255, 255, 0.9);
                                 display: inline-flex;
                                 align-items: center;
                                 padding: 5px 10px;
+                                flex: 0 0 auto;
                             }
                             & .msgActionBtn {
                                 & img {
-                                    height: 17px;
+                                    height: 18px;
                                     padding-left: 5px;
                                 }
                             }
@@ -71,7 +78,7 @@
                             font-family: 'Cabin';
                             font-style: normal;
                             font-weight: 400;
-                            font-size: 14px;
+                            font-size: 15px;
                             line-height: 20px;
                             color: #3D3D3D;
                             resize: none;
@@ -85,7 +92,7 @@
         } 
     }
     .starredResponseOffcanvas {
-        top: 75px !important;
+        // top: 75px !important;
         width: 800px !important;
         & .offcanvas-header {
             & .offcanvas-title {
@@ -145,7 +152,7 @@
                         font-family: 'Cabin';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 15px;
                         line-height: 21px;
                         color: #434343;
                     }
@@ -169,7 +176,7 @@
                         font-family: 'Cabin';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 14px;
+                        font-size: 15px;
                         line-height: 21px;
                         color: #FFFFFF;;
                     }
@@ -180,12 +187,13 @@
                         font-family: 'Cabin';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 12px;
+                        font-size: 13px;
                         line-height: 20px;
                         color: rgba(255, 255, 255, 0.9);
                         display: inline-flex;
                         align-items: center;
                         padding: 5px 10px;
+                        flex: 0 0 auto;
                     }
                     & .msgActionBtn {
                         & img {
@@ -210,13 +218,421 @@
 
 
 @include media-breakpoint-down(xxl) {
- 
+    main {
+        & .chatbotMainInner {
+            & .rightPart {
+                & .chatArea {
+                    & .userMessage {
+                        & .userMessageInner {
+                            & .text {
+                                font-size: 14px;
+                            }
+                            & .msgTime {
+                            }
+                        }
+                    }
+                    & .botMessage {
+                        & .botMessageInner {
+                            & .text {
+                                font-size: 14px;
+                            }
+                            & .downloadPdf {
+                                font-size: 12px;
+                            }
+                            & .msgActionBtn {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .chatBottomBar {
+                    & .chatInputWrapper {
+                        & .form-control {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .starredResponseOffcanvas {
+        & .offcanvas-header {
+            & .offcanvas-title {
+            }
+            & .input-group {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & .input-group-text {
+                    & img {
+
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .msgDate {
+                & .date {
+                }
+                & .line {
+                }
+            }
+            & .userMessage {
+                & .userMessageInner {
+                    & .text {
+                        font-size: 14px;
+                    }
+                    & .msgTime {
+                    }
+                }
+            }
+            & .botMessage {
+                & .botMessageInner {
+                    & .text {
+                        font-size: 14px;
+                    }
+                    & .downloadPdf {
+                        font-size: 12px;
+                    }
+                    & .msgActionBtn {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    main {
+        & .chatbotMainInner {
+            & .rightPart {
+                & .chatArea {
+                    & .userMessage {
+                        & .userMessageInner {
+                            & .text {
+                            }
+                            & .msgTime {
+                            }
+                        }
+                    }
+                    & .botMessage {
+                        & .botMessageInner {
+                            & .text {
+                            }
+                            & .downloadPdf {
+                            }
+                            & .msgActionBtn {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .chatBottomBar {
+                    & .chatInputWrapper {
+                        & .form-control {
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .starredResponseOffcanvas {
+        width: 700px !important;
+        & .offcanvas-header {
+            & .offcanvas-title {
+            }
+            & .input-group {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & .input-group-text {
+                    & img {
 
-@include media-breakpoint-down(lg) {}
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .msgDate {
+                & .date {
+                }
+                & .line {
+                }
+            }
+            & .userMessage {
+                & .userMessageInner {
+                    & .text {
+                    }
+                    & .msgTime {
+                    }
+                }
+            }
+            & .botMessage {
+                & .botMessageInner {
+                    & .text {
+                    }
+                    & .downloadPdf {
+                    }
+                    & .msgActionBtn {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(lg) {
+    main {
+        & .chatbotMainInner {
+            & .rightPart {
+                & .chatArea {
+                    & .userMessage {
+                        & .userMessageInner {
+                            & .text {
+                            }
+                            & .msgTime {
+                            }
+                        }
+                    }
+                    & .botMessage {
+                        & .botMessageInner {
+                            & .text {
+                            }
+                            & .downloadPdf {
+                            }
+                            & .msgActionBtn {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .chatBottomBar {
+                    & .chatInputWrapper {
+                        & .form-control {
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .starredResponseOffcanvas {
+        width: 100% !important;
+        & .offcanvas-header {
+            & .offcanvas-title {
+            }
+            & .input-group {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & .input-group-text {
+                    & img {
 
-@include media-breakpoint-down(sm) {}
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .msgDate {
+                & .date {
+                }
+                & .line {
+                }
+            }
+            & .userMessage {
+                & .userMessageInner {
+                    & .text {
+                    }
+                    & .msgTime {
+                    }
+                }
+            }
+            & .botMessage {
+                & .botMessageInner {
+                    & .text {
+                    }
+                    & .downloadPdf {
+                    }
+                    & .msgActionBtn {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    main {
+        & .chatbotMainInner {
+            & .rightPart {
+                & .chatArea {
+                    & .userMessage {
+                        & .userMessageInner {
+                            & .text {
+                            }
+                            & .msgTime {
+                            }
+                        }
+                    }
+                    & .botMessage {
+                        & .botMessageInner {
+                            & .text {
+                            }
+                            & .downloadPdf {
+                            }
+                            & .msgActionBtn {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .chatBottomBar {
+                    & .chatInputWrapper {
+                        & .form-control {
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .starredResponseOffcanvas {
+        & .offcanvas-header {
+            & .offcanvas-title {
+            }
+            & .input-group {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & .input-group-text {
+                    & img {
+
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .msgDate {
+                & .date {
+                }
+                & .line {
+                }
+            }
+            & .userMessage {
+                & .userMessageInner {
+                    & .text {
+                    }
+                    & .msgTime {
+                    }
+                }
+            }
+            & .botMessage {
+                & .botMessageInner {
+                    & .text {
+                    }
+                    & .downloadPdf {
+                    }
+                    & .msgActionBtn {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    main {
+        & .chatbotMainInner {
+            & .rightPart {
+                & .chatArea {
+                    & .userMessage {
+                        & .userMessageInner {
+                            & .text {
+                            }
+                            & .msgTime {
+                            }
+                        }
+                    }
+                    & .botMessage {
+                        & .botMessageInner {
+                            & .text {
+                            }
+                            & .downloadPdf {
+                            }
+                            & .msgActionBtn {
+                                & img {
+                                }
+                            }
+                        }
+                    }
+                }
+                & .chatBottomBar {
+                    & .chatInputWrapper {
+                        & .form-control {
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .starredResponseOffcanvas {
+        & .offcanvas-header {
+            & .offcanvas-title {
+                font-size: 20px;
+            }
+            & .input-group {
+                & .form-control {
+                    &::placeholder {
+                    }
+                }
+                & .input-group-text {
+                    & img {
+
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .msgDate {
+                & .date {
+                }
+                & .line {
+                }
+            }
+            & .userMessage {
+                & .userMessageInner {
+                    & .text {
+                    }
+                    & .msgTime {
+                    }
+                }
+            }
+            & .botMessage {
+                & .botMessageInner {
+                    & .text {
+                    }
+                    & .downloadPdf {
+                    }
+                    & .msgActionBtn {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
