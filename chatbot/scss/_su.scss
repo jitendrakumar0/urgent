@@ -137,7 +137,7 @@
                         }
                     }
                     & .powerText {
-                        font-family: 'Inter';
+                        font-family: 'Cabin';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 10px;
@@ -706,6 +706,7 @@
                     }
                 }
                 & .mainPart {
+                    padding-left: 20px;
                     &.onlyHomePage {
                     }
                 }
@@ -855,13 +856,173 @@
 
 @include media-breakpoint(basic) {
     .indexPageOuter {
+        padding-left: 25px;
         & .sectionHeading {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 700;
             font-size: 35px;
             line-height: 40px;
-            color: #8FA9B6;
+            color: #4A5C77;
+            & span{
+                color: #8FA9B6;
+            }
+        }
+        & .indexBottomSection {
+            & .searchBoxOuter {
+                padding-right: 25px;
+                & .megicTextOuter {
+                    display: flex;
+                    align-items: center;
+                    & .imgOuter {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 12px;
+                    }
+                    & .magicText {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 28px;
+                        color: #4A5C77;
+                    }
+                }
+                & .SearchBarOuter {
+                    max-width: 260px;
+                    & .input-group {
+                        height: 30px;
+                        & input {
+                            height: 100%;
+                            box-shadow: none;
+                            font-family: 'Cabin';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #ACB1C6;
+                            padding: 8px 14px;
+                            background-color: #fff;
+                            border-radius: 3px 0px 0px 3px !important;
+                            border: 1px solid #8CA5B2;
+                        }
+                        & button {
+                            box-shadow: none;
+                            background-color: #8CA5B2;
+                            border-radius: 0px 20px 20px 0px !important;
+                            height: 100%;
+                            padding: 4px 7px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #8CA5B2;
+                            & img {
+                                width: 14px;
+                                height: 14px;
+                                filter: invert(1);
+                            }
+                            &:focus {
+                                outline: none;
+                            }
+                            &:hover {
+                                background-color: darken(#8CA5B2, 5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .customScrollbar {
+            padding-bottom: 20px;
+            * {
+                &>* {
+                  &::-webkit-scrollbar {}
+            
+                  &::-webkit-scrollbar-track {
+                  }
+            
+                  &::-webkit-scrollbar-thumb {
+                  }
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+            
+                &:hover>* {
+                  &::-webkit-scrollbar-track {}
+            
+                  &::-webkit-scrollbar-thumb {}
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+              }
+        }
+    }
+    .dataCard {
+        max-width: 370px;
+        height: 190px;
+        width: 100%;
+        padding: 25px;
+        border-radius: 30.8224px;
+        overflow: hidden;
+        border: none;
+        &.bg-one {
+            background-color:  #E7EBB8;
+        }
+        &.bg-two {
+            background-color:  #B3C6E5;
+        }
+        &.bg-three {
+            background-color:  #F0CECE;
+        }
+        &.bg-four {
+            background-color:  #F5BE82;
+        }
+        &.bg-five {
+            background-color:  #CEC0EC;
+        }
+        &.bg-six {
+            background-color:  #62C0BB;
+        }
+        & .dataCardImg {
+            width: 33px;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            margin-left: 7px;
+            & img {
+                filter: brightness(10);
+            }
+        }
+        & .dataCardHeading {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14.8701px;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+        & .dataCardText {
+            font-family: 'Cabin';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11.7878px;
+            line-height: 13px;
+            color: #FFFFFF;
+        }
+        & .cardLink {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.67);
         }
     }
 }
@@ -877,18 +1038,365 @@
 
 
 @include media-breakpoint-down(xxl) {
+    .indexPageOuter {
+        & .sectionHeading {
+            & span{
+            }
+        }
+        & .indexBottomSection {
+            & .searchBoxOuter {
+                & .megicTextOuter {
+                    & .imgOuter {
+                    }
+                    & .magicText {
+                    }
+                }
+                & .SearchBarOuter {
+                    & .input-group {
+                        & input {
+                        }
+                        & button {
+                            & img {
+                            }
+                            &:focus {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .customScrollbar {
+            * {
+                &>* {
+                  &::-webkit-scrollbar {}
+            
+                  &::-webkit-scrollbar-track {
+                  }
+            
+                  &::-webkit-scrollbar-thumb {
+                  }
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+            
+                &:hover>* {
+                  &::-webkit-scrollbar-track {}
+            
+                  &::-webkit-scrollbar-thumb {}
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+              }
+        }
+    }
+    .dataCard {
+        max-width: 360px;
+        height: 185px;
+        &.bg-one {
+        }
+        &.bg-two {
+        }
+        &.bg-three {
+        }
+        &.bg-four {
+        }
+        &.bg-five {
+        }
+        &.bg-six {
+        }
+        & .dataCardImg {
+            & img {
+            }
+        }
+        & .dataCardHeading {
+            font-size: 14.8701px;
+        }
+        & .dataCardText {
+            font-size: 10.7878px;
+        }
+        & .cardLink {
+            font-size: 10px;
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
+    .indexPageOuter {
+        & .sectionHeading {
+            font-size: 33px;
+            line-height: 35px;
+            & span{
+            }
+        }
+        & .indexBottomSection {
+            & .searchBoxOuter {
+                & .megicTextOuter {
+                    & .imgOuter {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    & .magicText {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+                & .SearchBarOuter {
+                    & .input-group {
+                        & input {
+                        }
+                        & button {
+                            & img {
+                            }
+                            &:focus {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .customScrollbar {
+            * {
+                &>* {
+                  &::-webkit-scrollbar {}
+            
+                  &::-webkit-scrollbar-track {
+                  }
+            
+                  &::-webkit-scrollbar-thumb {
+                  }
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+            
+                &:hover>* {
+                  &::-webkit-scrollbar-track {}
+            
+                  &::-webkit-scrollbar-thumb {}
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+              }
+        }
+    }
+    .dataCard {
+        &.bg-one {
+        }
+        &.bg-two {
+        }
+        &.bg-three {
+        }
+        &.bg-four {
+        }
+        &.bg-five {
+        }
+        &.bg-six {
+        }
+        & .dataCardImg {
+            & img {
+            }
+        }
+        & .dataCardHeading {
+        }
+        & .dataCardText {
+        }
+        & .cardLink {
+        }
+    }
 }
 
 @include media-breakpoint-down(lg) {
 }
 
 @include media-breakpoint-down(md) {
+    .indexPageOuter {
+        padding-left: 0;
+        & .sectionHeading {
+            font-size: 25px;
+            line-height: 28px;
+            & span{
+            }
+        }
+        & .indexBottomSection {
+            & .searchBoxOuter {
+                & .megicTextOuter {
+                    & .imgOuter {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    & .magicText {
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                }
+                & .SearchBarOuter {
+                    max-width: 180px;
+                    & .input-group {
+                        & input {
+                        }
+                        & button {
+                            & img {
+                            }
+                            &:focus {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .customScrollbar {
+            * {
+                &>* {
+                  &::-webkit-scrollbar {}
+            
+                  &::-webkit-scrollbar-track {
+                  }
+            
+                  &::-webkit-scrollbar-thumb {
+                  }
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+            
+                &:hover>* {
+                  &::-webkit-scrollbar-track {}
+            
+                  &::-webkit-scrollbar-thumb {}
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+              }
+        }
+    }
+    .dataCard {
+        width: 330px;
+        height: 170px;
+        padding: 20px;
+        border-radius: 23.8224px;
+        &.bg-one {
+        }
+        &.bg-two {
+        }
+        &.bg-three {
+        }
+        &.bg-four {
+        }
+        &.bg-five {
+        }
+        &.bg-six {
+        }
+        & .dataCardImg {
+            & img {
+            }
+        }
+        & .dataCardHeading {
+        }
+        & .dataCardText {
+        }
+        & .cardLink {
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) {
+    .indexPageOuter {
+        & .sectionHeading {
+            font-size: 20px;
+            line-height: 25px;
+            padding-right: 20px !important;
+            & span{
+            }
+        }
+        & .indexBottomSection {
+            & .searchBoxOuter {
+                padding-right: 20px;
+                & .megicTextOuter {
+                    & .imgOuter {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    & .magicText {
+                        font-size: 14px;
+                    }
+                }
+                & .SearchBarOuter {
+                    margin-top: 15px;
+                    max-width: 100%;
+                    padding-left: 0;
+                    & .input-group {
+                        & input {
+                        }
+                        & button {
+                            & img {
+                            }
+                            &:focus {
+                            }
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .customScrollbar {
+            * {
+                &>* {
+                  &::-webkit-scrollbar {}
+            
+                  &::-webkit-scrollbar-track {
+                  }
+            
+                  &::-webkit-scrollbar-thumb {
+                  }
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+            
+                &:hover>* {
+                  &::-webkit-scrollbar-track {}
+            
+                  &::-webkit-scrollbar-thumb {}
+            
+                  &::-webkit-scrollbar-thumb:hover {}
+                }
+              }
+        }
+    }
+    .dataCard {
+        width: 300px;
+        height: 170px;
+        padding: 15px;
+        border-radius: 20.8224px;
+        &.bg-one {
+        }
+        &.bg-two {
+        }
+        &.bg-three {
+        }
+        &.bg-four {
+        }
+        &.bg-five {
+        }
+        &.bg-six {
+        }
+        & .dataCardImg {
+            & img {
+            }
+        }
+        & .dataCardHeading {
+        }
+        & .dataCardText {
+        }
+        & .cardLink {
+        }
+    }
 }
 
 //! **************************************** Home Page End ********************************//
