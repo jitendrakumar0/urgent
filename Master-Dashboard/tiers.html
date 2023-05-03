@@ -85,8 +85,8 @@
                                             <div class="col-12 sideBarBody flex-fill overflow-hidden-auto h-100">
                                                 <ul class="sidebarUL list-unstyled">
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="./../assets/img/svg/home.svg" alt=""></a> Dashboard</li>
-                                                    <li class="sidebarLi active"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="./../assets/img/svg/users.svg" alt=""></a> Clients</li>
-                                                    <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg sidebarImg1" src="./../assets/img/svg/tiers.svg" alt=""></a>Tiers</li>
+                                                    <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg" src="./../assets/img/svg/users.svg" alt=""></a> Clients</li>
+                                                    <li class="sidebarLi active"><a href="javascript:;" class="stretched-link"><img class="sidebarImg sidebarImg1" src="./../assets/img/svg/tiers.svg" alt=""></a>Tiers</li>
                                                     <li class="sidebarLi"><a href="javascript:;" class="stretched-link"><img class="sidebarImg billingIcon" src="./../assets/img/svg/creditcard.svg" alt=""></a>Payment History</li>
                                                 </ul>
                                             </div>
@@ -120,7 +120,7 @@
                                                                             </div>
                                                                             <div class="col textSide ps-0">
                                                                                 <div class="row flex-column mx-0 d-none d-md-flex">
-                                                                                    <div class="col pageHeading px-0">Clients</div>
+                                                                                    <div class="col pageHeading px-0">Tiers</div>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-auto imgSide pe-0">
@@ -156,68 +156,21 @@
                                                                             <div class="col pageHeading px-0">Dashboard</div>
                                                                             <div class="col pageSubheading px-0">Welcome Carmen, you can find all information you require here.</div>
                                                                         </div>
-                                                                        <div class="row dashboardCardDetail g-3">
-                                                                            <div class="col-xxl-9 col-12">
-                                                                                <div class="row g-3 g-sm-3">
-                                                                                    <div class="col-md-3 col-sm-6">
-                                                                                        <div class="dashboardCard"style="--color:#4A5C77">
-                                                                                            <div class="row">
-                                                                                                <div class="col-12 d-flex justify-content-between">
-                                                                                                    <div class="dashboardNumber">8</div>
-                                                                                                </div>
-                                                                                                <div class="col-12 pe-0">
-                                                                                                    <div class="dashboardCardText">Company Clients</div>
+                                                                        <div class="row pt-sm-5 pt-3">
+                                                                            <div class="col-12">
+                                                                                <div class="clientTableTopBar row justify-content-between align-items-center">
+                                                                                    <div class="clientTableTopBarHeading col-12 col-md">Tier List</div>
+                                                                                    <div class="containerBox col-auto d-flex align-items-center">
+                                                                                        <div class="row">
+                                                                                            <div class="col-sm-auto col-12">
+                                                                                                <button class="addTier">+ Add New Tier</button>
+                                                                                            </div>
+                                                                                            <div class="col-sm-auto col-12 position-relative">
+                                                                                                <input type="text" class="form-control inpSearch" name="" id="" placeholder="Search tier">
+                                                                                                <div class="inpSearchBtn">
+                                                                                                    <img src="./../assets/img/svg/search.svg" alt="">
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-3 col-sm-6">
-                                                                                        <div class="dashboardCard"style="--color:#9BB7C2">
-                                                                                            <div class="row">
-                                                                                                <div class="col-12 d-flex justify-content-between">
-                                                                                                    <div class="dashboardNumber">3</div>
-                                                                                                </div>
-                                                                                                <div class="col-12 pe-0">
-                                                                                                    <div class="dashboardCardText">Lite Tier</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-3 col-sm-6">
-                                                                                        <div class="dashboardCard" style="--color:#A5B3C9">
-                                                                                            <div class="row">
-                                                                                                <div class="col-12 d-flex justify-content-between">
-                                                                                                    <div class="dashboardNumber">4</div>
-                                                                                                </div>
-                                                                                                <div class="col-12 pe-0">
-                                                                                                    <div class="dashboardCardText">Pro</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-3 col-sm-6">
-                                                                                        <div class="dashboardCard" style="--color:#A5B3C9">
-                                                                                            <div class="row">
-                                                                                                <div class="col-12 d-flex justify-content-between">
-                                                                                                    <div class="dashboardNumber">1</div>
-                                                                                                </div>
-                                                                                                <div class="col-12 pe-0">
-                                                                                                    <div class="dashboardCardText">Enterprise Tier</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-xxl-3 col-12 d-flex align-items-end justify-content-end">
-                                                                                <div class="row">
-                                                                                    <div class="col-12 d-flex align-items-end justify-content-end h-100">
-                                                                                        <button class="ExportBtn"><img src="./../assets/img/svg/download1.svg" alt="">Export</button>
-                                                                                    </div>
-                                                                                    <div class="col-12 position-relative">
-                                                                                        <input type="text" class="form-control inp" name="" id="" placeholder="Search company">
-                                                                                        <div class="search">
-                                                                                            <img src="./../assets/img/svg/search.svg" alt="">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -225,8 +178,8 @@
                                                                         </div>
                                                                         <div class="row py-3">
                                                                             <div class="col-12">
-                                                                                <div class="clientTable">
-                                                                                    <img src="./../assets/img/svg/clientUsertable.svg" alt="">
+                                                                                <div class="tierTable">
+                                                                                    <img src="./../assets/img/svg/clienttab.svg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
