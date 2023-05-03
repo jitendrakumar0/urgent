@@ -28,7 +28,10 @@
         & .leftPart {}
         & .rightBgPart {
             & .singleRightPart {
-                width: 100% !important;
+                & .stickyHeader {
+                    width: 100%;
+                    margin-inline: auto !important;
+                }
             }
         }
     }
