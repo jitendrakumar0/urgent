@@ -1,5 +1,16 @@
 @include media-breakpoint(basic) {
-  
+    .sideBarHeader{
+        display: flex;
+        justify-content: center;
+        & .companyLogo{
+            width: 127px;
+            height: 48px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
