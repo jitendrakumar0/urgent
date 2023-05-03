@@ -3,7 +3,11 @@
         & .leftPart {}
         & .rightBgPart {
             & .singleRightPart {
-                width: 66.6666% !important;
+                width: 100%!important;
+                & .stickyHeader {
+                    width: 66.66%;
+                    margin-inline: auto !important;
+                }
             }
         }
     }
