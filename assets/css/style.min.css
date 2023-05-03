@@ -7275,8 +7275,8 @@ body .overflow-auto-hidden {
   height: 100%;
 }
 .masterDashboard .sidebarUL .sidebarLi .sidebarImg1 {
-  width: 18px !important;
-  height: 18px !important;
+  width: 20px !important;
+  height: 20px !important;
 }
 .masterDashboard .rightBgPart .singleRightPart .mainContent .leftSide .textSide .pageHeading {
   font-weight: 600;
@@ -7319,6 +7319,23 @@ body .overflow-auto-hidden {
 .masterDashboard .rightBgPart .apiHolder .apiHolderBtn {
   background: #5BCD97;
   border-radius: 18px;
+  height: 37px;
+  width: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  position: absolute;
+  right: 12px;
+  top: 0;
 }
 
 .masterDashboard .rightBgPart .singleRightPart {

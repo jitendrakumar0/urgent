@@ -15,8 +15,8 @@
         & .sidebarUL{
             & .sidebarLi{
                 & .sidebarImg1{
-                    width: 18px !important;
-                    height: 18px !important;
+                    width: 20px !important;
+                    height: 20px !important;
                 }
             }
         }
@@ -76,6 +76,23 @@
                 & .apiHolderBtn{
                     background: #5BCD97;
                     border-radius: 18px;
+                    height: 37px;
+                    width: 147px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: none;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    position: absolute;
+                    right: 12px;
+                    top: 0;
                 }
             }
         }
