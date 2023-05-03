@@ -1,0 +1,49 @@
+@include media-breakpoint(basic) {
+    main {
+        & .chatbotMainInner {
+            & .rightPart {
+                & .chatBottomBar {
+                    height: 143px;
+                    background: rgba(213, 224, 229, 0.4);
+                    border-top: 1px solid #D9D9D9;
+                    & .chatInputWrapper {
+                        & .form-control {
+                            font-family: 'Cabin';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #3D3D3D;
+                            resize: none;
+                            overflow: hidden;
+                            min-height: 49px;
+                            max-height: 75px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+ 
+}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
