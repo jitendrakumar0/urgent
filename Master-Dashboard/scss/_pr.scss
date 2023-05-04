@@ -9,6 +9,11 @@
                     margin-inline: auto !important;
                 }
             }
+            & .headerHiddenDetails {
+                & .pageHeading {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
