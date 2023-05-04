@@ -263,7 +263,11 @@
             left: -24px;
             top: 50%;
         }
+    }
+    
+    .confirmModal {
         & .modalDialog{
+            max-width: 572px !important;
             & .modalContent{
                 padding: 25px 42px;
                 background: #FFFFFF;
@@ -275,18 +279,21 @@
                     font-size: 24px;
                     line-height: 36px;
                     color: #464255;
-                    display: flex;
+                    display: flex !important;
                     justify-content: center;
                     border-bottom: unset;
                     & img{
-                        height: 20px;
-                        padding-right: 5px;
+                        height: 25px;
+                        padding-right: 10px;
                     }
                     & .modalTitle{
-    
+                        display: flex;
+                        align-items: center;
                     }
                 }
                 & .modalBody{
+                    padding-top: 22px !important;
+                    padding-bottom: 18px !important;
                     & .para{
                         font-family: 'Poppins';
                         font-style: normal;
@@ -300,7 +307,7 @@
                     border-top: unset;
                     & .cancleBtn{
                         background: #E15656;
-                        border-radius: 18px;
+                        border-radius: 40px;
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 500;
@@ -308,14 +315,21 @@
                         line-height: 21px;
                         letter-spacing: 0.4px;
                         color: #FFFFFF;
+                        margin: 0;
+                        height: 35px !important;
+                        transition: 0.3s ease-in-out;
                         & img{
                             height: 12px;
                             padding-right: 5px;
                         }
+                        &:hover {
+                            background-color: darken($color: #E15656, $amount: 8);
+                        }
                     }
                     & .applyBtn{
-                        background: #5BCD97;
-                        border-radius: 18px;
+                        height: 35px !important;
+                        background-color: #5BCD97;
+                        border-radius: 40px;
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 500;
@@ -324,9 +338,15 @@
                         text-align: center;
                         letter-spacing: 0.4px;
                         color: #FFFFFF;
+                        margin: 0;
+                        margin-left: 15px !important;
+                        transition: 0.3s ease-in-out;
                         & img{
-                            height: 12px;
-                            padding-right: 5px;
+                            height: 17px;
+                            padding-right: 10px;
+                        }
+                        &:hover {
+                            background-color: darken($color: #5BCD97, $amount: 8);
                         }
                     }
                 }
