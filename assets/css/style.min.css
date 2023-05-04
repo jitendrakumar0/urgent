@@ -9648,7 +9648,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
     font-size: 11px;
   }
   .carmenDashboard .trackTableHead {
-    font-size: 14px;
+    font-size: 13px !important;
   }
   .carmenDashboard .profileSection {
     padding: 25px;
