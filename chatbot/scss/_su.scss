@@ -1400,3 +1400,287 @@
 }
 
 //! **************************************** Home Page End ********************************//
+
+
+// ********************************** Upload Selection Page Srart ************************** //
+
+@include media-breakpoint(basic) {
+    .uploadSelectionSectionOuter {
+        & .uploadSelectionInnner {
+            padding: 35px 16px 0px 16px;
+            & .sideHeading {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                color: #4A5C77;
+                padding-bottom: 27px;
+                & img {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+            & .leftSide {
+                padding: 28px 32px 0px 32px;
+                background: rgba(243, 242, 247, 0.5);
+                border-radius: 20px;
+                & .dataCardOuter {
+                    & .dataCard {
+                        max-width: 100%;
+                        width: 100%;
+                        padding: 25px 40px;
+                        &.active {
+                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                padding: 28px 32px 0px 32px;
+                & .reviewText {
+                    font-family: 'Cabin';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #4A5C77;
+                    & span {
+                        font-weight: 700;
+                    }
+                }
+                & .uploadPageBtn {
+                    background: #897FFF;
+                    border-radius: 8px;
+                    width: 257px;
+                    height: 66px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease-in-out;
+                    & img {
+                        width: 29px;
+                        height: 29px;
+                    }
+                    &:hover {
+                        filter: brightness(0.9);
+                    }
+                    &.disabled {
+                        filter: brightness(0.8);
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+}
+
+@include media-breakpoint-down(xl) {
+    .uploadSelectionSectionOuter {
+        & .uploadSelectionInnner {
+            padding: 30px 15px 0px 15px;
+            & .sideHeading {
+                gap: 6px;
+                font-size: 22px;
+                line-height: 24px;
+                padding-bottom: 24px;
+                & img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            & .leftSide {
+                padding: 24px 24px 0px 24px;
+                & .dataCardOuter {
+                    & .dataCard {
+                        padding: 25px 30px;
+                        &.active {
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                padding: 24px 24px 0px 24px;
+                & .reviewText {
+                    & span {
+                    }
+                }
+                & .uploadPageBtn {
+                    border-radius: 8px;
+                    width: 240px;
+                    height: 50px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    & img {
+                        width: 23px;
+                        height: 23px;
+                    }
+                    &:hover {
+                    }
+                    &.disabled {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .uploadSelectionSectionOuter {
+        & .uploadSelectionInnner {
+            & .sideHeading {
+                & img {
+                }
+            }
+            & .leftSide {
+                padding: 20px 20px 0px 20px;
+                & .dataCardOuter {
+                    & .dataCard {
+                        padding: 25px 25px;
+                        &.active {
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                padding: 20px 20px 0px 20px;
+                & .reviewText {
+                    & span {
+                    }
+                }
+                & .uploadPageBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                    &.disabled {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .uploadSelectionSectionOuter {
+        & .uploadSelectionInnner {
+            padding: 25px 0px 0px 0px;
+            & .sideHeading {
+                font-size: 20px;
+                line-height: 22px;
+                padding-bottom: 20px;
+                & img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            & .leftSide {
+                height: auto !important;
+                padding: 20px 20px 0px 20px;
+                & .dataCardOuter {
+                    & .dataCard {
+                        padding: 25px 35px;
+                        &.active {
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                padding: 20px 20px 0px 20px;
+                & .reviewText {
+                    & span {
+                    }
+                }
+                & .uploadPageBtn {
+                    width: 220px;
+                    height: 45px;
+                    font-size: 15px;
+                    line-height: 17px;
+                    & img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    &:hover {
+                    }
+                    &.disabled {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .uploadSelectionSectionOuter {
+        & .uploadSelectionInnner {
+            padding: 25px 0px 0px 0px;
+            & .sideHeading {
+                font-size: 18px;
+                line-height: 20px;
+                padding-bottom: 18px;
+                & img {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+            & .leftSide {
+                padding: 15px 15px 0px 15px;
+                & .dataCardOuter {
+                    & .dataCard {
+                        padding: 25px 25px;
+                        &.active {
+                        }
+                    }
+                }
+            }
+            & .rightSide {
+                padding: 20px 20px 0px 20px;
+                & .reviewText {
+                    & span {
+                    }
+                }
+                & .uploadPageBtn {
+                    border-radius: 6px;
+                    width: 200px;
+                    height: 40px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    & img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                    &:hover {
+                    }
+                    &.disabled {
+                    }
+                }
+            }
+        }
+    }
+}
+
+//! **************************************** Upload Selection Page End ********************************//
