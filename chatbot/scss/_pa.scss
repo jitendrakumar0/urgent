@@ -8,6 +8,7 @@
             border-radius: 24px;
             padding: 25px 134px;
             margin: 30px 0;
+            margin-right: 60px;
             & .trackPageTopBarHeadTxt{
                 font-family: 'Poppins';
                 font-style: normal;
@@ -58,70 +59,56 @@
                 }
             }
         }
-        & .trackTableHead{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            color: #464255;
-        }
-        & .trackTableHeadSearch{
-            & .trackInp{
-                background: #FBFBFB;
-                border-radius: 18px;
-                border-color: #FBFBFB;
-                padding-left: 20px;
+        & .marginClass{
+            margin-right: 60px !important;
+            & .trackTableHead{
                 font-family: 'Poppins';
                 font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 18px;
-                color: #4A5C77;
-                border: none;
-                height: 30px;
-                &:focus-visible{
-                    outline: unset;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #464255;
+            }
+            & .trackTableHeadSearch{
+                & .trackInp{
+                    background: #FBFBFB;
+                    border-radius: 18px;
+                    border-color: #FBFBFB;
+                    padding-left: 20px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #4A5C77;
+                    border: none;
+                    height: 30px;
+                    &:focus-visible{
+                        outline: unset;
+                    }
+                }
+                & .inpSearch{
+                    position: absolute;
+                    top: 8%;
+                    right: 10px;
+                    & img{
+                        height: 15px;
+                    }
                 }
             }
-            & .inpSearch{
-                position: absolute;
-                top: 8%;
-                right: 10px;
+            & .trackTable{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;;
                 & img{
-                    height: 15px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
-        }
-        & .trackTable{
-            width: 100%;
-            height: 100%;
-            overflow: hidden;;
-            & img{
+            & .trackgraph{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
-            }
-        }
-        & .trackgraph{
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            & img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        & .profileSection{
-            background: rgba(243, 242, 247, 0.8);
-            border-radius: 30.8224px;
-            padding: 26px 50px;
-            margin: 0 0 46px 0;
-            & .profileImg{
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
                 overflow: hidden;
                 & img{
                     width: 100%;
@@ -129,139 +116,157 @@
                     object-fit: cover;
                 }
             }
-            & .fileLbl{
-                width: 24px;
-                height: 24px;
-                background-color: #4A5C77;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                bottom: 3px;
-                left: 70px;
-                & img{
-                    height: 12px;
+            & .profileSection{
+                background: rgba(243, 242, 247, 0.8);
+                border-radius: 30.8224px;
+                padding: 26px 50px;
+                margin: 0 0 46px 0;
+                margin-right: 100px;
+                & .profileImg{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .fileLbl{
+                    width: 24px;
+                    height: 24px;
+                    background-color: #4A5C77;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    bottom: 3px;
+                    left: 70px;
+                    & img{
+                        height: 12px;
+                    }
+                }
+                & .profileName{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #4A5C77;
+                    margin-bottom: 5px;
+                }
+                & .profileDescription{
+                    font-family: 'Cabin';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14.22px;
+                    line-height: 17px;
+                    color: #4A5C77;
+                }
+                & .userLbl{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14.22px;
+                    line-height: 19px;
+                    color: #4A5C77;
+                    margin-bottom: 10px;
+                }
+                & .userInp{
+                    background: #FFFFFF;
+                    border-radius: 8px;
+                    height: 46px;
+                    padding-left: 40px;
+                    font-family: 'Cabin';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14.22px;
+                    line-height: 17px;
+                    color: #727272;
+                    border: none;
+                }
+                & .userImg{
+                    position: absolute;
+                    top: 55%;
+                    left: 28px;
+                    & img{
+                        height: 14px;
+                    }
+                }
+                & .updateBtn{
+                    background: #9BB7C2;
+                    opacity: 0.8;
+                    border-radius: 8px;
+                    font-family: 'Cabin';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                    padding: 12px 60px;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                & .passInp{
+                    background: #FFFFFF;
+                    border-radius: 8px;
+                    height: 46px;
+                    padding-left: 40px;
+                    font-family: 'Cabin';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14.22px;
+                    line-height: 17px;
+                    color: #727272;
+                    border: none;
+                }
+                & .passImg{
+                    position: absolute;
+                    top: 24%;
+                    left: 28px;
+                    & img{
+        
+                    }
+                }
+                & .openEye{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 25px;
+                    & img{
+                        height: 18px;
+                    }
                 }
             }
-            & .profileName{
+            & .sideTxt{
                 font-family: 'Poppins';
                 font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 33px;
                 color: #4A5C77;
-                margin-bottom: 5px;
-            }
-            & .profileDescription{
-                font-family: 'Cabin';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14.22px;
-                line-height: 17px;
-                color: #4A5C77;
-            }
-            & .userLbl{
-                font-family: 'DM Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14.22px;
-                line-height: 19px;
-                color: #4A5C77;
-                margin-bottom: 10px;
-            }
-            & .userInp{
-                background: #FFFFFF;
-                border-radius: 8px;
-                height: 46px;
-                padding-left: 40px;
-                font-family: 'Cabin';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14.22px;
-                line-height: 17px;
-                color: #727272;
-                border: none;
-            }
-            & .userImg{
+                transform: rotate(-90deg);
                 position: absolute;
-                top: 55%;
-                left: 28px;
-                & img{
-                    height: 14px;
-                }
-            }
-            & .updateBtn{
-                background: #9BB7C2;
-                opacity: 0.8;
-                border-radius: 8px;
-                font-family: 'Cabin';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-                text-align: center;
-                color: #FFFFFF;
-                border: none;
-                padding: 12px 60px;
-                &:hover{
-                    opacity: 0.5;
-                }
-            }
-            & .passInp{
-                background: #FFFFFF;
-                border-radius: 8px;
-                height: 46px;
-                padding-left: 40px;
-                font-family: 'Cabin';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14.22px;
-                line-height: 17px;
-                color: #727272;
-                border: none;
-            }
-            & .passImg{
-                position: absolute;
-                top: 24%;
-                left: 28px;
-                & img{
-    
-                }
-            }
-            & .openEye{
-                position: absolute;
+                left: -70px;
                 top: 50%;
-                transform: translateY(-50%);
-                right: 25px;
-                & img{
-                    height: 18px;
-                }
             }
-        }
-        & .sideTxt{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 33px;
-            color: #4A5C77;
-            transform: rotate(-90deg);
-            position: absolute;
-            left: -70px;
-            top: 50%;
-        }
-        & .sideTxt1{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 33px;
-            color: #4A5C77;
-            transform: rotate(-90deg);
-            position: absolute;
-            left: -24px;
-            top: 50%;
+            & .sideTxt1{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 33px;
+                color: #4A5C77;
+                transform: rotate(-90deg);
+                position: absolute;
+                left: -24px;
+                top: 50%;
+            }
         }
     }
     
@@ -369,6 +374,7 @@
     
     .carmenDashboard{
         & .trackPageTopBar{
+            margin-right: 20px !important;
             & .trackPageTopBarHeadTxt{
             }
             & .trackPageTopBarPercent{
@@ -387,6 +393,9 @@
                 }
             }
         }
+        & .marginClass{
+            margin-right: 20px !important;
+            
         & .trackTableHead{
         }
         & .trackTableHeadSearch{
@@ -447,6 +456,7 @@
         & .sideTxt{
         }
         & .sideTxt1{
+        }
         }
     }
 }
@@ -456,6 +466,7 @@
     .carmenDashboard{
         & .trackPageTopBar{
             padding: 25px 60px;
+            margin-right: 20px;
             & .trackPageTopBarHeadTxt{
             }
             & .trackPageTopBarPercent{
@@ -474,66 +485,70 @@
                 }
             }
         }
-        & .trackTableHead{
-        }
-        & .trackTableHeadSearch{
-            & .trackInp{
-                &:focus-visible{
+        & .marginClass{
+            margin-right: 20px;
+            & .trackTableHead{
+            }
+            & .trackTableHeadSearch{
+                & .trackInp{
+                    &:focus-visible{
+                    }
+                }
+                & .inpSearch{
+                    & img{
+                    }
                 }
             }
-            & .inpSearch{
+            & .trackTable{
                 & img{
                 }
             }
-        }
-        & .trackTable{
-            & img{
-            }
-        }
-        & .trackgraph{
-            & img{
-            }
-        }
-        & .profileSection{
-            & .profileImg{
+            & .trackgraph{
                 & img{
                 }
             }
-            & .fileLbl{
-                & img{
+            & .profileSection{
+                margin-right: 50px;
+                & .profileImg{
+                    & img{
+                    }
+                }
+                & .fileLbl{
+                    & img{
+                    }
+                }
+                & .profileName{
+                }
+                & .profileDescription{
+                }
+                & .userLbl{
+                }
+                & .userInp{
+                }
+                & .userImg{
+                    & img{
+                    }
+                }
+                & .updateBtn{
+                    &:hover{
+                    }
+                }
+                & .passInp{
+                }
+                & .passImg{
+                    & img{
+    
+                    }
+                }
+                & .openEye{
+                    & img{
+                    }
                 }
             }
-            & .profileName{
+            & .sideTxt{
             }
-            & .profileDescription{
+            & .sideTxt1{
             }
-            & .userLbl{
-            }
-            & .userInp{
-            }
-            & .userImg{
-                & img{
-                }
-            }
-            & .updateBtn{
-                &:hover{
-                }
-            }
-            & .passInp{
-            }
-            & .passImg{
-                & img{
-
-                }
-            }
-            & .openEye{
-                & img{
-                }
-            }
-        }
-        & .sideTxt{
-        }
-        & .sideTxt1{
         }
     }
 }
@@ -581,6 +596,7 @@
             }
         }
         & .profileSection{
+            margin-right: 30px;
             & .profileImg{
                 & img{
                 }
@@ -743,7 +759,7 @@
             }
         }
         & .trackTableHead{
-            font-size: 14px;
+            font-size: 13px !important;
         }
         & .trackTableHeadSearch{
             & .trackInp{
@@ -765,6 +781,7 @@
         }
         & .profileSection{
             padding: 25px;
+            margin-right: 10px;
             & .profileImg{
                 width: 60px;
                 height: 60px;
@@ -811,8 +828,32 @@
             }
         }
         & .sideTxt{
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 33px;
+            color: #4A5C77;
+            /* transform: rotate(-90deg); */
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            margin-top: 10px;
         }
         & .sideTxt1{
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 33px;
+            color: #4A5C77;
+            /* transform: rotate(-90deg); */
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            margin-top: -38px;
         }
     }
 }
