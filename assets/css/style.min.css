@@ -9255,6 +9255,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   border-radius: 24px;
   padding: 25px 134px;
   margin: 30px 0;
+  margin-right: 60px;
 }
 .carmenDashboard .trackPageTopBar .trackPageTopBarHeadTxt {
   font-family: "Poppins";
@@ -9302,7 +9303,10 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
 .carmenDashboard .trackPageTopBar .trackPageTopBarBottomTxt1 span {
   color: #4A5C77;
 }
-.carmenDashboard .trackTableHead {
+.carmenDashboard .marginClass {
+  margin-right: 60px !important;
+}
+.carmenDashboard .marginClass .trackTableHead {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -9310,7 +9314,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   line-height: 24px;
   color: #464255;
 }
-.carmenDashboard .trackTableHeadSearch .trackInp {
+.carmenDashboard .marginClass .trackTableHeadSearch .trackInp {
   background: #FBFBFB;
   border-radius: 18px;
   border-color: #FBFBFB;
@@ -9324,55 +9328,56 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   border: none;
   height: 30px;
 }
-.carmenDashboard .trackTableHeadSearch .trackInp:focus-visible {
+.carmenDashboard .marginClass .trackTableHeadSearch .trackInp:focus-visible {
   outline: unset;
 }
-.carmenDashboard .trackTableHeadSearch .inpSearch {
+.carmenDashboard .marginClass .trackTableHeadSearch .inpSearch {
   position: absolute;
   top: 8%;
   right: 10px;
 }
-.carmenDashboard .trackTableHeadSearch .inpSearch img {
+.carmenDashboard .marginClass .trackTableHeadSearch .inpSearch img {
   height: 15px;
 }
-.carmenDashboard .trackTable {
+.carmenDashboard .marginClass .trackTable {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.carmenDashboard .trackTable img {
+.carmenDashboard .marginClass .trackTable img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.carmenDashboard .trackgraph {
+.carmenDashboard .marginClass .trackgraph {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.carmenDashboard .trackgraph img {
+.carmenDashboard .marginClass .trackgraph img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.carmenDashboard .profileSection {
+.carmenDashboard .marginClass .profileSection {
   background: rgba(243, 242, 247, 0.8);
   border-radius: 30.8224px;
   padding: 26px 50px;
   margin: 0 0 46px 0;
+  margin-right: 100px;
 }
-.carmenDashboard .profileSection .profileImg {
+.carmenDashboard .marginClass .profileSection .profileImg {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
 }
-.carmenDashboard .profileSection .profileImg img {
+.carmenDashboard .marginClass .profileSection .profileImg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.carmenDashboard .profileSection .fileLbl {
+.carmenDashboard .marginClass .profileSection .fileLbl {
   width: 24px;
   height: 24px;
   background-color: #4A5C77;
@@ -9384,10 +9389,10 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   bottom: 3px;
   left: 70px;
 }
-.carmenDashboard .profileSection .fileLbl img {
+.carmenDashboard .marginClass .profileSection .fileLbl img {
   height: 12px;
 }
-.carmenDashboard .profileSection .profileName {
+.carmenDashboard .marginClass .profileSection .profileName {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -9396,7 +9401,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   color: #4A5C77;
   margin-bottom: 5px;
 }
-.carmenDashboard .profileSection .profileDescription {
+.carmenDashboard .marginClass .profileSection .profileDescription {
   font-family: "Cabin";
   font-style: normal;
   font-weight: 400;
@@ -9404,7 +9409,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   line-height: 17px;
   color: #4A5C77;
 }
-.carmenDashboard .profileSection .userLbl {
+.carmenDashboard .marginClass .profileSection .userLbl {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -9413,7 +9418,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   color: #4A5C77;
   margin-bottom: 10px;
 }
-.carmenDashboard .profileSection .userInp {
+.carmenDashboard .marginClass .profileSection .userInp {
   background: #FFFFFF;
   border-radius: 8px;
   height: 46px;
@@ -9426,15 +9431,15 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   color: #727272;
   border: none;
 }
-.carmenDashboard .profileSection .userImg {
+.carmenDashboard .marginClass .profileSection .userImg {
   position: absolute;
   top: 55%;
   left: 28px;
 }
-.carmenDashboard .profileSection .userImg img {
+.carmenDashboard .marginClass .profileSection .userImg img {
   height: 14px;
 }
-.carmenDashboard .profileSection .updateBtn {
+.carmenDashboard .marginClass .profileSection .updateBtn {
   background: #9BB7C2;
   opacity: 0.8;
   border-radius: 8px;
@@ -9448,10 +9453,10 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   border: none;
   padding: 12px 60px;
 }
-.carmenDashboard .profileSection .updateBtn:hover {
+.carmenDashboard .marginClass .profileSection .updateBtn:hover {
   opacity: 0.5;
 }
-.carmenDashboard .profileSection .passInp {
+.carmenDashboard .marginClass .profileSection .passInp {
   background: #FFFFFF;
   border-radius: 8px;
   height: 46px;
@@ -9464,21 +9469,21 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   color: #727272;
   border: none;
 }
-.carmenDashboard .profileSection .passImg {
+.carmenDashboard .marginClass .profileSection .passImg {
   position: absolute;
   top: 24%;
   left: 28px;
 }
-.carmenDashboard .profileSection .openEye {
+.carmenDashboard .marginClass .profileSection .openEye {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 25px;
 }
-.carmenDashboard .profileSection .openEye img {
+.carmenDashboard .marginClass .profileSection .openEye img {
   height: 18px;
 }
-.carmenDashboard .sideTxt {
+.carmenDashboard .marginClass .sideTxt {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -9490,7 +9495,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   left: -70px;
   top: 50%;
 }
-.carmenDashboard .sideTxt1 {
+.carmenDashboard .marginClass .sideTxt1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -9502,27 +9507,39 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   left: -24px;
   top: 50%;
 }
-.carmenDashboard .modalDialog .modalContent {
+
+.confirmModal .modalDialog {
+  max-width: 572px !important;
+}
+.confirmModal .modalDialog .modalContent {
   padding: 25px 42px;
   background: #FFFFFF;
   border-radius: 24px;
 }
-.carmenDashboard .modalDialog .modalContent .modalHeader {
+.confirmModal .modalDialog .modalContent .modalHeader {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
   color: #464255;
-  display: flex;
+  display: flex !important;
   justify-content: center;
   border-bottom: unset;
 }
-.carmenDashboard .modalDialog .modalContent .modalHeader img {
-  height: 20px;
-  padding-right: 5px;
+.confirmModal .modalDialog .modalContent .modalHeader img {
+  height: 25px;
+  padding-right: 10px;
 }
-.carmenDashboard .modalDialog .modalContent .modalBody .para {
+.confirmModal .modalDialog .modalContent .modalHeader .modalTitle {
+  display: flex;
+  align-items: center;
+}
+.confirmModal .modalDialog .modalContent .modalBody {
+  padding-top: 22px !important;
+  padding-bottom: 18px !important;
+}
+.confirmModal .modalDialog .modalContent .modalBody .para {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -9530,12 +9547,12 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   line-height: 26px;
   color: #4A5C77;
 }
-.carmenDashboard .modalDialog .modalContent .modalFooter {
+.confirmModal .modalDialog .modalContent .modalFooter {
   border-top: unset;
 }
-.carmenDashboard .modalDialog .modalContent .modalFooter .cancleBtn {
+.confirmModal .modalDialog .modalContent .modalFooter .cancleBtn {
   background: #E15656;
-  border-radius: 18px;
+  border-radius: 40px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -9543,14 +9560,21 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   line-height: 21px;
   letter-spacing: 0.4px;
   color: #FFFFFF;
+  margin: 0;
+  height: 35px !important;
+  transition: 0.3s ease-in-out;
 }
-.carmenDashboard .modalDialog .modalContent .modalFooter .cancleBtn img {
+.confirmModal .modalDialog .modalContent .modalFooter .cancleBtn img {
   height: 12px;
   padding-right: 5px;
 }
-.carmenDashboard .modalDialog .modalContent .modalFooter .applyBtn {
-  background: #5BCD97;
-  border-radius: 18px;
+.confirmModal .modalDialog .modalContent .modalFooter .cancleBtn:hover {
+  background-color: #db3333;
+}
+.confirmModal .modalDialog .modalContent .modalFooter .applyBtn {
+  height: 35px !important;
+  background-color: #5BCD97;
+  border-radius: 40px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -9559,15 +9583,41 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   text-align: center;
   letter-spacing: 0.4px;
   color: #FFFFFF;
+  margin: 0;
+  margin-left: 15px !important;
+  transition: 0.3s ease-in-out;
 }
-.carmenDashboard .modalDialog .modalContent .modalFooter .applyBtn img {
-  height: 12px;
-  padding-right: 5px;
+.confirmModal .modalDialog .modalContent .modalFooter .applyBtn img {
+  height: 17px;
+  padding-right: 10px;
+}
+.confirmModal .modalDialog .modalContent .modalFooter .applyBtn:hover {
+  background-color: #3cc383;
 }
 
+@media (max-width: 1399.98px) {
+  .carmenDashboard .trackPageTopBar {
+    margin-right: 20px !important;
+  }
+  .carmenDashboard .marginClass {
+    margin-right: 20px !important;
+  }
+}
 @media (max-width: 1199.98px) {
   .carmenDashboard .trackPageTopBar {
     padding: 25px 60px;
+    margin-right: 20px;
+  }
+  .carmenDashboard .marginClass {
+    margin-right: 20px;
+  }
+  .carmenDashboard .marginClass .profileSection {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  .carmenDashboard .profileSection {
+    margin-right: 30px;
   }
 }
 @media (max-width: 767.98px) {
@@ -9602,6 +9652,7 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   }
   .carmenDashboard .profileSection {
     padding: 25px;
+    margin-right: 10px;
   }
   .carmenDashboard .profileSection .profileImg {
     width: 60px;
@@ -9621,5 +9672,33 @@ main .chatbotMainInner .rightPart .chatBottomBar .chatInputWrapper .form-control
   }
   .carmenDashboard .profileSection .passInp {
     font-size: 12px;
+  }
+  .carmenDashboard .sideTxt {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4A5C77;
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  }
+  .carmenDashboard .sideTxt1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4A5C77;
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-top: -38px;
   }
 }/*# sourceMappingURL=style.min.css.map */
