@@ -253,6 +253,10 @@
                         &:hover {
                             filter: brightness(0.9);
                         }
+                        &.disabled {
+                            filter: brightness(0.8);
+                            pointer-events: none;
+                        }
                     }
                     & .uploadBtn {
                         height: 50px;
@@ -278,6 +282,10 @@
                         }
                         &:hover {
                             filter: brightness(0.9);
+                        }
+                        &.disabled {
+                            filter: brightness(0.8);
+                            pointer-events: none;
                         }
                     }
                 }
@@ -1612,6 +1620,7 @@
             & .rightSide {
                 padding: 20px 20px 0px 20px;
                 & .reviewText {
+                    text-align: center;
                     & span {
                     }
                 }
@@ -1684,3 +1693,414 @@
 }
 
 //! **************************************** Upload Selection Page End ********************************//
+
+
+// ********************************** Upload Page Srart ************************** //
+
+@include media-breakpoint(basic) {
+    .uploadPageSectionOuter {
+        & .leftSide {
+            padding: 32px !important;
+            & .fileInpOuter {
+                width: 100%;
+                height: 100%;
+                border: 1px dashed rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                & .uploadIconOuter {
+                    width: 48px;
+                    height: 48px;
+                    margin-bottom: 24px;
+                }
+                & .selectHeadig {
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #000000;
+                    text-align: center;
+                    margin-bottom: 12px;
+                }
+                & .formetText {
+                    text-align: center;
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: rgba(0, 0, 0, 0.4);
+                    margin-bottom: 24px;
+                }
+                & .selectFileBtn {
+                    width: 95px;
+                    height: 35px;
+                    background: #FBFDFE;
+                    border: 1px solid rgba(15, 145, 210, 0.7);
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 11px;
+                    text-transform: uppercase;
+                    color: #0F91D2;
+                }
+            }
+        }
+        & .rightSide {
+            padding: 32px !important;
+        }
+        & .noFile {
+            font-family: 'Cabin';
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(74, 92, 119, 0.6);
+        }
+    }
+    .uploadedFileOuter {
+        padding: 0px 16px;
+        margin-top: 40px;
+        min-height: 250px;
+        & .scrollPart {
+            border-top: 2px solid #E9E9E9;
+        }
+        & .uploadedFileInner {
+            padding: 20px 40px;
+            & .uploadedCard {
+                background: #F9F9FB;
+                border-radius: 5px;
+                padding: 17px 19px;
+                position: relative;
+                & .closetBtn {
+                    position: absolute;
+                    top: -6px;
+                    right: -6px;
+                    width: 24px;
+                    height: 24px;
+                    text-decoration: none;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #0F91D2;
+                    & img {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+                & .fileImgOuter {
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 17px;
+                }
+                & .fileNameText {
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #000000;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+          
+                }
+                & .previewText {
+                    position: relative;
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #0F91D2;
+                    padding: 0px 12px;
+                    text-decoration: none;
+                    display: inline-block;
+                    &::before {
+                        content: "";
+                        width: 3px;
+                        height: 3px;
+                        background-color: #767676;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 0px;
+                        top: 5px;
+                    }
+                }
+                & .fileSizeText {
+                    text-align: end;
+                    font-family: 'Helvetica';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 11px;
+                    color: rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+    }
+    .successBoxOuter {
+        max-width: 460px;
+        width: 100%;
+        padding: 28px 71px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        & .successImg {
+            width: 112px;
+            height: 112px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        & .successHeading {
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+            margin-bottom: 16px;
+        }
+        & .successText {
+            text-align: center;
+            font-family: 'Cabin';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 25px;
+        }
+        & .backBtn2 {
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #FFFFFF;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 199px;
+            height: 45px;
+            background: #897FFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+}
+
+@include media-breakpoint-down(xl) {
+    .uploadPageSectionOuter {
+        & .leftSide {
+            padding: 25px !important;
+            & .fileInpOuter {
+                & .uploadIconOuter {
+                }
+                & .selectHeadig {
+                }
+                & .formetText {
+                }
+                & .selectFileBtn {
+                }
+            }
+        }
+        & .rightSide {
+            padding: 25px !important;
+        }
+        & .noFile {
+        }
+    }
+    .uploadedFileOuter {
+        & .scrollPart {
+        }
+        & .uploadedFileInner {
+            & .uploadedCard {
+                & .closetBtn {
+                    & img {
+                    }
+                }
+                & .fileImgOuter {
+                }
+                & .fileNameText {
+                }
+                & .previewText {
+                    &::before {
+                    }
+                }
+                & .fileSizeText {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+    .uploadPageSectionOuter {
+        height: auto !important;
+        & .leftSide {
+            padding: 20px !important;
+            & .fileInpOuter {
+                padding: 10px;
+                & .uploadIconOuter {
+                }
+                & .selectHeadig {
+                }
+                & .formetText {
+                }
+                & .selectFileBtn {
+                }
+            }
+        }
+        & .rightSide {
+            padding: 20px !important;
+        }
+        & .noFile {
+        }
+    }
+    .uploadedFileOuter {
+        margin-top: 30px;
+        & .scrollPart {
+            height: auto !important;
+        }
+        & .uploadedFileInner {
+            padding: 20px 10px;
+            & .uploadedCard {
+                & .closetBtn {
+                    & img {
+                    }
+                }
+                & .fileImgOuter {
+                }
+                & .fileNameText {
+                }
+                & .previewText {
+                    &::before {
+                    }
+                }
+                & .fileSizeText {
+                }
+            }
+        }
+    }
+    .successBoxOuter {
+        padding: 20px;
+        & .successImg {
+            width: 112px;
+            height: 112px;
+            margin-bottom: 16px;
+        }
+        & .successHeading {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 16px;
+        }
+        & .successText {
+            font-size: 13px;
+            line-height: 16px;
+            margin-bottom: 25px;
+        }
+        & .backBtn2 {
+            font-size: 13px;
+            line-height: 20px;
+            width: 180px;
+            height: 40px;
+            &:hover {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .uploadPageSectionOuter {
+        & .leftSide {
+            padding: 15px !important;
+            & .fileInpOuter {
+                padding: 10px 5px;
+                & .uploadIconOuter {
+                    margin-bottom: 18px;
+                }
+                & .selectHeadig {
+                }
+                & .formetText {
+                }
+                & .selectFileBtn {
+                }
+            }
+        }
+        & .rightSide {
+            padding: 15px !important;
+        }
+        & .noFile {
+        }
+    }
+    .uploadedFileOuter {
+        margin-top: 30px;
+        & .scrollPart {
+            height: auto !important;
+        }
+        & .uploadedFileInner {
+            padding: 20px 10px;
+            & .uploadedCard {
+                & .closetBtn {
+                    & img {
+                    }
+                }
+                & .fileImgOuter {
+                }
+                & .fileNameText {
+                }
+                & .previewText {
+                    &::before {
+                    }
+                }
+                & .fileSizeText {
+                }
+            }
+        }
+    }
+}
+
+//! **************************************** Upload Page End ********************************//
