@@ -3,12 +3,12 @@
 
 @include media-breakpoint(basic) {
     .carmenDashboard{
+        
         & .trackPageTopBar{
             background: #F9F9FB;
             border-radius: 24px;
             padding: 25px 134px;
             margin: 30px 0;
-            margin-right: 60px;
             & .trackPageTopBarHeadTxt{
                 font-family: 'Poppins';
                 font-style: normal;
@@ -60,7 +60,7 @@
             }
         }
         & .marginClass{
-            margin-right: 60px !important;
+            // margin-right: 60px !important;
             & .trackTableHead{
                 font-family: 'Poppins';
                 font-style: normal;
@@ -121,7 +121,7 @@
                 border-radius: 30.8224px;
                 padding: 26px 50px;
                 margin: 0 0 46px 0;
-                margin-right: 100px;
+                // margin-right: 100px;
                 & .profileImg{
                     width: 80px;
                     height: 80px;
@@ -374,7 +374,6 @@
     
     .carmenDashboard{
         & .trackPageTopBar{
-            margin-right: 20px !important;
             & .trackPageTopBarHeadTxt{
             }
             & .trackPageTopBarPercent{
@@ -394,7 +393,7 @@
             }
         }
         & .marginClass{
-            margin-right: 20px !important;
+            // margin-right: 20px !important;
             
         & .trackTableHead{
         }
@@ -466,7 +465,6 @@
     .carmenDashboard{
         & .trackPageTopBar{
             padding: 25px 60px;
-            margin-right: 20px;
             & .trackPageTopBarHeadTxt{
             }
             & .trackPageTopBarPercent{
@@ -486,7 +484,7 @@
             }
         }
         & .marginClass{
-            margin-right: 20px;
+            // margin-right: 20px;
             & .trackTableHead{
             }
             & .trackTableHeadSearch{
@@ -508,7 +506,7 @@
                 }
             }
             & .profileSection{
-                margin-right: 50px;
+                // margin-right: 50px;
                 & .profileImg{
                     & img{
                     }
@@ -596,7 +594,7 @@
             }
         }
         & .profileSection{
-            margin-right: 30px;
+            // margin-right: 30px;
             & .profileImg{
                 & img{
                 }
@@ -683,6 +681,7 @@
             }
         }
         & .profileSection{
+            padding: 25px !important;
             & .profileImg{
                 & img{
                 }
@@ -722,8 +721,14 @@
             }
         }
         & .sideTxt{
+            position: static !important;
+            transform: rotate(0) !important;
+            margin-top: 25px;
         }
         & .sideTxt1{
+            position: static !important;
+            transform: rotate(0) !important;
+            margin-bottom: 0.5rem;
         }
     }
 }
@@ -780,8 +785,7 @@
             }
         }
         & .profileSection{
-            padding: 25px;
-            margin-right: 10px;
+            padding: 25px !important;
             & .profileImg{
                 width: 60px;
                 height: 60px;
@@ -828,32 +832,8 @@
             }
         }
         & .sideTxt{
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 33px;
-            color: #4A5C77;
-            /* transform: rotate(-90deg); */
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-            margin-top: 10px;
         }
         & .sideTxt1{
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 33px;
-            color: #4A5C77;
-            /* transform: rotate(-90deg); */
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-            margin-top: -38px;
         }
     }
 }
