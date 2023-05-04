@@ -212,26 +212,6 @@
                                                         </div>
                                                         <div class="col-12 d-flex justify-content-end mt-4">
                                                             <button class="updateBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Update</button>
-                                                            <!-- Modal -->
-                                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                                <div class="modal-dialog modal-dialog-centered modalDialog">
-                                                                <div class="modal-content modalContent">
-                                                                    <div class="modal-header modalHeader">
-                                                                    <div class="modal-title modalTitle" id="exampleModalLabel"> <img src="./../assets/img/svg/userinfo.svg" alt=""> Update E-mail</div>
-                                                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                                                                    </div>
-                                                                    <div class="modal-body modalBody">
-                                                                        <div class="para">
-                                                                            Are you sure you want to modify your e-mail address? If you proceed, your login email will be replaced with the new one you have entered.
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="modal-footer modalFooter">
-                                                                    <button type="button" class="cancleBtn" data-bs-dismiss="modal"><img src="./../assets/img/svg/close.svg" alt=""> Cancle</button>
-                                                                    <button type="button" class="applyBtn"><img src="./../assets/img/svg/apply.svg" alt="">Apply</button>
-                                                                    </div>
-                                                                </div>
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -245,6 +225,26 @@
                 </div>
             </div>
         </main>
+         <!-- Modal -->
+         <div class="modal fade confirmModal" data-bs-backdrop="static" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modalDialog">
+            <div class="modal-content modalContent">
+                <div class="modal-header modalHeader p-0">
+                <div class="modal-title modalTitle" id="exampleModalLabel"> <img src="./../assets/img/svg/userinfo.svg" alt=""> Update E-mail</div>
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body modalBody p-0">
+                    <div class="para">
+                        Are you sure you want to modify your e-mail address? If you proceed, your login email will be replaced with the new one you have entered.
+                    </div>
+                </div>
+                <div class="modal-footer modalFooter p-0">
+                <button type="button" class="cancleBtn" data-bs-dismiss="modal"><img src="./../assets/img/svg/close.svg" alt=""> Cancel</button>
+                <button type="button" class="applyBtn"><img src="./../assets/img/svg/apply.svg" alt="">Apply</button>
+                </div>
+            </div>
+            </div>
+        </div>
         <script src="../assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script type="module" src="../assets/js/main.min.js"></script>
         <!-- sidebar open close -->
