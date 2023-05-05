@@ -759,6 +759,9 @@
             box-shadow: none;
             margin-bottom: 22px;
             padding-left: 24px;
+            &::placeholder {
+                color: #A3A3A3;
+            }
         }
         & .updateSelect{
             width: 100%;
