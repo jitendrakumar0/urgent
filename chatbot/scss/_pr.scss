@@ -85,6 +85,13 @@
                             overflow: hidden;
                             min-height: 49px;
                             max-height: 75px;
+                            padding-right: 80px;
+                        }
+                        & .textareaBtn{
+                            & img{
+                                border-left: 1px solid $gray-500;
+                                padding-left: 18px;
+                            }
                         }
                     }
                 }
@@ -220,6 +227,94 @@
                 border-radius: 100px;
                 height: 8px;
                 margin-inline: 300px !important;
+            }
+        }
+    }
+    .modalBox{
+        & .modalBoxDialog{
+            // width: 572.16px;
+            // height: 234px;
+            & .modalBoxContent{
+                padding: 25px 56px 0 56px;
+                & .modalBoxHeader{
+                    border-bottom: 0;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    & .modalBoxTitle{
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 36px;
+                        color: #464255;
+                        margin-bottom: 37px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        & img{
+                            width: 21px;
+                            height: 19px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+                & .modalBoxBody{
+                    padding: 0;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 26px;
+                    color: #4A5C77;
+                    margin-bottom: 37px;
+                }
+                & .modalBoxfooter{
+                    padding: 0;
+                    border-top: none;
+                    display: flex;
+                    justify-content: center;
+                    & .cancleBtn{
+                        margin-bottom: 29px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: 0.4px;
+                        color: #FFFFFF;
+                        background: #E15656;
+                        border-radius: 18px;
+                        height: 35px;
+                        border: none;
+                        padding: 7px 21px;
+                        & img{
+                            height: 12px;
+                            margin-right: 14px;
+                        }
+                    }
+                    & .removeBtn{
+                        margin-bottom: 29px;
+                        background: #5BCD97;
+                        border-radius: 18px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-align: center;
+                        letter-spacing: 0.4px;
+                        color: #FFFFFF;
+                        border: none;
+                        padding: 7px 21px;
+                        height: 35px;
+                        & img{
+                            height: 13px;
+                        }
+
+                    }
+                }
             }
         }
     }
@@ -648,6 +743,45 @@
                     & .msgActionBtn {
                         & img {
                         }
+                    }
+                }
+            }
+        }
+    }
+    
+    .modalBox{
+        & .modalBoxDialog{
+            & .modalBoxContent{
+                padding: 25px 20px 0 20px;
+                & .modalBoxHeader{
+                    & .modalBoxTitle{
+                        margin-bottom: 15px;
+                        font-size: 15px;
+                        & img{
+                            padding-right: 8px;
+                            margin-right: 0;
+                            height: 20px;
+                        }
+                    }
+                }
+                & .modalBoxBody{
+                    margin-bottom: 15px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                & .modalBoxfooter{
+                    & .cancleBtn{
+                        font-size: 13px;
+                        margin-bottom: 15px;
+                        & img{
+                        }
+                    }
+                    & .removeBtn{
+                        font-size: 13px;
+                        margin-bottom: 15px;
+                        & img{
+                        }
+
                     }
                 }
             }
