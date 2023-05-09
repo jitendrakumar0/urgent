@@ -22,7 +22,16 @@
         }
         .rightBgPart{
             & .singleRightPart{
-                & .mainContent{
+                & .mainContent{ 
+                    & .header {
+                        & .leftSide {
+                            & .imgSide {
+                                & .imgSideInner {
+                                    // position: unset;
+                                }
+                            }
+                        }
+                    }
                     & .leftSide{
                         & .textSide{
                             & .pageHeading{
@@ -34,11 +43,47 @@
             }
             & .dashboardCardDetail{
                 & .dashboardCard{
+                    align-items: start;
                     & .dashboardNumber{
 
                     }
                     & .dashboardCardText{
                         font-size: 14px;
+                    }
+                }
+                & .customSelect {
+                    position: relative;
+                    & select {
+                        background-color:  #EAF0F8;
+                        width: 174px;
+                        height: 36px;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 18px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: 0.4px;
+                        color: #464255;
+                        padding: 8px 40px 8px 20px;
+                        width: 140px;
+                        appearance: none;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 10px;
+                        right: 14px;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url('../../assets/img/svg/down-chevron.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 14px;
                     }
                 }
             }
@@ -50,7 +95,7 @@
                 & .apiHolderHeading{
                     font-family: 'Poppins';
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 28px;
                     line-height: 42px;
                     color: #FFFFFF;
@@ -505,7 +550,7 @@
                 }
                 & .inpSearchBtn{
                     position: absolute;
-                    top: 50%;
+                    top: 44%;
                     transform: translateY(-50%);
                     right: 30px;
                     & img{
@@ -524,11 +569,11 @@
                     line-height: 21px;
                     letter-spacing: 0.4px;
                     color: #464255;
-                    background-image: url(/assets/img/svg/down.svg);
+                    background-image: url('../../assets/img/svg/down.svg');
                     background-repeat: no-repeat;
-                    background-position: top 50% right 10px;
+                    background-position: top 50% right 15px;
                     background-size: 10px;
-                    padding: 7px 25px;
+                    padding: 7px 35px 7px 25px;
                 }
                 & .addTier{
                     background: #EAF0F8;
@@ -545,6 +590,11 @@
                 }
             }
         }
+    }
+}
+.modalFooter {
+    & .cancleBtnBg {
+        background-color: #4A5C77 !important;
     }
 }
 @include media-breakpoint-up(sm) {}

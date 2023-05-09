@@ -1,6 +1,31 @@
 @include media-breakpoint(basic) {
     .masterDashboard {
-        & .leftPart {}
+        & .leftPart {
+            & .sideBar {
+                & .sideBarInner {
+                    & .sideBarHeader {
+                        & .companyLogo {
+                            padding-left: 0;
+                        }
+                    }
+                    & .sideBarBody {
+                        & .sidebarUL {
+                            & .sidebarLi {
+                                & .sidebarImg {
+                                    margin-right: 15px;
+                                    filter: brightness(1);
+                                }
+                                &.active {
+                                    & .sidebarImg {
+                                        filter: brightness(5);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         & .rightBgPart {
             & .singleRightPart {
                 width: 100%!important;
