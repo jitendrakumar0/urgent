@@ -1,4 +1,36 @@
 @include media-breakpoint(basic) {
+    .upgradeOffcanvas {
+        & + .offcanvas-backdrop {
+            display: none !important;
+            background-color: transparent !important;
+            transition: none !important;
+            &.fade {
+                transition: opacity 0s !important;
+            }
+            &.show {
+                opacity: 0 !important;
+                display: none !important;
+                & + .modal-backdrop {
+                    display: none !important;
+                    &.show {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    .dpausagetracking  {
+        & .form-control {
+            &.formesInput {
+                padding: 6px 27px 6px 15px !important;
+            }
+        }
+    }
+    .imagetable {
+        & .rdt_TableHeader {
+            padding: 0 !important;
+        }
+    }
     .modalMain{
         & .modalContent{
             border-radius: 25px;
